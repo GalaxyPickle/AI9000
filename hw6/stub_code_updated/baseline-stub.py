@@ -24,9 +24,12 @@ def get_sentences(text):
     
     return sentences	
 
+# get bag of words
+# breaks sentences into set of tokenized sentences, removing stopwords
 def get_bow(tagged_tokens, stopwords):
     return set([t[0].lower() for t in tagged_tokens if t[0].lower() not in stopwords])
 	
+# searches for similarly tagged tokens and returns them
 def find_phrase(tagged_tokens, qbow):
     for i in range(len(tagged_tokens) - 1, 0, -1):
         word = (tagged_tokens[i])[0]
@@ -36,6 +39,7 @@ def find_phrase(tagged_tokens, qbow):
 # qtokens: is a list of pos tagged question tokens with SW removed
 # sentences: is a list of pos tagged story sentences
 # stopwords is a set of stopwords
+# matches words to sentences and returns the best answer
 def baseline(qbow, sentences, stopwords):
     # Collect all the candidate answers
     answers = []
@@ -46,6 +50,7 @@ def baseline(qbow, sentences, stopwords):
         # Count the # of overlapping words between the Q and the A
         # & is the set intersection operator
         overlap = len(qbow & sbow)
+        print(overlap)
         
         answers.append((overlap, sent))
         
@@ -58,12 +63,13 @@ def baseline(qbow, sentences, stopwords):
     return best_answer
 
 if __name__ == '__main__':
-    text_file = "fables-01.sch"
+    text_file = "hw6_dataset/fables-01.sch"
 	
     stopwords = set(nltk.corpus.stopwords.words("english"))
     text = read_file(text_file)
-    question = "Where was the crow sitting?"
+    question = "What did the crow feel?"
 
+    # get words for every sentence in sentence
     qbow = get_bow(get_sentences(question)[0], stopwords)
     sentences = get_sentences(text)
 	
