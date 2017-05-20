@@ -1,5 +1,7 @@
 import zipfile, os
 import re, nltk
+import pickle
+
 ##############
 # Alex Lang
 # Conor Rogers
@@ -47,8 +49,7 @@ def question_process(raw_text):
 
     # print("questionID: {0}".format(questionID))
     # print("questions: {0}".format(questions))
-    print("type: {0}".format(q_type))
-
+    # print("type: {0}".format(q_type))
     return questionID, questions, q_type
 
 def pickler(filename,data):
@@ -71,14 +72,16 @@ if __name__ == '__main__':
 
     f_questionID, f_questions, f_q_type = question_process(question_raw_fables)
 
-
-
     for i in range(len(b_questionID)):
         questions_blogs.update({b_questionID[i] : (b_questions[i], b_q_type[i])})
 
     for i in range(len(f_questionID)):
         questions_fables.update({f_questionID[i] : (f_questions[i], f_q_type[i])})
 
-       
+    pickler('questions_blogs.pickle',questions_blogs)
+
+    pickler('questions_fables.pickle',questions_fables)
+
+
 
 
