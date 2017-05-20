@@ -10,6 +10,10 @@ import re, nltk
 #	recieves a file, reads questions, and returns a dic of Q and Q type
 ##############
 
+#global variables for executable extraction.
+
+
+
 ###############################################################################
 ## Utility Functions ##########################################################
 ###############################################################################
@@ -33,6 +37,7 @@ def unzip_corpus(input_file, name):
 def get_qfactor(split_text, start):
     return [split_text[i].split(': ',1)[1] for i in range(start,len(split_text),5)]
 
+#gets questionIDs, questions, and types from specified question files
 def question_process(raw_text):
     for i in range(len(raw_text)):
         split_text = raw_text[i].splitlines() 
@@ -42,16 +47,16 @@ def question_process(raw_text):
 
     # print("questionID: {0}".format(questionID))
     # print("questions: {0}".format(questions))
-    # print("type: {0}".format(q_type))
+    print("type: {0}".format(q_type))
 
     return questionID, questions, q_type
 
-
-
-
+def pickler(filename,data):
+    f = open(filename,'wb')
+    pickle.dump(data,f)
+    f.close()
 
 if __name__ == '__main__':
-
     questions_blogs = {}
     questions_fables = {}
 
@@ -74,6 +79,6 @@ if __name__ == '__main__':
     for i in range(len(f_questionID)):
         questions_fables.update({f_questionID[i] : (f_questions[i], f_q_type[i])})
 
-    
+       
 
 
