@@ -41,8 +41,10 @@ def get_qfactor(split_text, start):
 
 #gets questionIDs, questions, and types from specified question files
 def question_process(raw_text):
+    split_text = []
     for i in range(len(raw_text)):
-        split_text = raw_text[i].splitlines() 
+        split_text += raw_text[i].splitlines() + ['']
+    print(split_text)
     questionID = get_qfactor(split_text,0) #questionID start at line 0 and continue every 4th line
     questions = get_qfactor(split_text,1)
     q_type = get_qfactor(split_text,3)
@@ -72,11 +74,17 @@ if __name__ == '__main__':
 
     f_questionID, f_questions, f_q_type = question_process(question_raw_fables)
 
+
+
     for i in range(len(b_questionID)):
         questions_blogs.update({b_questionID[i] : (b_questions[i], b_q_type[i])})
 
     for i in range(len(f_questionID)):
         questions_fables.update({f_questionID[i] : (f_questions[i], f_q_type[i])})
+
+    #these are dict's of each question
+    #the key will be the QuestionID and the value will be a tuple of question and type
+    #Example --> {'<QuestionID>' : ('<Question>', '<Type>'), ...}
 
     pickler('questions_blogs.pickle',questions_blogs)
 

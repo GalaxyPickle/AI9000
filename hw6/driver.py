@@ -17,7 +17,7 @@ def load_pickle(filename):
 
 if __name__ == '__main__':
 
-
     exec(open('process_questions.py').read())
+    exec(open('fetch_sentence.py').read())
 
 
