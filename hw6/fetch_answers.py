@@ -35,7 +35,7 @@ def start():
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
-    answer_sentences = [fetch_sentence.fetch(key, value[0], value[1]) 
+    answer_sentences = [fetch_sentence.fetch(key, value[0].lower(), value[1].lower()) 
         for key, value in all_questions.items()]
     print(answer_sentences)
 
