@@ -5,7 +5,7 @@
 # HW 6
 #
 # FETCH SENTENCE
-#	recieves dic of Q, fetches the sentence from .story or .sch file that holds the correct answer to the Q
+#	receives dic of Q, fetches the sentence from .story or .sch file that holds the correct answer to the Q
 ##############
 
 import pickle, re
@@ -37,7 +37,6 @@ def start():
     # now we want to read from the proper story/sch for each question and find answer sentence
     answer_sentences = [fetch_sentence.fetch(key, value[0].lower(), value[1].lower()) 
         for key, value in all_questions.items()]
-    print(answer_sentences)
 
     # compile list of question/answer sentence
     QandA = []

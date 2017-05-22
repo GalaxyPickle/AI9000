@@ -10,12 +10,6 @@
 
 import process_questions, fetch_answers, write_answers
 
-def load_pickle(filename):
-    f = open(filename,'rb')
-    classifier = pickle.load(f)
-    f.close()
-    return classifier
-
 if __name__ == '__main__':
 	
 	# make some pickles of dic type for questions and type
