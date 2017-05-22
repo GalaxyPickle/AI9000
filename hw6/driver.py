@@ -1,4 +1,3 @@
-# import os
 ##############
 # Alex Lang
 # Conor Rogers
@@ -9,7 +8,7 @@
 #	is the driver, calls all supporting files
 ##############
 
-import process_questions, fetch_sentence, write_answers
+import process_questions, fetch_answers, write_answers
 
 def load_pickle(filename):
     f = open(filename,'rb')
@@ -19,7 +18,18 @@ def load_pickle(filename):
 
 if __name__ == '__main__':
 
+	# make some pickles of dic type for questions and type
     process_questions.start()
-    fetch_sentence.start()
+    # call helper files to find and return Q & the best A 
+    #	tuple of lists ([questions], [answers]) 
+    responses = fetch_answers.start()
+    # write the questions and answers to a file in the proper format
+    write_answers.start(questions, answers)
 
 
+
+
+
+
+
+# EOF #

@@ -1,7 +1,3 @@
-import zipfile, os
-import re, nltk
-import pickle
-
 ##############
 # Alex Lang
 # Conor Rogers
@@ -11,6 +7,10 @@ import pickle
 # PROCESS QUESTIONS
 #	recieves a file, reads questions, and returns a dic of Q and Q type
 ##############
+
+import zipfile, os
+import re, nltk
+import pickle
 
 #global variables for executable extraction.
 
@@ -44,7 +44,7 @@ def question_process(raw_text):
     split_text = []
     for i in range(len(raw_text)):
         split_text += raw_text[i].splitlines() + ['']
-    print(split_text)
+    #print(split_text)
     questionID = get_qfactor(split_text,0) #questionID start at line 0 and continue every 4th line
     questions = get_qfactor(split_text,1)
     q_type = get_qfactor(split_text,3)
