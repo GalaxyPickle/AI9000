@@ -8,8 +8,8 @@
 #	recieves dic of Q, fetches the sentence from .story or .sch file that holds the correct answer to the Q
 ##############
 
-import pickle
-import fetch_sentences, cull_words
+import pickle, re
+import fetch_sentence, cull_words
 
 #loads pickles
 def load_pickle(filename):
@@ -26,22 +26,34 @@ def start():
     blog_f = 'questions_blogs.pickle'
     fable_f = 'questions_fables.pickle'
 
+    # 1.
     #these are dict's of each question
     #the key will be the QuestionID and the value will be a tuple of question and type
     #Example --> {'<QuestionID>' : ('<Question>', '<Type>'), ...}
-    questions_blogs = load_pickle(blog_f)
-    questions_fables = load_pickle(fable_f)
+    all_questions = {**load_pickle(blog_f), **load_pickle(fable_f)}
+    print(all_questions)
 
-    # compile all questions into a mega dic
-    all_questions = {**questions_blogs, **questions_fables}
-    # print(all_questions)
+    # 2.
+    # now we want to read from the proper story/sch for each question and find answer sentence
+    answer_sentences = [fetch_sentence.fetch(key, value[0], value[1]) 
+        for key, value in all_questions.items()]
+    print(answer_sentences)
 
-    # now we want to read from the story 
+    # compile list of question/answer sentence
+    QandA = []
+    # i = 0
+    # for key in all_questions.items():
+    #     QandA.append(re.match(r'\w*-[0-9]{2}', key).group(0), answer_sentences[i])
+    #     i += 1
+    # print(QandA)
 
-    all_answers = []
+    # 3.
+    # finally, we get the proper answer string for each sentence/question
+    #answers = [cull_words.cull() for sentence in answer_sentences]
 
+    # 4.
     # we return a list of tups [(Q1, A1), (Q2, A2), ...]
-    return 
+    return QandA
 
 
 if __name__ == '__main__':
