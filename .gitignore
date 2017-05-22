@@ -1,5 +1,7 @@
 # Compiled source #
 ###################
+*.pickle
+*.pyc
 *.com
 *.class
 *.dll

@@ -17,7 +17,7 @@ def load_pickle(filename):
     f.close()
     return question_dict
 
-if __name__ == '__main__':
+def start():
     blog_f = 'questions_blogs.pickle'
     fable_f = 'questions_fables.pickle'
 
@@ -27,5 +27,25 @@ if __name__ == '__main__':
     questions_blogs = load_pickle(blog_f)
     questions_fables = load_pickle(fable_f)
 
-    # print(questions_blogs)
-    # print(questions_fables)
+    print(questions_blogs)
+    print(questions_fables)
+
+
+if __name__ == '__main__':
+    start()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# EOF #

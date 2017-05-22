@@ -32,7 +32,7 @@ import pickle
 #     zip_archive.open(fn, 'rU').read()
 def unzip_corpus(input_file, name):
     zip_archive = zipfile.ZipFile(input_file)
-    contents = [zip_archive.open(fn, 'rU').read().decode('utf-8') for fn in zip_archive.namelist() if fn == name]
+    contents = [zip_archive.open(fn, 'r').read().decode('utf-8') for fn in zip_archive.namelist() if fn == name]
     return ''.join(contents)
 
 #takes start, then steps through for every 4th line and splits it off at the ':' delimiter
@@ -59,7 +59,7 @@ def pickler(filename,data):
     pickle.dump(data,f)
     f.close()
 
-if __name__ == '__main__':
+def start():
     questions_blogs = {}
     questions_fables = {}
 
@@ -90,6 +90,25 @@ if __name__ == '__main__':
 
     pickler('questions_fables.pickle',questions_fables)
 
+if __name__ == '__main__':
+    start()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# EOF #

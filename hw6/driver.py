@@ -9,6 +9,8 @@
 #	is the driver, calls all supporting files
 ##############
 
+import process_questions, fetch_sentence, write_answers
+
 def load_pickle(filename):
     f = open(filename,'rb')
     classifier = pickle.load(f)
@@ -17,7 +19,7 @@ def load_pickle(filename):
 
 if __name__ == '__main__':
 
-    exec(open('process_questions.py').read())
-    exec(open('fetch_sentence.py').read())
+    process_questions.start()
+    fetch_sentence.start()
 
 
