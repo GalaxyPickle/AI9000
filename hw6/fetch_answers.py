@@ -21,7 +21,7 @@ def load_pickle(filename):
 # 1. reads the pickles
 # 2. finds correct answer sentence
 # 3. culls words from correct answer sentence
-# 4. returns tuple of lists ([questions], [answers])
+# 4. returns a list of tups [(Q1, A1), (Q2, A2), ...]
 def start():
     blog_f = 'questions_blogs.pickle'
     fable_f = 'questions_fables.pickle'
@@ -32,15 +32,16 @@ def start():
     questions_blogs = load_pickle(blog_f)
     questions_fables = load_pickle(fable_f)
 
-    print(questions_blogs)
-    print(questions_fables)
+    # compile all questions into a mega dic
+    all_questions = {**questions_blogs, **questions_fables}
+    # print(all_questions)
 
-    # now we want to fetch the BEST sentence that contains the answer
+    # now we want to read from the story 
 
+    all_answers = []
 
-
-    # we return a tup of ([questions], [answers])
-
+    # we return a list of tups [(Q1, A1), (Q2, A2), ...]
+    return 
 
 
 if __name__ == '__main__':
