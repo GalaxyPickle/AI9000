@@ -44,6 +44,22 @@ def get_sentences(text):
     
     return sentences
 
+#returns lemma of word added 
+def lemmatizer(tokens):
+    lem_tokens = []
+    # this little bit is because wordnet lemmas don't play nicely with things verb infinitives....... [very rough fix
+    second_form_same_vinfinitive = [('felt','feel'),('fell','fall'),('stood','stand')]
+
+    vinfinitive_check = [a for (a,b) in second_form_same_vinfinitive]
+    for token in tokens:
+        for (a,b) in second_form_same_vinfinitive:
+            if a == token:
+                lem_tokens += [b]
+        if token not in vinfinitive_check:
+            lem_tokens += [WordNetLemmatizer().lemmatize(token,'v')]
+
+    return lem_tokens
+
 # qtokens: is a list of pos tagged question tokens with SW removed
 # text: list of a list of pos tagged story sentences
 # stopwords is a set of stopwords

@@ -46,7 +46,7 @@ def start():
     for key, val in all_questions.items():
         QandA.append((val[0], answer_sentences[i]))
         i += 1
-    print(QandA)
+    #print(QandA)
 
     # 3.
     # finally, we get the proper answer string for each sentence/question
@@ -58,7 +58,7 @@ def start():
         answer = ' '.join(w for w in answers[i])
         QandA.append(("QuestionID: " + key, "Answer: " + answer))
         i += 1
-    print(QandA)
+    #print(QandA)
 
     # 4.
     # we return a list of tups [(Q1, A1), (Q2, A2), ...]
