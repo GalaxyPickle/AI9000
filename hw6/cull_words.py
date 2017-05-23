@@ -66,36 +66,56 @@ def lemmatizer(tokens):
 #roughly determines what tag would fit the question...
 def determine_type(question):
     q = question.lower()
+    question, pos = get_words_tags(q)
+    print("Q: " + q)
+
+    ####################################
+
     if 'what' in q:
-        if 'did' in q:
+        if 'did' in q or 'to' in q:
+            if 'feel' in q:
+                return ['VBN']
             if 'have' in q:
                 return ['DT','NN','IN']
-            return ['VBN','VBD','NN']
+            return ['VBN','VBD','NN', 'JJ']
 
         if 'if' in q:
             return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
-        if (len(question.split())) == 1:
-            return ['sentence']
-        return ['NN','NNP','DT','JJ']
-    if 'who' in q:
-        if 'they' in q:
-            return ['NNS', 'NNPS']
+        # if (len(question.split())) == 1:
+        #     return ['sentence']
+        return ['NN','NNP','DT','JJ', 'VB']
+
+    elif 'who' in q:
+        # if 'they' in q:
+        #     return ['NNS', 'NNPS']
         # if 'was' in q:
         #     return ['NNP','DT']
-        return ['NN','NNP','DT']
-    if 'how' in q:
+        return ['NNP','DT']
+
+    elif 'how' in q:
         return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
-    if 'when' in q:
-        return ['CD','NN','JJ']
-    if 'where' in q:
-        return ['NN','NNP','DT', 'IN']
-    if'why' in q:
+
+    elif 'when' in q:
+        return ['CD','NN','JJ', 'IN']
+
+    elif 'where' in q:
+        return ['NN','DT','IN']
+
+    elif 'why' in q:
         return ['NN','VBD']
+
     return ['ambiguous']
 
 #culls all words without the correct tag (determined by determine_type())
-def get_correct_words(qtype,sentence_words,sentence_tags):
+def get_correct_words(qtype, question_words, question_tags,
+    sentence_words, sentence_tags):
     ans = []
+
+    print("Q: " + ' '.join(w for w in question_words))
+    print("qtype: " + ' '.join(q for q in qtype))
+    print(' '.join(w for w in sentence_words))
+    print(' '.join(w for w in sentence_tags))
+
     for x in range(len(sentence_words)):
         if sentence_tags[x] in qtype:
             if sentence_words[x] not in ans:
@@ -123,11 +143,13 @@ def cull(question, sentence):
     # lemma_sentence = lemmatizer(sentence_words)
     # lemma_question = lemmatizer(question_words)
     if (qtype[0] != 'ambiguous') or (qtype[0] != 'sentence'):
-        rough_ans = get_correct_words(qtype,sentence_words,sentence_tags)
+        rough_ans = get_correct_words(qtype, question_words, question_tags,
+            sentence_words, sentence_tags)
     else:
         rough_ans = sentence_words
     
-    # print(rough_ans)
+    print(rough_ans)
+    print()
 
     
     return rough_ans

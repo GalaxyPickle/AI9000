@@ -1,5 +1,5 @@
 QuestionID: blogs-01-1
-Answer: summit meeting eventful today
+Answer: summit meeting on eventful today
 
 QuestionID: blogs-01-2
 Answer: a summit meeting g20 eventful today
@@ -11,22 +11,22 @@ QuestionID: blogs-01-4
 Answer: burned police car threw thing
 
 QuestionID: blogs-01-5
-Answer: the riot
+Answer: the
 
 QuestionID: blogs-01-6
-Answer: the riot
+Answer: the
 
 QuestionID: blogs-01-7
-Answer: the a police car thing
+Answer: burned police car threw thing
 
 QuestionID: blogs-01-8
-Answer: the a police car thing
+Answer: the a
 
 QuestionID: blogs-01-9
 Answer: police
 
 QuestionID: blogs-01-10
-Answer: police
+Answer: burned thrown
 
 QuestionID: blogs-01-11
 Answer: tear gas bean bag the
@@ -38,56 +38,56 @@ QuestionID: blogs-01-13
 Answer: tear gas bean bag the
 
 QuestionID: fables-01-1
-Answer: a crow on branch of tree piece cheese beak fox way the
+Answer: a on branch of tree piece cheese beak way the
 
 QuestionID: fables-01-2
 Answer: a on branch of tree piece cheese beak way the
 
 QuestionID: fables-01-3
-Answer: a crow branch tree piece cheese beak fox way the
+Answer: a crow fox the
 
 QuestionID: fables-01-4
 Answer: fox observed crow tried cheese
 
 QuestionID: fables-01-5
-Answer: a fox the crow cheese
+Answer: the fox tree
 
 QuestionID: fables-01-6
-Answer: crow
+Answer: flattered cawed
 
 QuestionID: fables-01-7
-Answer: the crow fox order
+Answer: the
 
 QuestionID: fables-02-1
-Answer: a lion bull feeding meadow mouth the royal feast
+Answer: a lion bull the
 
 QuestionID: fables-02-2
-Answer: the bull flattery defense prey lion
+Answer: the bull lion
 
 QuestionID: fables-02-3
 Answer: a bull
 
 QuestionID: fables-02-4
-Answer: the bull a meadow
+Answer: the a
 
 QuestionID: fables-02-5
-Answer: a lion the bull
+Answer: a the
 
 QuestionID: fables-02-6
 Answer: lion walked bull began
 
 QuestionID: fables-02-7
-Answer: a lion bull feeding meadow mouth the royal feast
+Answer: a lion bull the
 
 QuestionID: fables-02-8
-Answer: a bull
+Answer: a
 
 QuestionID: fables-02-9
 Answer: lion watched bull salivated wanted
 
 QuestionID: fables-02-10
-Answer: the lion bull feared every horn
+Answer: lion bull feared horn
 
 QuestionID: fables-02-11
-Answer: lion bull feared horn
+Answer: lion bull feared sharp horn
 
