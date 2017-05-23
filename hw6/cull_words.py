@@ -49,9 +49,9 @@ def get_bigram(tokens):
 #returns lemma of word added 
 def lemmatizer(tokens):
     lem_tokens = []
-    # this little bit is because wordnet lemmas don't play nicely with things verb infinitives....... [very rough fix]
-
+    # this little bit is because wordnet lemmas don't play nicely with things verb infinitives....... [very rough fix
     second_form_same_vinfinitive = [('felt','feel'),('fell','fall'),('stood','stand')]
+
     vinfinitive_check = [a for (a,b) in second_form_same_vinfinitive]
     for token in tokens:
         for (a,b) in second_form_same_vinfinitive:
@@ -59,17 +59,6 @@ def lemmatizer(tokens):
                 lem_tokens += [b]
         if token not in vinfinitive_check:
             lem_tokens += [WordNetLemmatizer().lemmatize(token,'v')]
-
-
-        # if token == second_form_same_vinfinitive[0]:
-        #     token = 'feel'
-        #     lem_tokens += [token]
-        # if token == second_form_same_vinfinitive[1]:
-        #     token = 'fall'
-        #     lem_tokens += [token]
-        # if token == second_form_same_vinfinitive[2]:
-        #     token='stand'
-        #     lem_tokens += [token]
 
     return lem_tokens
 
@@ -87,7 +76,9 @@ def determine_type(question):
     if 'who' in q:
         if 'they' in q:
             return ['NNS', 'NNPS']
-        return ['NN','NNP','DT']
+        # if 'was' in q:
+        #     return ['NNP','DT']
+        return ['NNP','DT']
     if 'how' in q:
         return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
     if 'when' in q:
@@ -96,6 +87,7 @@ def determine_type(question):
         return ['NN','NNP','DT', 'IN']
     return ['ambiguous']
 
+#culls all words without the correct tag (determined by determine_type())
 def get_correct_words(qtype,sentence_words,sentence_tags):
     ans = []
     for x in range(len(sentence_words)):
@@ -104,6 +96,7 @@ def get_correct_words(qtype,sentence_words,sentence_tags):
 
     return ans
 
+#
 def cull(question, sentence):
     qtype = determine_type(question)
 
@@ -122,19 +115,15 @@ def cull(question, sentence):
     if (qtype[0] != 'ambiguous') or (qtype[0] != 'sentence'):
         rough_ans = get_correct_words(qtype,sentence_words,sentence_tags)
     else:
-        rouch_ans = sentence_words
-    
-    # print(rough_ans)
-
-    
-    # print(lemma_sentence)
-
-
+        rough_ans = sentence_words
+    print(rough_ans)
 
     return rough_ans
 
 if __name__ == '__main__':
     cull('What did the crow feel?',' The crow felt that the fox had flattered her and cawed loudly in order for she to show him that she was able to sing.')
-    cull('Who is the man?', 'The crow met a man.')
+    cull('Who is the man?', 'The crow met The Man.')
     cull('when did I meet you?', 'The two met at 12:40, there was a giant football in the field and we danced')
     cull('Where was the crow sitting?','The crow was sitting on a branch of a tree')
+    cull('Who was persuaded by this flattery?','The Bull was foolish enough to be persuaded by this flattery to have his horns cut off; and, having now lost his only means of defense, fell an easy prey to the Lion.')
+    cull('Who was foolish?', '')
