@@ -8,7 +8,7 @@ QuestionID: blogs-01-3
 Answer: a protest along the street bunch of riot
 
 QuestionID: blogs-01-4
-Answer: 
+Answer: burned police car threw thing
 
 QuestionID: blogs-01-5
 Answer: the riot
@@ -41,19 +41,19 @@ QuestionID: fables-01-1
 Answer: a crow on branch of tree piece cheese beak fox way the
 
 QuestionID: fables-01-2
-Answer: 
+Answer: a on branch of tree piece cheese beak way the
 
 QuestionID: fables-01-3
 Answer: a crow branch tree piece cheese beak fox way the
 
 QuestionID: fables-01-4
-Answer: 
+Answer: fox observed crow tried cheese
 
 QuestionID: fables-01-5
 Answer: a fox the crow cheese
 
 QuestionID: fables-01-6
-Answer: 
+Answer: crow
 
 QuestionID: fables-01-7
 Answer: the crow fox order
@@ -74,7 +74,7 @@ QuestionID: fables-02-5
 Answer: a lion the bull
 
 QuestionID: fables-02-6
-Answer: 
+Answer: lion walked bull began
 
 QuestionID: fables-02-7
 Answer: a lion bull feeding meadow mouth the royal feast
@@ -83,11 +83,11 @@ QuestionID: fables-02-8
 Answer: a bull
 
 QuestionID: fables-02-9
-Answer: salivated
+Answer: lion watched bull salivated wanted
 
 QuestionID: fables-02-10
 Answer: the lion bull feared every horn
 
 QuestionID: fables-02-11
-Answer: 
+Answer: lion bull feared horn
 
