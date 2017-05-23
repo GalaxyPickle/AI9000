@@ -83,9 +83,11 @@ def determine_type(question):
     if 'how' in q:
         return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
     if 'when' in q:
-        return ['CD']
+        return ['CD','NN','JJ']
     if 'where' in q:
         return ['NN','NNP','DT', 'IN']
+    if'why' in q:
+        return ['NN','DT','VBD']
     return ['ambiguous']
 
 #culls all words without the correct tag (determined by determine_type())
@@ -96,6 +98,9 @@ def get_correct_words(qtype,sentence_words,sentence_tags):
             if sentence_words[x] not in ans:
                 ans += [sentence_words[x]]
 
+    if ans == []:
+        ans = ['']
+
     return ans
 
 #
@@ -105,7 +110,7 @@ def cull(question, sentence):
     print(question + '-> ' + str(qtype))
     sentence_words, sentence_tags = get_words_tags(sentence)
     question_words, question_tags = get_words_tags(question)
-    # print(str(sentence_words) + ' ' + str(sentence_tags))
+    print(str(sentence_words) + ' ' + str(sentence_tags))
     # bi_sentence_words = get_bigram(sentence_words)
     # print(get_bi_tags(bi_sentence_words))
     # print(str(sentence_words) + ' ' + str(sentence_tags))
@@ -131,3 +136,5 @@ if __name__ == '__main__':
     cull('Where was the crow sitting?','The crow was sitting on a branch of a tree')
     cull('Who was persuaded by this flattery?','The Bull was foolish enough to be persuaded by this flattery to have his horns cut off; and, having now lost his only means of defense, fell an easy prey to the Lion.')
     cull('Who was foolish?', 'There once was a fat bull.')
+    cull('When did the G20 summit start?','A summit meeting named G20 summit started on eventful today.')
+    cull("Why didn't the lion attack the bull?","The lion didn't attack the bull because the lion feared sharp every horn of the bull.")
