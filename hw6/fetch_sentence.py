@@ -20,6 +20,8 @@ class c:
     UNDERLINE = '\033[4m'
 
 import sys, nltk, operator, zipfile
+from nltk.stem.wordnet import WordNetLemmatizer
+
 
 # unzip and read story from zip file
 def unzip_corpus(input_file, name):
@@ -48,7 +50,7 @@ def get_sentences(text):
 def lemmatizer(tokens):
     lem_tokens = []
     # this little bit is because wordnet lemmas don't play nicely with things verb infinitives....... [very rough fix
-    second_form_same_vinfinitive = [('felt','feel'),('fell','fall'),('stood','stand')]
+    second_form_same_vinfinitive = [('felt','feel'),('fell','fall'),('stood','stand'),('flattered','flatter'),('flattery','flatter')]
 
     vinfinitive_check = [a for (a,b) in second_form_same_vinfinitive]
     for token in tokens:
@@ -68,6 +70,7 @@ def baseline(qbow, text, stopwords):
     # Collect all the candidate answers
     answers = []
     qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
+    qbow.update(set(lemmatizer(qbow)))
     print(qbow)
     for f in text:
         for sent in f:
@@ -76,6 +79,7 @@ def baseline(qbow, text, stopwords):
 
             # stem all questions and sentences for better results
             sbow = set([nltk.LancasterStemmer().stem(word) for word in sbow])
+            sbow.update(set(lemmatizer(sbow)))
 
             # and then add the other
             print(sbow)
