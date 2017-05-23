@@ -31,6 +31,10 @@ def start():
     #the key will be the QuestionID and the value will be a tuple of question and type
     #Example --> {'<QuestionID>' : ('<Question>', '<Type>'), ...}
     all_questions = {**load_pickle(blog_f), **load_pickle(fable_f)}
+    
+    #python 2
+    # all_questions = load_pickle(blog_f)
+    # all_questions.update(load_pickle(fable_f))
     #print(all_questions)
 
     # 2.
