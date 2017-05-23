@@ -71,7 +71,7 @@ def determine_type(question):
             return ['VBN']
         if 'if' in q:
             return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
-        if (len(question.split)) == 1:
+        if (len(question.split())) == 1:
             return ['sentence']
         return ['NN','NNP','DT','JJ']
     if 'who' in q:
@@ -79,7 +79,7 @@ def determine_type(question):
             return ['NNS', 'NNPS']
         # if 'was' in q:
         #     return ['NNP','DT']
-        return ['NNP','DT']
+        return ['NN','NNP','DT']
     if 'how' in q:
         return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
     if 'when' in q:
@@ -93,7 +93,8 @@ def get_correct_words(qtype,sentence_words,sentence_tags):
     ans = []
     for x in range(len(sentence_words)):
         if sentence_tags[x] in qtype:
-            ans += [sentence_words[x]]
+            if sentence_words[x] not in ans:
+                ans += [sentence_words[x]]
 
     return ans
 
@@ -116,13 +117,11 @@ def cull(question, sentence):
     if (qtype[0] != 'ambiguous') or (qtype[0] != 'sentence'):
         rough_ans = get_correct_words(qtype,sentence_words,sentence_tags)
     else:
-        rouch_ans = sentence_words
+        rough_ans = sentence_words
     
     print(rough_ans)
 
     
-    # print(lemma_sentence)
-
     return rough_ans
 
 if __name__ == '__main__':
@@ -131,4 +130,4 @@ if __name__ == '__main__':
     cull('when did I meet you?', 'The two met at 12:40, there was a giant football in the field and we danced')
     cull('Where was the crow sitting?','The crow was sitting on a branch of a tree')
     cull('Who was persuaded by this flattery?','The Bull was foolish enough to be persuaded by this flattery to have his horns cut off; and, having now lost his only means of defense, fell an easy prey to the Lion.')
-    cull('Who was foolish?', '')
+    cull('Who was foolish?', 'There once was a fat bull.')
