@@ -71,6 +71,7 @@ def determine_type(question):
             if 'have' in q:
                 return ['DT','NN','IN']
             return ['VBN','VBD','NN']
+
         if 'if' in q:
             return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
         if (len(question.split())) == 1:
@@ -89,7 +90,7 @@ def determine_type(question):
     if 'where' in q:
         return ['NN','NNP','DT', 'IN']
     if'why' in q:
-        return ['NN','DT','VBD']
+        return ['NN','VBD']
     return ['ambiguous']
 
 #culls all words without the correct tag (determined by determine_type())
