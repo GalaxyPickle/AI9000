@@ -68,7 +68,9 @@ def determine_type(question):
     q = question.lower()
     if 'what' in q:
         if 'did' in q:
-            return ['VBN']
+            if 'have' in q:
+                return ['DT','NN','IN']
+            return ['VBN','VBD','NN']
         if 'if' in q:
             return ['PRP','DT','NN','NNS','NNP','NNPS','JJ']
         if (len(question.split())) == 1:
@@ -107,10 +109,10 @@ def get_correct_words(qtype,sentence_words,sentence_tags):
 def cull(question, sentence):
     qtype = determine_type(question)
 
-    print(question + '-> ' + str(qtype))
+    # print(question + '-> ' + str(qtype))
     sentence_words, sentence_tags = get_words_tags(sentence)
     question_words, question_tags = get_words_tags(question)
-    print(str(sentence_words) + ' ' + str(sentence_tags))
+    # print(str(sentence_words) + ' ' + str(sentence_tags))
     # bi_sentence_words = get_bigram(sentence_words)
     # print(get_bi_tags(bi_sentence_words))
     # print(str(sentence_words) + ' ' + str(sentence_tags))
@@ -124,7 +126,7 @@ def cull(question, sentence):
     else:
         rough_ans = sentence_words
     
-    print(rough_ans)
+    # print(rough_ans)
 
     
     return rough_ans
@@ -138,3 +140,5 @@ if __name__ == '__main__':
     cull('Who was foolish?', 'There once was a fat bull.')
     cull('When did the G20 summit start?','A summit meeting named G20 summit started on eventful today.')
     cull("Why didn't the lion attack the bull?","The lion didn't attack the bull because the lion feared sharp every horn of the bull.")
+    cull("What did the crow have in her beak?","A Crow was sitting on a branch of a tree with a piece of cheese in her beak when a Fox observed her and set his wits to work to discover some way of getting the cheese.")
+    cull("What did the fox do to the cheese?","The fox snatched the cheese, said that the crow was able to sing and the fox said that the crow needed wits.")
