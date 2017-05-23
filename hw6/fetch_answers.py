@@ -31,20 +31,22 @@ def start():
     #the key will be the QuestionID and the value will be a tuple of question and type
     #Example --> {'<QuestionID>' : ('<Question>', '<Type>'), ...}
     all_questions = {**load_pickle(blog_f), **load_pickle(fable_f)}
-    print(all_questions)
+    #print(all_questions)
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
     answer_sentences = [fetch_sentence.fetch(key, value[0].lower(), value[1].lower()) 
         for key, value in all_questions.items()]
 
+    # print(answer_sentences)
+
     # compile list of question/answer sentence
     QandA = []
-    # i = 0
-    # for key in all_questions.items():
-    #     QandA.append(re.match(r'\w*-[0-9]{2}', key).group(0), answer_sentences[i])
-    #     i += 1
-    # print(QandA)
+    i = 0
+    for key, val in all_questions.items():
+        QandA.append((val[0], answer_sentences[i]))
+        i += 1
+    print(QandA)
 
     # 3.
     # finally, we get the proper answer string for each sentence/question

@@ -1,5 +1,3 @@
-import re, nltk, argparse
-from nltk.stem.wordnet import WordNetLemmatizer
 # import word_category_counter
 ##############
 # Alex Lang
@@ -10,6 +8,9 @@ from nltk.stem.wordnet import WordNetLemmatizer
 # CULL WORDS
 #	recieves a correct answer sentence, eliminates extraneous words (w/ respect to Answer)
 ##############
+
+import re, nltk, argparse
+from nltk.stem.wordnet import WordNetLemmatizer
 
 def get_words_tags(text):
     words = []
@@ -124,7 +125,7 @@ def cull(question, sentence):
     else:
         rouch_ans = sentence_words
     
-    # print(rough_ans)
+    print(rough_ans)
 
     
     # print(lemma_sentence)

@@ -20,11 +20,11 @@ if __name__ == '__main__':
     response = fetch_answers.start()
 
     # testing
-    response = [
-    	("Q1: xxx", "A1: sacked"), 
-    	("Q2: yyy", "A2: flipped"), 
-    	("Q3: etc", "A3: etc")
-    	]
+    # response = [
+    # 	("Q1: xxx", "A1: sacked"), 
+    # 	("Q2: yyy", "A2: flipped"), 
+    # 	("Q3: etc", "A3: etc")
+    # 	]
 
     # writes answers to "train_my_answers.txt"
     write_answers.start(response)
