@@ -1,93 +1,93 @@
-When did the G20 summit start?
-A summit meeting named G20 summit started on eventful today .
+QuestionID: blogs-01-1
+Answer: summit meeting eventful today
 
-What is the summit meeting named?
-A summit meeting named G20 summit started on eventful today .
+QuestionID: blogs-01-2
+Answer: a summit meeting g20 eventful today
 
-Where did the protest happen?
-There was a protest that happened along the street where I work and at first it looked peaceful until a bunch of people started rebelling and creating a riot .
+QuestionID: blogs-01-3
+Answer: a protest along the street bunch of riot
 
-What did the people burn?
-The people burned a police car and threw a thing at a police .
+QuestionID: blogs-01-4
+Answer: 
 
-Who rebelled?
-The people rebelled and created riot .
+QuestionID: blogs-01-5
+Answer: the riot
 
-Who created a riot?
-The people rebelled and created riot .
+QuestionID: blogs-01-6
+Answer: the riot
 
-What happened to a police car?
-The people burned a police car and threw a thing at a police .
+QuestionID: blogs-01-7
+Answer: the a police car thing
 
-Who burned a police car?
-The people burned a police car and threw a thing at a police .
+QuestionID: blogs-01-8
+Answer: the a police car thing
 
-What was burned?
-Police cars were burned and things were thrown at cops .
+QuestionID: blogs-01-9
+Answer: police
 
-What happened to the police cars?
-Police cars were burned and things were thrown at cops .
+QuestionID: blogs-01-10
+Answer: police
 
-What was fired?
-As things got worse tear gas and bean bag bullets were fired at the rioters while they smash windows of stores .
+QuestionID: blogs-01-11
+Answer: tear gas bean bag the
 
-What was fired at the rioters?
-As things got worse tear gas and bean bag bullets were fired at the rioters while they smash windows of stores .
+QuestionID: blogs-01-12
+Answer: tear gas bean bag the
 
-What was smashed?
-As things got worse tear gas and bean bag bullets were fired at the rioters while they smash windows of stores .
+QuestionID: blogs-01-13
+Answer: tear gas bean bag the
 
-Where was the crow sitting?
-A Crow was sitting on a branch of a tree with a piece of cheese in her beak when a Fox observed her and set his wits to work to discover some way of getting the cheese .
+QuestionID: fables-01-1
+Answer: a crow on branch of tree piece cheese beak fox way the
 
-What did the crow have in her beak?
-A Crow was sitting on a branch of a tree with a piece of cheese in her beak when a Fox observed her and set his wits to work to discover some way of getting the cheese .
+QuestionID: fables-01-2
+Answer: 
 
-Who is the Story about?
-A Crow was sitting on a branch of a tree with a piece of cheese in her beak when a Fox observed her and set his wits to work to discover some way of getting the cheese .
+QuestionID: fables-01-3
+Answer: a crow branch tree piece cheese beak fox way the
 
-What did the fox do to the cheese?
-A fox observed the crow and tried to discover how to get the cheese .
+QuestionID: fables-01-4
+Answer: 
 
-Where was the fox standing?
-A fox observed the crow and tried to discover how to get the cheese .
+QuestionID: fables-01-5
+Answer: a fox the crow cheese
 
-What did the crow feel?
-There once was a crow .
+QuestionID: fables-01-6
+Answer: 
 
-Who flattered the crow?
-The crow felt that the fox had flattered her and cawed loudly in order for she to show him that she was able to sing .
+QuestionID: fables-01-7
+Answer: the crow fox order
 
-Who was feeding in a meadow?
-A Lion watched a fat Bull feeding in a meadow , and his mouth watered when he thought of the royal feast he would make , but he did not dare to attack him , for he was afraid of his sharp horns .
+QuestionID: fables-02-1
+Answer: a lion bull feeding meadow mouth the royal feast
 
-Who was persuaded by this flattery?
-The Bull was foolish enough to be persuaded by this flattery to have his horns cut off ; and , having now lost his only means of defense , fell an easy prey to the Lion .
+QuestionID: fables-02-2
+Answer: the bull flattery defense prey lion
 
-Where was the bull?
-There once was a fat bull .
+QuestionID: fables-02-3
+Answer: a bull
 
-Who was grazing?
-The bull was grazing in a meadow .
+QuestionID: fables-02-4
+Answer: the bull a meadow
 
-Who watched the bull?
-A lion watched the bull and salivated because the lion wanted to eat the bull .
+QuestionID: fables-02-5
+Answer: a lion the bull
 
-What did the lion feign?
-The lion walked toward the bull and began to feign that the lion was friendly .
+QuestionID: fables-02-6
+Answer: 
 
-Who is the story about?
-A Lion watched a fat Bull feeding in a meadow , and his mouth watered when he thought of the royal feast he would make , but he did not dare to attack him , for he was afraid of his sharp horns .
+QuestionID: fables-02-7
+Answer: a lion bull feeding meadow mouth the royal feast
 
-Who was foolish?
-There once was a fat bull .
+QuestionID: fables-02-8
+Answer: a bull
 
-What did the lion want?
-A lion watched the bull and salivated because the lion wanted to eat the bull .
+QuestionID: fables-02-9
+Answer: salivated
 
-Why didn't the lion attack the bull?
-The lion did n't attack the bull because the lion feared sharp every horn of the bull .
+QuestionID: fables-02-10
+Answer: the lion bull feared every horn
 
-What did the lion fear?
-The lion did n't attack the bull because the lion feared sharp every horn of the bull .
+QuestionID: fables-02-11
+Answer: 
 
