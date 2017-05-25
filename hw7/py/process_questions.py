@@ -111,13 +111,16 @@ def read_dep(fh):
         return None, None
 
 # Read the dependency parses from a file
+#inputfile = zipfiles: hw7_dataset.zip
+#depfile = 'hw7_dataset/' + question_order[i] + '.questions.dep' 
+#question_order[] is a list of strings pulled from process_stories.txt
+#returns a tuple (questionID, DependencyGraph)
+
 def read_dep_parses(inputfile,depfile):
-    # fh = open(depfile, 'r')
     fh = unzip_corpus(inputfile,depfile,True).splitlines()
-    # print(fh)
+
     # list to store the results
     graphs = []
-    questionIDs = []
     
     # Read the lines containing the first parse.
     dep, qID = read_dep(fh)
@@ -126,27 +129,27 @@ def read_dep_parses(inputfile,depfile):
     # While there are more lines:
     # 1) create the DependencyGraph
     # 2) add it to our list
-    # 3) try again until we're done
-   
+    # 3) try again until we're done   
     while dep is not None:
-        # print(qID + ': ' + dep)
-        # print('\n')
-        graph = DependencyGraph(dep)
+        #creates dependency graph
+        # graph = DependencyGraph(dep)
+        graph = dep
         graphs.append((qID,graph))
-        # questionIDs.append(qID)
+        
+        #removes lines that were present in dep
         n = len(dep.splitlines() + [qID]) + 1            
         fh = fh[n:]
+
         dep, qID = read_dep(fh)
 
-    # print(graphs)
-
+    #returns a tuple (questionID, DependencyGraph)
     return graphs
 
 
 def start(filename_arg):
     questions = []
 
-
+    #makes directories
     question_order = get_file_order(filename_arg)
     pickles_path = '../pickles/'
     pickles_normal_path = '/regular/'
@@ -164,31 +167,28 @@ def start(filename_arg):
 
     #Questions:
     # question_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.questions') for i in range(len(question_order))]
-
     # f_questionID, f_questions, f_q_type = question_process(question_raw_fables)
 
 
     #Questions + Answers:
     answer_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.answers') for i in range(len(question_order))]
-
     questionID, questions, q_type, answer = question_process(answer_raw,1,True)
 
 
     #Dep questions:
-    # dep_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
-    # dep_question_process(dep_raw)    
-    dep_graphs = [read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    dep_graphs_listofEachFile = [read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
+    # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
     # print(dep_graphs)
-    print([x for val in dep_graphs for x in val if 'blogs-01' in x[0]])
 
     #Par questions:
-
+    #...
     
 
     # [print(str(questionID[i]) + ' ' + str(questions[i]) + ' ' + str(answer[i]) + ': ' + str(q_type[i])) for i in range(len(questionID))]
 
 
-
+    #basic:
     #[(questionID, question, Type, Answer), ...]
     for i in range(len(questionID)):
         questions += [(questionID[i], questions[i], q_type[i], answer[i]) for i in range(len(questionID))]
@@ -196,20 +196,17 @@ def start(filename_arg):
     for file in question_order:
         pickler(pickles_path + pickles_normal_path + file + '.pickle',[x for x in questions if file in x[0]])
 
-    #[(questionID, DependencyGraph), ...] DOESN"T WORK :' - (
-    # for file in question_order:
-        # pickler(pickles_path + pickles_dep_path + file + '.pickle',[x for val in dep_graphs for x in val if file in x[0]])
+    #dep:
+    #[(questionID, string_stuff), ...] 
+    #to fully load into dependency graphs just load the following into variable (depending on which story):
+    # [DependencyGraph(y) for (x,y) in dep_graph_file]
+    #this will make a list of dependencygraphs. (you cannot store a list of dependency graphs)
+    for file in question_order:
+        pickler(pickles_path + pickles_dep_path + file + '.pickle',[x for x in dep_graphs if file in x[0]])
 
 
 
 
-    #these are dict's of each question
-    #the key will be the QuestionID and the value will be a tuple of question and type
-    #Example --> {'<QuestionID>' : ('<Question>', '<Type>'), ...}
-
-    # pickler('questions_blogs.pickle',questions_blogs)
-
-    # pickler('questions_fables.pickle',questions_fables)
 
 if __name__ == '__main__':
     start('process_stories.txt')
