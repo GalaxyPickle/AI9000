@@ -202,7 +202,7 @@ def start(filename_arg):
     # [DependencyGraph(y) for (x,y) in dep_graph_file]
     #this will make a list of dependencygraphs. (you cannot store a list of dependency graphs)
     for file in question_order:
-        pickler(pickles_path + pickles_dep_path + file + '.pickle',[x for x in dep_graphs if file in x[0]])
+        pickler(pickles_path + pickles_dep_path + file + '.dep.pickle',[x for x in dep_graphs if file in x[0]])
 
 
 
