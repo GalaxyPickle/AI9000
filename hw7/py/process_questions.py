@@ -11,6 +11,8 @@
 import zipfile, os
 import re, nltk
 import pickle
+from nltk.parse import DependencyGraph
+
 
 #global variables for executable extraction.
 
@@ -30,9 +32,13 @@ import pickle
 #     zip_archive.open(fn, 'rU')
 # Finally, we read the raw contents of the file:
 #     zip_archive.open(fn, 'rU').read()
-def unzip_corpus(input_file, name):
+def unzip_corpus(input_file, name,type_call=False):
     zip_archive = zipfile.ZipFile(input_file)
+    if type_call == True:
+        return zip_archive.open(name,'r').read().decode('utf-8')
+
     contents = [zip_archive.open(fn, 'r').read().decode('utf-8') for fn in zip_archive.namelist() if fn == name]
+
     return ''.join(contents)
 
 #takes start, then steps through for every 4th line and splits it off at the ':' delimiter
@@ -60,6 +66,14 @@ def question_process(raw_text, offset=0,answer=False):
         return questionID, questions, q_type, answer
     return questionID, questions, q_type
 
+def dep_question_process(raw_text,offset=0):
+    split_text = []
+    for i in range(len(raw_text)):
+        split_text += raw_text[i].splitlines() + ['']
+    print(split_text)
+    # questionID = get_qfactor(split_text,0,offset) #questionID start at line 0 and continue every 4th line
+
+
 def pickler(filename,data):
     f = open(filename,'wb')
     pickle.dump(data,f)
@@ -71,6 +85,62 @@ def get_file_order(filename):
 def quick_mkdir(newpath):
     if not os.path.exists(newpath):
         os.makedirs(newpath)
+
+def update_inconsistent_tags(old):
+    return old.replace("root", "ROOT")
+
+def read_dep(fh):
+    dep_lines = []
+    qID = None
+    for line in fh:
+        # print(line)
+        line = line.strip()
+        # print(line)
+        if len(line) == 0:
+            return update_inconsistent_tags("\n".join(dep_lines)), qID
+        elif re.match(r"^QuestionId:\s+(.*)$", line):
+            # print(line)
+            qID = line
+            # You would want to get the question id here and store it with the parse
+            continue
+        dep_lines.append(line)
+        # print(qID)
+    if len(dep_lines) > 0:
+        return update_inconsistent_tags("\n".join(dep_lines)), qID
+    else:
+        return None, None
+
+# Read the dependency parses from a file
+def read_dep_parses(inputfile,depfile):
+    # fh = open(depfile, 'r')
+    fh = unzip_corpus(inputfile,depfile,True).splitlines()
+    # print(fh)
+    # list to store the results
+    graphs = []
+    questionIDs = []
+    
+    # Read the lines containing the first parse.
+    dep, qID = read_dep(fh)
+
+    # print(qID)
+    # While there are more lines:
+    # 1) create the DependencyGraph
+    # 2) add it to our list
+    # 3) try again until we're done
+   
+    while dep is not None:
+        # print(qID + ': ' + dep)
+        # print('\n')
+        graph = DependencyGraph(dep)
+        graphs.append((qID,graph))
+        # questionIDs.append(qID)
+        n = len(dep.splitlines() + [qID]) + 1            
+        fh = fh[n:]
+        dep, qID = read_dep(fh)
+
+    # print(graphs)
+
+    return graphs
 
 
 def start(filename_arg):
@@ -105,6 +175,11 @@ def start(filename_arg):
 
 
     #Dep questions:
+    # dep_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    # dep_question_process(dep_raw)    
+    dep_graphs = [read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    # print(dep_graphs)
+    print([x for val in dep_graphs for x in val if 'blogs-01' in x[0]])
 
     #Par questions:
 
@@ -120,6 +195,10 @@ def start(filename_arg):
 
     for file in question_order:
         pickler(pickles_path + pickles_normal_path + file + '.pickle',[x for x in questions if file in x[0]])
+
+    #[(questionID, DependencyGraph), ...] DOESN"T WORK :' - (
+    # for file in question_order:
+        # pickler(pickles_path + pickles_dep_path + file + '.pickle',[x for val in dep_graphs for x in val if file in x[0]])
 
 
 
