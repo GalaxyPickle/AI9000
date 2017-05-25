@@ -111,11 +111,10 @@ def read_dep(fh):
         return None, None
 
 # Read the dependency parses from a file
-#inputfile = zipfiles: hw7_dataset.zip
+#inputfile = zipfiles: '../hw7_dataset.zip'
 #depfile = 'hw7_dataset/' + question_order[i] + '.questions.dep' 
 #question_order[] is a list of strings pulled from process_stories.txt
-#returns a tuple (questionID, DependencyGraph)
-
+#returns a tuple (questionID, strings_for_DependencyGraph)
 def read_dep_parses(inputfile,depfile):
     fh = unzip_corpus(inputfile,depfile,True).splitlines()
 
@@ -161,8 +160,6 @@ def start(filename_arg):
     quick_mkdir(pickles_path + pickles_dep_path)
 
 
-    # blogs_qfilename = ["hw6_dataset/blogs-01.questions"]
-    # fables_qfilename = ["hw6_dataset/fables-01.questions","hw6_dataset/fables-02.questions"]
     input_file = "../hw7_dataset.zip"
 
     #Questions:
@@ -179,7 +176,7 @@ def start(filename_arg):
     dep_graphs_listofEachFile = [read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
     dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
     # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
-    print(dep_graphs)
+    # print(dep_graphs)
 
     #Par questions:
     #...
