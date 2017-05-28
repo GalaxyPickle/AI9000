@@ -59,8 +59,8 @@ def pattern_matcher(pattern, tree):
     return None
 
 if __name__ == '__main__':
-    text_file = "fables-01.sch"
-    par_file = "fables-01.sch.par"
+    text_file = "dataset/fables-01.sch"
+    par_file = "dataset/fables-01.sch.par"
     
     # Read the constituency parses into a list 
     trees = read_con_parses(par_file)

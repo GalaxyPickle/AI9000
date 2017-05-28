@@ -106,9 +106,9 @@ def find_answer(qgraph, sgraphs):
                     return " ".join(dep["word"] for dep in deps)
 
 if __name__ == '__main__':
-    text_file = "fables-01.sch"
-    dep_file = "fables-01.sch.dep"
-    q_file = "fables-01.questions.dep"
+    text_file = "dataset/fables-01.sch"
+    dep_file = "dataset/fables-01.sch.dep"
+    q_file = "dataset/fables-01.questions.dep"
 
     # Read the dependency graphs into a list
     sgraphs = read_dep_parses(dep_file)

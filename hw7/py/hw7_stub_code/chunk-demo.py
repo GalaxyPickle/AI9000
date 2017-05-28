@@ -89,7 +89,7 @@ if __name__ == '__main__':
     chunker = nltk.RegexpParser(GRAMMAR)
     lmtzr = WordNetLemmatizer()
     
-    filename = "fables-01.story"
+    filename = "dataset/fables-01.story"
     text = read_file(filename)
     
     # Apply the standard NLP pipeline we've seen before

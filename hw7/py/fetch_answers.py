@@ -4,7 +4,7 @@
 #
 # HW 6
 #
-# FETCH SENTENCE
+# FETCH ANSWER
 #	receives dic of Q, fetches the sentence from .story or .sch file that holds the correct answer to the Q
 ##############
 
@@ -144,7 +144,58 @@ def start(filename_arg):
     # # 4.
     # # we return a list of tups [(Q1, A1), (Q2, A2), ...]
     # return QandA
+def start(bobby):
 
+    # 0. get list of pickle files
+    pickle_files = []
+    with open(bobby, 'r') as bob:
+        pickle_files = bob.read().split('\n')
+    print(pickle_files)
+
+    # 1.
+    # this is a list of lists
+    # each element in this list is a list corresponding the each pickle file (fables-01, fables-02, etc.)
+    # element of the inner lists is a tuple of type:
+    # (question ID, Question, Type, Answer)
+    # the whole thing looks like this:
+    # all_question = 
+    # [
+    #     [ (fables-01-1, "What is Bob?", "Story", "Dumb"), (...), ...  ],
+    #     [ (fables-02-1, ..., ..., ...), (...), ... ],
+    #     ...
+    # ]
+    all_questions = [load_pickle(f + '.pickle') for f in pickle_files]
+
+    # 2.
+    # now we want to read from the proper story/sch for each question and find answer sentence
+    answer_sentences = [fetch_sentence.fetch(key, value[0].lower(), value[1].lower()) 
+        for key, value in all_questions]
+
+    # print(answer_sentences)
+
+    # compile list of question/answer sentence
+    QandA = []
+    i = 0
+    for key, val in all_questions.items():
+        QandA.append((val[0], answer_sentences[i]))
+        i += 1
+    #print(QandA)
+
+    # 3.
+    # finally, we get the proper answer string for each sentence/question
+    answers = [cull_words.cull(question, sentence) for (question, sentence) in QandA]
+
+    QandA = []
+    i = 0
+    for key, val in all_questions.items():
+        answer = ' '.join(w for w in answers[i])
+        QandA.append(("QuestionID: " + key, "Answer: " + answer))
+        i += 1
+    #print(QandA)
+
+    # 4.
+    # we return a list of tups [(Q1, A1), (Q2, A2), ...]
+    return QandA
 
 if __name__ == '__main__':
     start('process_stories.txt')
