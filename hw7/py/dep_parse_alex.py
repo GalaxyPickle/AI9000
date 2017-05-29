@@ -1,10 +1,21 @@
-#!/usr/bin/env python
-'''
-Created on May 14, 2014
-@author: reid
 
-Modified on May 21, 2015
-'''
+# ██████╗ ███████╗██████╗     ██████╗  █████╗ ██████╗ ███████╗███████╗
+# ██╔══██╗██╔════╝██╔══██╗    ██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔════╝
+# ██║  ██║█████╗  ██████╔╝    ██████╔╝███████║██████╔╝███████╗█████╗  
+# ██║  ██║██╔══╝  ██╔═══╝     ██╔═══╝ ██╔══██║██╔══██╗╚════██║██╔══╝  
+# ██████╔╝███████╗██║         ██║     ██║  ██║██║  ██║███████║███████╗
+# ╚═════╝ ╚══════╝╚═╝         ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
+
+# for coloring the terminal output 8)
+class c:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 import re, sys, nltk, operator
 from nltk.parse import DependencyGraph
@@ -34,6 +45,7 @@ def update_inconsistent_tags(old):
 
 # Read the dependency parses from a file
 def read_dep_parses(depfile):
+
     fh = open(depfile, 'r')
 
     # list to store the results
@@ -106,13 +118,15 @@ def find_answer(qgraph, sgraphs):
                     return " ".join(dep["word"] for dep in deps)
 
 if __name__ == '__main__':
-    text_file = "dataset/fables-01.sch"
-    dep_file = "dataset/fables-01.sch.dep"
-    q_file = "dataset/fables-01.questions.dep"
+    # get file path and get demo file names
+    fpath = "hw7_stub_code/dataset/"
+    text_file = "fables-01.sch"
+    dep_file = "fables-01.sch.dep"
+    q_file = "fables-01.questions.dep"
 
     # Read the dependency graphs into a list
-    sgraphs = read_dep_parses(dep_file)
-    qgraphs = read_dep_parses(q_file)
+    sgraphs = read_dep_parses(fpath + dep_file)
+    qgraphs = read_dep_parses(fpath + q_file)
 
     # TODO: You may need to include different rules in find_answer() for
     # different types of questions. For example, the rule here is good for
@@ -121,7 +135,10 @@ if __name__ == '__main__':
     for qgraph in qgraphs:
         print("Question:", pretty_question(qgraph), "?")
         answer = find_answer(qgraph, sgraphs)
-        print("Answer:", answer)
+        if answer is not None:
+            print(c.OKGREEN + "Answer:", answer + c.ENDC)
+        else:
+            print(c.FAIL + "Error: no answer" + c.ENDC)
         print()
 
     # example of how to use a lemmatizer

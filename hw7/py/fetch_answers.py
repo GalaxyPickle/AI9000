@@ -59,17 +59,20 @@ def start(filename_arg):
     reg_ques = []
     for file in filenames:
         reg_ques += load_pickle(pickles_path + pickles_normal_path + file + '.pickle')
-    #to differentiate example:
-    ques_ID = 'fables-01'
-    all_in_fables_01 = [x for x in reg_ques if ques_ID in x[0]]    
-    #or just do it one at a time... :' - (
-    all_in_fables_01 = load_pickle(pickles_path + pickles_normal_path + 'fables-01' + '.pickle')
+
+
+    # #to differentiate example:
+    # ques_ID = 'fables-01'
+    # all_in_fables_01 = [x for x in reg_ques if ques_ID in x[0]]    
+    # #or just do it one at a time... :' - (
+    # all_in_fables_01 = load_pickle(pickles_path + pickles_normal_path + 'fables-01' + '.pickle')
 
     #load dep questions, in format:
     #[(questionID, string_garbage), ...]
     dep_ques = []
     for file in filenames:
         dep_ques += load_pickle(pickles_path + pickles_dep_path + file + '.dep.pickle')
+
     #grow some dependency trees :)
     #to fully load into dependency graphs just load the following into variable (depending on which story):
     dependency_graph_list = [(questionID, DependencyGraph(string_garbage)) for (questionID, string_garbage) in dep_ques]
@@ -79,9 +82,11 @@ def start(filename_arg):
     #read_dep_parses takes 2 arguments, and 2 optional: read_dep_parses('zipfile_path','file_path',forced_ID=' ',make_graph=false)
     #we set forcedID to equal our filename, and we set make_graph = True so it will just auto make the dep-graphs for us
     story_graphs_listofeach = [dep_parse.read_dep_parses(input_file,'hw7_dataset/' + filenames[i] + '.story.dep',filenames[i],True) for i in range(len(filenames))]
-    #have todo this because 'read_dep_parses' returns a list.. so we flatten:
+    
+    #have to do this because 'read_dep_parses' returns a list.. so we flatten:
     story_graphs = [j for i in story_graphs_listofeach for j in i]
     #GG EZ (you need to do this with .sch.dep later)
+    
     #now we just use dep_parse:
     for name in filenames:
         sgraphs = [y for (x,y) in story_graphs if name in x]
@@ -93,8 +98,9 @@ def start(filename_arg):
                 if(answer != None):
                     print(c.OKGREEN + "Answer:", answer + c.ENDC)
                 else:
-                    print(c.FAIL +  "Cannot answer this yet")
+                    print(c.FAIL +  "Error: cannot answer this yet" + c.ENDC)
                 print()
+
     ########## WARNING!!! ############
     #the above code will return 'None' for most... this is OK for now.
     #look hard enough, some of the answers will be real! : - )))))
