@@ -1,18 +1,11 @@
-'''
-Created on May 14, 2014
-@author: Reid Swanson
-
-Modified on May 21, 2015
-'''
-
 ##############
 # Alex Lang
 # Conor Rogers
 #
 # HW 6
 #
-# FETCH SENTENCE
-#   recieves Q, type, fetches the sentence from .story or .sch file that holds the correct answer to the Q
+# CHUNKY
+#   fetches sentence with the answer contained in it (92%+ accuracy)
 ##############
 
 # colorssszzzzzz
@@ -28,6 +21,7 @@ class c:
 
 import sys, nltk, operator, zipfile
 from nltk.stem.wordnet import WordNetLemmatizer
+import chunky_boi
 
 
 # unzip and read story from zip file
@@ -141,81 +135,18 @@ def find_best_sentence(question, fnames):
     answer = baseline(qbow, text, stopwords)
     print(c.OKGREEN + "Answer Sentence: " + c.ENDC + " ".join(t[0] for t in answer))
 
+    qbow = get_sentences(question)[0]
+
     answer = [answer]
-    print(answer)
+    #print(answer)
 
-    return answer
-
-    #return " ".join(t[0] for t in answer)
-
-# Our simple grammar from class (and the book)
-GRAMMAR =   """
-            N: {<PRP>|<NN.*>}
-            V: {<V.*>}
-            ADJ: {<JJ.*>}
-            NP: {<DT>? <ADJ>* <N>+}
-            PP: {<IN> <NP>}
-            VP: {<TO>? <V> (<NP>|<PP>)*}
-            """
-
-LOC_PP = set(["in", "on", "at"])
-
-# def read_file(filename):
-#     fh = open(filename, 'r')
-#     text = fh.read()
-#     fh.close()
-    
-#     return text
-
-# def get_sentences(text):
-#     sentences = nltk.sent_tokenize(text)
-#     sentences = [nltk.word_tokenize(sent) for sent in sentences]
-#     sentences = [nltk.pos_tag(sent) for sent in sentences]
-    
-#     return sentences
-
-def pp_filter(subtree):
-    return subtree.label() == "PP"
-
-def is_location(prep):
-    return prep[0] in LOC_PP
-
-def find_locations(tree):
-    # Starting at the root of the tree
-    # Traverse each node and get the subtree underneath it
-    # Filter out any subtrees who's label is not a PP
-    # Then check to see if the first child (it must be a preposition) is in
-    # our set of locative markers
-    # If it is then add it to our list of candidate locations
-    
-    # How do we modify this to return only the NP: add [1] to subtree!
-    # How can we make this function more robust?
-    # Make sure the crow/subj is to the left
-    locations = []
-    for subtree in tree.subtrees(filter=pp_filter):
-        if is_location(subtree[0]):
-            locations.append(subtree)
-    
-    return locations
-
-def find_candidates(sentences, chunker):
-    candidates = []
-    for sent in sentences:
-        tree = chunker.parse(sent)
-        # print(tree)
-        locations = find_locations(tree)
-        candidates.extend(locations)
-        
-    return candidates
+    return answer, qbow
 
 # 1. open story/sch file or both for q
 # 2. use super s1ck algorithms to find the best sentence
 #   (if story | sch, open both and find best matching sentence)
 # 3. return best sentence
 def chunk(fnames, question, q_type):
-
-    # Our tools
-    chunker = nltk.RegexpParser(GRAMMAR)
 
     # ready storyname to open
     fnames = fnames.split('-')
@@ -229,33 +160,10 @@ def chunk(fnames, question, q_type):
 
     fnames = [fnames + '.' + t.lower() for t in q_type]
 
-    answer_sentence = find_best_sentence(question, fnames)
+    answer_sentence, qbow = find_best_sentence(question, fnames)
 
-    locations = find_candidates(answer_sentence, chunker)
-    # Print them out
-    print(c.OKGREEN + "Locations: " + c.ENDC)
-    for loc in locations:
-        print(loc)
-        print(" ".join([token[0] for token in loc.leaves()]))
+    return chunky_boi.mah_boi(qbow, answer_sentence[0])
 
-    return answer_sentence
-
-# def find_sentences(patterns, sentences):
-#     # Get the raw text of each sentence to make it easier to search using regexes
-#     raw_sentences = [" ".join([token[0] for token in sent]) for sent in sentences]
-    
-
-#     result = []
-#     for sent, raw_sent in zip(sentences, raw_sentences):
-#         for pattern in patterns:
-#             if not re.search(pattern, raw_sent):
-#                 matches = False
-#             else:
-#                 matches = True
-#         if matches:
-#             result.append(sent)
-            
-#     return result
 
 if __name__ == '__main__':
 

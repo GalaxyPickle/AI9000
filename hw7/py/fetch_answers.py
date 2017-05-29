@@ -23,7 +23,7 @@ import pickle, re, collections
 
 from nltk.parse import DependencyGraph
 
-import fetch_sentence, cull_words, process_questions, dep_parse, chunky
+import fetch_sentence, process_questions, dep_parse, chunky
 
 #loads pickles
 def load_pickle(filename):
@@ -66,14 +66,14 @@ def start(filename_arg):
     reg_ques = list(collections.OrderedDict.fromkeys(reg_ques).items())
     reg_ques = [first for first, second in reg_ques]
 
-    print(reg_ques)
+    #print(reg_ques)
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
-    answer_sentences = [chunky.chunk(q_id, q, q_type)
+    answers = [chunky.chunk(q_id, q, q_type)
         for q_id, q, q_type, q_diff, a in reg_ques]
 
-    # print(answer_sentences)
+    # print(answers)
 
     # # compile list of question/answer sentence
     # QandA = []

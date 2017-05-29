@@ -12,7 +12,7 @@ import zipfile, os
 import re, nltk
 import pickle
 from nltk.parse import DependencyGraph
-import dep_parse, con_parse
+import dep_parse
 from nltk.tree import Tree
 
 
