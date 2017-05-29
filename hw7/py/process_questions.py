@@ -200,7 +200,7 @@ def start(filename_arg):
     #[(questionID, question, Type, Difficulty, Answer), ...]
     for i in range(len(questionID)):
         questions += [(questionID[i], questions[i], q_type[i], diff[i], answer[i]) for i in range(len(questionID))]
-    print(questions)
+    # print(questions)
 
     for file in question_order:
         pickler(pickles_path + pickles_normal_path + file + '.pickle',[x for x in questions if file in x[0]])
