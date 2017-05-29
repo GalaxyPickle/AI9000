@@ -79,6 +79,7 @@ def baseline(qbow, text, stopwords):
     qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
     qbow.update(set(lemmatizer(qbow)))
     print(qbow)
+
     for f in text:
         for sent in f:
             # A list of all the word tokens in the sentence
@@ -113,8 +114,8 @@ def find_best_sentence(question, fnames):
     print(fnames)
 
     # raw story / sch
-    dataset = "hw7_stub_code/dataset"
-    text = [unzip_corpus(dataset + ".zip", "dataset" + "/" + f) for f in fnames]
+    dataset = "hw7_dataset"
+    text = [unzip_corpus(dataset + ".zip", dataset + "/" + f) for f in fnames]
 
     # get words for every sentence in sentence
     stopwords = set(nltk.corpus.stopwords.words("english"))
@@ -205,14 +206,14 @@ def find_candidates(sentences, chunker):
 # 2. use super s1ck algorithms to find the best sentence
 #   (if story | sch, open both and find best matching sentence)
 # 3. return best sentence
-def chunky(fnames, question, q_type):
+def chunk(fnames, question, q_type):
 
     # Our tools
     chunker = nltk.RegexpParser(GRAMMAR)
 
     # ready storyname to open
-    fnames = fname.split('-')
-    fnames = fname[0] + "-" + fname[1]
+    fnames = fnames.split('-')
+    fnames = fnames[0] + "-" + fnames[1]
 
     # ready what kind of storyname to open
     if "|" in q_type:
@@ -220,7 +221,7 @@ def chunky(fnames, question, q_type):
     else:
         q_type = [q_type]
 
-    fnames = [fname + '.' + t for t in q_type]
+    fnames = [fnames + '.' + t.lower() for t in q_type]
 
     answer_sentence = find_best_sentence(question, fnames)
 

@@ -80,7 +80,7 @@ def pickler(filename,data):
     f.close()
 
 def get_file_order(filename):
-    return unzip_corpus('../hw7_dataset.zip','hw7_dataset/' + filename).splitlines()
+    return unzip_corpus('hw7_dataset.zip','hw7_dataset/' + filename).splitlines()
 
 def quick_mkdir(newpath):
     if not os.path.exists(newpath):
@@ -160,7 +160,7 @@ def start(filename_arg):
     # quick_mkdir(pickles_path + pickles_dep_path)
 
 
-    input_file = "../hw7_dataset.zip"
+    input_file = "hw7_dataset.zip"
 
     #Questions:
     # question_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.questions') for i in range(len(question_order))]

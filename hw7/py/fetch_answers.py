@@ -60,12 +60,12 @@ def start(filename_arg):
     for file in filenames:
         reg_ques += load_pickle(pickles_path + pickles_normal_path + file + '.pickle')
 
-    print(reg_ques)
+    print(reg_ques[:50])
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
-    answer_sentences = [chunky.chunk(a_id, q, q_type, a)
-        for q_id, q, q_type, a in reg_ques]
+    answer_sentences = [chunky.chunk(q_id, q, q_type)
+        for q_id, q, q_type, a in reg_ques[:30]]
 
     # print(answer_sentences)
 
