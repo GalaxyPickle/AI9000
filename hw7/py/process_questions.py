@@ -12,7 +12,9 @@ import zipfile, os
 import re, nltk
 import pickle
 from nltk.parse import DependencyGraph
-import dep_parse
+import dep_parse, con_parse
+from nltk.tree import Tree
+
 
 
 #global variables for executable extraction.
@@ -177,10 +179,16 @@ def start(filename_arg):
     dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
     dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
     # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
-    print(dep_graphs)
+    # print(dep_graphs)
 
     #Par questions:
-    #...
+    con_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.sch.par').splitlines() for i in range(len(question_order))]
+    con_trees = []
+    for index in range(len(question_order)):
+        con_trees += (question_order[index], [Tree.fromstring(con_raw[index][j]) for j in range(len(con_raw[index]))])
+    # [print(a + ': ' + str(b)) for (a,b) in con_trees if a in 'fables-01']
+    print(len(question_order))
+
     
 
     # [print(str(questionID[i]) + ' ' + str(questions[i]) + ' ' + str(answer[i]) + ': ' + str(q_type[i])) for i in range(len(questionID))]
