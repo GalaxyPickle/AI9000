@@ -19,7 +19,7 @@ class c:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-import pickle, re
+import pickle, re, collections
 from nltk.parse import DependencyGraph
 import fetch_sentence, cull_words, process_questions, dep_parse
 
@@ -59,6 +59,9 @@ def start(filename_arg):
     reg_ques = []
     for file in filenames:
         reg_ques += load_pickle(pickles_path + pickles_normal_path + file + '.pickle')
+
+    reg_ques = collections.OrderedDict.fromkeys(reg_ques)
+    print(reg_ques)
 
 
     # #to differentiate example:
