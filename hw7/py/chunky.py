@@ -104,7 +104,10 @@ def baseline(qbow, text, stopwords):
     answers = sorted(answers, key=operator.itemgetter(0), reverse=True)
 
     # Return the best answer
-    best_answer = (answers[0])[1]
+    if len(answers) > 0:
+        best_answer = (answers[0])[1]
+    else:
+        best_answer = "ERROR: NO ANSWER!!!"
 
     return best_answer
 
@@ -138,9 +141,12 @@ def find_best_sentence(question, fnames):
     answer = baseline(qbow, text, stopwords)
     print(c.OKGREEN + "Answer Sentence: " + c.ENDC + " ".join(t[0] for t in answer))
 
-    
+    answer = [answer]
+    print(answer)
 
-    return " ".join(t[0] for t in answer)
+    return answer
+
+    #return " ".join(t[0] for t in answer)
 
 # Our simple grammar from class (and the book)
 GRAMMAR =   """
@@ -152,7 +158,7 @@ GRAMMAR =   """
             VP: {<TO>? <V> (<NP>|<PP>)*}
             """
 
-# LOC_PP = set(["in", "on", "at"])
+LOC_PP = set(["in", "on", "at"])
 
 # def read_file(filename):
 #     fh = open(filename, 'r')
@@ -224,6 +230,13 @@ def chunk(fnames, question, q_type):
     fnames = [fnames + '.' + t.lower() for t in q_type]
 
     answer_sentence = find_best_sentence(question, fnames)
+
+    locations = find_candidates(answer_sentence, chunker)
+    # Print them out
+    print(c.OKGREEN + "Locations: " + c.ENDC)
+    for loc in locations:
+        print(loc)
+        print(" ".join([token[0] for token in loc.leaves()]))
 
     return answer_sentence
 

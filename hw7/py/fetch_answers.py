@@ -19,7 +19,7 @@ class c:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-import pickle, re
+import pickle, re, collections
 import cull_words, process_questions, chunky
 
 #loads pickles
@@ -60,12 +60,14 @@ def start(filename_arg):
     for file in filenames:
         reg_ques += load_pickle(pickles_path + pickles_normal_path + file + '.pickle')
 
-    print(reg_ques[:50])
+    reg_ques = list(collections.OrderedDict.fromkeys(reg_ques).items())
+    reg_ques = [first for first, second in reg_ques]
+    #print(reg_ques)
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
     answer_sentences = [chunky.chunk(q_id, q, q_type)
-        for q_id, q, q_type, a in reg_ques[:30]]
+        for q_id, q, q_type, a in reg_ques]
 
     # print(answer_sentences)
 
