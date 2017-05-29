@@ -20,8 +20,7 @@ class c:
     UNDERLINE = '\033[4m'
 
 import pickle, re
-from nltk.parse import DependencyGraph
-import fetch_sentence, cull_words, process_questions
+import cull_words, process_questions, chunky
 
 #loads pickles
 def load_pickle(filename):
@@ -65,18 +64,18 @@ def start(filename_arg):
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
-    answer_sentences = [fetch_sentence.fetch(key, value[0].lower(), value[1].lower()) 
-        for key, value in all_questions.items()]
+    answer_sentences = [chunky.chunk(a_id, q, q_type, a)
+        for q_id, q, q_type, a in reg_ques]
 
     # print(answer_sentences)
 
-    # compile list of question/answer sentence
-    QandA = []
-    i = 0
-    for key, val in all_questions.items():
-        QandA.append((val[0], answer_sentences[i]))
-        i += 1
-    #print(QandA)
+    # # compile list of question/answer sentence
+    # QandA = []
+    # i = 0
+    # for key, val in all_questions.items():
+    #     QandA.append((val[0], answer_sentences[i]))
+    #     i += 1
+    # #print(QandA)
 
     # # 3.
     # # finally, we get the proper answer string for each sentence/question
