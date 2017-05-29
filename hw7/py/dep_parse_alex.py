@@ -99,15 +99,17 @@ def pretty_question(qgraph):
 
 def find_answer(qgraph, sgraphs):
     qword = find_root_word(qgraph)
+    print("QWORD: ", qword)
     # look for answer in the sgraphs, return the first match
     for sgraph in sgraphs:
         snode = find_node(qword, sgraph)
+        print(snode)
         if snode is None or 'address' not in snode:
             continue
         for node in sgraph.nodes.values():
-            #print("node in nodelist:", node)
-            #print("Our relation is:", node['rel'], ", and word is:", node['word'])
-            #print("Our node is:", node)
+            # print("node in nodelist:", node)
+            # print("Our relation is:", node['rel'], ", and word is:", node['word'])
+            # print("Our node is:", node)
             if node is None or 'head' not in node:
                 continue
             if node['head'] == snode["address"]:
@@ -118,9 +120,12 @@ def find_answer(qgraph, sgraphs):
                     return " ".join(dep["word"] for dep in deps)
 
 if __name__ == '__main__':
+
     # get file path and get demo file names
     fpath = "hw7_stub_code/dataset/"
+
     text_file = "fables-01.sch"
+    
     dep_file = "fables-01.sch.dep"
     q_file = "fables-01.questions.dep"
 
@@ -132,7 +137,7 @@ if __name__ == '__main__':
     # different types of questions. For example, the rule here is good for
     # answering "Where was the crow sitting?", but not necessarily the others.
     # You would have to figure this out like in the chunking demo
-    for qgraph in qgraphs:
+    for qgraph in qgraphs[:5]:
         print("Question:", pretty_question(qgraph), "?")
         answer = find_answer(qgraph, sgraphs)
         if answer is not None:
@@ -141,15 +146,28 @@ if __name__ == '__main__':
             print(c.FAIL + "Error: no answer" + c.ENDC)
         print()
 
-    # example of how to use a lemmatizer
-    print("\nLemma:")
-    lmtzr = WordNetLemmatizer()
-    for node in sgraphs[1].nodes.values():
-        tag = node["tag"]
-        word = node["word"]
-        if word is not None:
-            if tag.startswith("V"):
-                print(lmtzr.lemmatize(word, 'v'))
-            else:
-                print(lmtzr.lemmatize(word, 'n'))
-    print()
+    # # example of how to use a lemmatizer
+    # print("\nLemma:")
+    # lmtzr = WordNetLemmatizer()
+    # for node in sgraphs[1].nodes.values():
+    #     tag = node["tag"]
+    #     word = node["word"]
+    #     if word is not None:
+    #         if tag.startswith("V"):
+    #             print(lmtzr.lemmatize(word, 'v'))
+    #         else:
+    #             print(lmtzr.lemmatize(word, 'n'))
+    # print()
+
+
+
+
+
+
+
+
+
+
+
+
+# EOF #
