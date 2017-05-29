@@ -174,7 +174,7 @@ def start(filename_arg):
 
     #Questions + Answers:
     answer_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.answers') for i in range(len(question_order))]
-    questionID, questions, q_type, diff, answer = question_process(answer_raw,1,True)
+    questionID, question, q_type, diff, answer = question_process(answer_raw,1,True)
 
 
     #Dep questions:
@@ -198,8 +198,10 @@ def start(filename_arg):
 
     #basic (for question + answer):
     #[(questionID, question, Type, Difficulty, Answer), ...]
-    for i in range(len(questionID)):
-        questions += [(questionID[i], questions[i], q_type[i], diff[i], answer[i]) for i in range(len(questionID))]
+    # print(len(questionID))
+    # print(questionID)
+    # for i in range(len(questionID)):
+    questions += [(questionID[i], question[i], q_type[i], diff[i], answer[i]) for i in range(len(questionID))]
     # print(questions)
 
     for file in question_order:
