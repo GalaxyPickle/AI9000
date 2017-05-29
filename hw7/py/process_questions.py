@@ -12,7 +12,6 @@ import zipfile, os
 import re, nltk
 import pickle
 from nltk.parse import DependencyGraph
-import dep_parse
 
 
 #global variables for executable extraction.
@@ -153,12 +152,12 @@ def start(filename_arg):
     question_order = get_file_order(filename_arg)
     pickles_path = '../pickles/'
     pickles_normal_path = '/regular/'
-    pickles_dep_path = '/dep/'
-    pickles_par_path = '/par/'
+    # pickles_dep_path = '/dep/'
+    # pickles_par_path = '/par/'
     quick_mkdir(pickles_path)
     quick_mkdir(pickles_path + pickles_normal_path)
-    quick_mkdir(pickles_path + pickles_par_path)
-    quick_mkdir(pickles_path + pickles_dep_path)
+    # quick_mkdir(pickles_path + pickles_par_path)
+    # quick_mkdir(pickles_path + pickles_dep_path)
 
 
     input_file = "../hw7_dataset.zip"
@@ -174,10 +173,10 @@ def start(filename_arg):
 
 
     #Dep questions:
-    dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
-    dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
-    # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
-    print(dep_graphs)
+    # dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    # dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
+    # # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
+    # print(dep_graphs)
 
     #Par questions:
     #...
@@ -199,8 +198,8 @@ def start(filename_arg):
     #to fully load into dependency graphs just load the following into variable (depending on which story):
     #example_dependency_graph_list = [DependencyGraph(string_stuff) for (questionID,string_stuff) in dep_graph_file]
     #this will make a list of dependencygraphs. (you cannot pickle a list of dependency graphs)
-    for file in question_order:
-        pickler(pickles_path + pickles_dep_path + file + '.dep.pickle',[x for x in dep_graphs if file in x[0]])
+    # for file in question_order:
+    #     pickler(pickles_path + pickles_dep_path + file + '.dep.pickle',[x for x in dep_graphs if file in x[0]])
 
 
 
