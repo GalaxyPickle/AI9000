@@ -12,6 +12,8 @@ import zipfile, os
 import re, nltk
 import pickle
 from nltk.parse import DependencyGraph
+import dep_parse, con_parse
+from nltk.tree import Tree
 
 
 #global variables for executable extraction.
@@ -53,6 +55,7 @@ def question_process(raw_text, offset=0,answer=False):
     #print(split_text)
     questionID = get_qfactor(split_text,0,offset) #questionID start at line 0 and continue every 4th line
     questions = get_qfactor(split_text,1,offset)
+    diff = get_qfactor(split_text,2,offset)
     q_type = get_qfactor(split_text,3,offset)
 
     # print("questionID: {0}".format(questionID))
@@ -62,9 +65,10 @@ def question_process(raw_text, offset=0,answer=False):
         questionID = get_qfactor(split_text,0,offset) #questionID start at line 0 and continue every 4th line
         questions = get_qfactor(split_text,1,offset)
         q_type = get_qfactor(split_text,4,offset)
+        diff = get_qfactor(split_text,3,offset)
         answer = get_qfactor(split_text,2,offset)
-        return questionID, questions, q_type, answer
-    return questionID, questions, q_type
+        return questionID, questions, q_type, diff, answer
+    return questionID, questions, q_type, diff
 
 def dep_question_process(raw_text,offset=0):
     split_text = []
@@ -164,12 +168,12 @@ def start(filename_arg):
 
     #Questions:
     # question_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.questions') for i in range(len(question_order))]
-    # f_questionID, f_questions, f_q_type = question_process(question_raw_fables)
+    # f_questionID, f_questions, f_diff, f_q_type = question_process(question_raw_fables)
 
 
     #Questions + Answers:
     answer_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.answers') for i in range(len(question_order))]
-    questionID, questions, q_type, answer = question_process(answer_raw,1,True)
+    questionID, question, q_type, diff, answer = question_process(answer_raw,1,True)
 
 
     #Dep questions:
@@ -177,18 +181,31 @@ def start(filename_arg):
     # dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
     # # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
     # print(dep_graphs)
+    dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
+    # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
+    # print(dep_graphs)
 
-    #Par questions:
-    #...
+    # #Par questions:
+    # con_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.sch.par').splitlines() for i in range(len(question_order))]
+    # con_trees = []
+    # for index in range(len(question_order)):
+    #     con_trees += (question_order[index], [Tree.fromstring(con_raw[index][j]) for j in range(len(con_raw[index]))])
+    # # [print(a + ': ' + str(b)) for (a,b) in con_trees if a in 'fables-01']
+    # print(len(question_order))
+
     
 
     # [print(str(questionID[i]) + ' ' + str(questions[i]) + ' ' + str(answer[i]) + ': ' + str(q_type[i])) for i in range(len(questionID))]
 
 
-    #basic:
-    #[(questionID, question, Type, Answer), ...]
-    for i in range(len(questionID)):
-        questions += [(questionID[i], questions[i], q_type[i], answer[i]) for i in range(len(questionID))]
+    #basic (for question + answer):
+    #[(questionID, question, Type, Difficulty, Answer), ...]
+    # print(len(questionID))
+    # print(questionID)
+    # for i in range(len(questionID)):
+    questions += [(questionID[i], question[i], q_type[i], diff[i], answer[i]) for i in range(len(questionID))]
+    # print(questions)
 
     for file in question_order:
         pickler(pickles_path + pickles_normal_path + file + '.pickle',[x for x in questions if file in x[0]])
