@@ -132,3 +132,16 @@ def find_answer(qgraph, sgraphs):
                     deps.append(node)
                     deps = sorted(deps, key=operator.itemgetter("address"))
                     return " ".join(dep["word"] for dep in deps)
+
+
+
+
+
+
+
+
+
+
+
+
+# EOF #

@@ -58,7 +58,7 @@ def baseline(qbow, sentences, stopwords):
     return best_answer
 
 if __name__ == '__main__':
-    text_file = "fables-01.sch"
+    text_file = "dataset/fables-01.sch"
 	
     stopwords = set(nltk.corpus.stopwords.words("english"))
     text = read_file(text_file)

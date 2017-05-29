@@ -60,7 +60,7 @@ def find_locations(tree):
 
 def find_candidates(sentences, chunker):
     candidates = []
-    for sent in crow_sentences:
+    for sent in sentences:
         tree = chunker.parse(sent)
         # print(tree)
         locations = find_locations(tree)
@@ -72,6 +72,7 @@ def find_sentences(patterns, sentences):
     # Get the raw text of each sentence to make it easier to search using regexes
     raw_sentences = [" ".join([token[0] for token in sent]) for sent in sentences]
     
+
     result = []
     for sent, raw_sent in zip(sentences, raw_sentences):
         for pattern in patterns:
@@ -89,7 +90,7 @@ if __name__ == '__main__':
     chunker = nltk.RegexpParser(GRAMMAR)
     lmtzr = WordNetLemmatizer()
     
-    filename = "fables-01.story"
+    filename = "dataset/fables-01.sch"
     text = read_file(filename)
     
     # Apply the standard NLP pipeline we've seen before
@@ -111,6 +112,7 @@ if __name__ == '__main__':
     # Find the sentences that have all of our keywords in them
     # How could we make this better?
     crow_sentences = find_sentences([subj_stem, verb_stem], sentences)
+    print(crow_sentences)
     
     # Extract the candidate locations from these sentences
     locations = find_candidates(crow_sentences, chunker)
