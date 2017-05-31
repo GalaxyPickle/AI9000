@@ -52,6 +52,25 @@ def subfinder(mylist, pattern):
 
 def decide(q, s):
 
+    # 1. looks at words in question and decides whether to look for words or POS
+    # WHO - looks for a POS NP "DT" "JJ" "NN"
+    if 'who' in [word for word, tag in q]:
+        r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
+    # WHAT - tricky, reads Q last 2 words, then searches for words after them
+    if 'what' in q:
+        return
+    # WHERE - looks for POS tag "IN" "DT" "NN" ?
+    if 'where' in q:
+        return
+    # WHEN - tricky as well, looks for POS "IN"
+    if 'when' in q:
+        return
+    # WHY - looks for the word "because" or just the Q and words after it
+    if 'why' in q:
+        return
+
+    # ----------------------------------------------------------------------------------------
+
     print("Q: ", q)
 
     stopwords = set(nltk.corpus.stopwords.words("english"))
@@ -75,19 +94,17 @@ def decide(q, s):
 
     r = r'(\w+/DT)?\s?(\w+/JJ)*\s?(\w+/NN)+'
 
-    print(c.OKGREEN + "r: " + c.ENDC, r)
+    # print(c.OKGREEN + "r: " + c.ENDC, r)
 
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------
 
     s_matches = []
     for match in get_phrase(s_proc, r):
-        print("sent match: ", match)
+        # print("sent match: ", match)
         sub_match = subfinder([word for word, tag in s], match)
         if len(sub_match) != 0:
             s_matches.append(sub_match)
-    if s_matches == []:
-        s_matches = c.FAIL + "ERROR: NO MATCHES FOR REG EXP" + c.ENDC
 
     print(c.OKGREEN + "S_MATCHES: " + c.ENDC, s_matches)
 
@@ -100,40 +117,47 @@ def decide(q, s):
 
     q_matches = []
     for match in q_r:
-        print("ques match: ", match)
+        # print("ques match: ", match)
         sub_match = subfinder([word for word, tag in s], match)
         if len(sub_match) != 0:
             q_matches.append(sub_match)
-    if q_matches == []:
-        q_matches = c.FAIL + "ERROR: NO MATCHES FOR QUESTION WORDS" + c.ENDC
 
     print(c.OKGREEN + "Q_MATCHES: " + c.ENDC, q_matches)
 
     # 5. compare the indices for the found s_matches and q_matches, then return the best one!
     # ----------------------------------------------------------------
 
-    # for q in q_matches:
+    # 99 is index of answer tup in s_matches
+    # 66 is num value of answer_tup in s_matches
+    high = (99, 66)
+    if q_matches != []:
+        for listy in q_matches:
+            for tup in listy:
+                q_index = tup[1]
+
+                # compare indices and return the highest one
+                if s_matches != []:
+                    for i in range(len(s_matches)):
+                        for stup in s_matches[i]:
+                            if stup != []:
+                                print("STUP: ", stup)
+                                s_index = stup[1]
+                                comp = math.fabs(s_index - q_index)
+                                if comp <= high[1]:
+                                    high = (i, comp)
 
 
+                # print(q_index)
+    else:
+        high = (0, 0)
 
+    # print("S: ", s)
+    answer = ""
+    if s_matches != []:
+        answer = s_matches[high[0]]
+    print(c.OKGREEN + "ANSWER: " + c.ENDC, answer)
 
-    # 1. looks at words in question and decides whether to look for words or POS
-    # WHO - looks for a POS NP "DT" "JJ" "NN"
-    if 'who' in [word for word, tag in q]:
-        r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
-    # WHAT - tricky, reads Q last 2 words, then searches for words after them
-    if 'what' in q:
-        return
-    # WHERE - looks for POS tag "IN" "DT" "NN" ?
-    if 'where' in q:
-        return
-    # WHEN - tricky as well, looks for POS "IN"
-    if 'when' in q:
-        return
-    # WHY - looks for the word "because" or just the Q and words after it
-    if 'why' in q:
-        return
-    return ""
+    return answer
 
 # get the correct answer using a super top secret algo
 def mah_boi(question, answer_sentence):
