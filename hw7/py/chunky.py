@@ -152,7 +152,7 @@ def chunk(fnames, question, q_type):
 
     # ready what kind of storyname to open
     if "|" in q_type:
-        q_type = q_type.split(' | ')
+        q_type = q_type.split('|')
     else:
         q_type = [q_type]
 

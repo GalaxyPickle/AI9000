@@ -29,10 +29,14 @@ def get_phrase(pos_sent, r):
 
     ret = []
     for tup in matches:
-        mini_list = [w.split('/')[0] for w in tup if w != '']
+
+        mini_list = [ w.split('/')[0] for w in tup if w != '']
+
         ret.append(mini_list)
 
     print(c.OKGREEN + "SEARCH WORDS: " + c.ENDC, ret)
+
+
 
     return ret
 
@@ -52,23 +56,6 @@ def subfinder(mylist, pattern):
 
 def decide(q, s):
 
-    # 1. looks at words in question and decides whether to look for words or POS
-    # WHO - looks for a POS NP "DT" "JJ" "NN"
-    if 'who' in [word for word, tag in q]:
-        r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
-    # WHAT - tricky, reads Q last 2 words, then searches for words after them
-    if 'what' in q:
-        return
-    # WHERE - looks for POS tag "IN" "DT" "NN" ?
-    if 'where' in q:
-        return
-    # WHEN - tricky as well, looks for POS "IN"
-    if 'when' in q:
-        return
-    # WHY - looks for the word "because" or just the Q and words after it
-    if 'why' in q:
-        return
-
     # ----------------------------------------------------------------------------------------
 
     print("Q: ", q)
@@ -82,12 +69,14 @@ def decide(q, s):
         if word not in stopwords ]
     q_proc = " ".join(word + "/" + tag for word, tag in q_proc)
 
-    print("QPROC: ", q_proc)
+    # print("QPROC: ", q_proc)
 
     s_proc = [ (nltk.LancasterStemmer().stem(word), tag) for word, tag in s ]
     s_proc = " ".join(word + "/" + tag for word, tag in s_proc)
 
-    print("SPROC: ", s_proc)
+    s_proc_nostem = " ".join(word + "/" + tag for word, tag in s)
+
+    # print("SPROC: ", s_proc)
 
         # ----------------------------------------------------------------
     # 2. set demo regex
@@ -152,65 +141,68 @@ def decide(q, s):
         print('how')
         r = r'(\S+/ninininininin)*\s?(\S+/RB)+\s?'
 
+    sent_matches = get_phrase(s_proc_nostem, r)
+
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------
 
-    s_matches = []
-    for match in get_phrase(s_proc, r):
-        # print("sent match: ", match)
-        sub_match = subfinder([word for word, tag in s], match)
-        if len(sub_match) != 0:
-            s_matches.append(sub_match)
+    # s_matches = []
+    # for match in get_phrase(s_proc, r):
+    #     # print("sent match: ", match)
+    #     sub_match = subfinder([word for word, tag in s], match)
+    #     if len(sub_match) != 0:
+    #         s_matches.append(sub_match)
 
-    print(c.OKGREEN + "S_MATCHES: " + c.ENDC, s_matches)
+    # print(c.OKGREEN + "S_MATCHES: " + c.ENDC, s_matches)
 
-    # 4. search answer sentence for all words in processed question and assign index num value
-    # ----------------------------------------------------------------
+    # # 4. search answer sentence for all words in processed question and assign index num value
+    # # ----------------------------------------------------------------
 
-    q_r = re.findall(r'(\w+)/+', q_proc)
-    q_r = [[w] for w in q_r]
-    # print(c.OKGREEN + "QR" + c.ENDC, q_r)
+    # q_r = re.findall(r'(\w+)/+', q_proc)
+    # q_r = [[w] for w in q_r]
+    # # print(c.OKGREEN + "QR" + c.ENDC, q_r)
 
-    q_matches = []
-    for match in q_r:
-        # print("ques match: ", match)
-        sub_match = subfinder([word for word, tag in s], match)
-        if len(sub_match) != 0:
-            q_matches.append(sub_match)
+    # q_matches = []
+    # for match in q_r:
+    #     # print("ques match: ", match)
+    #     sub_match = subfinder([word for word, tag in s], match)
+    #     if len(sub_match) != 0:
+    #         q_matches.append(sub_match)
 
-    print(c.OKGREEN + "Q_MATCHES: " + c.ENDC, q_matches)
+    # print(c.OKGREEN + "Q_MATCHES: " + c.ENDC, q_matches)
 
-    # 5. compare the indices for the found s_matches and q_matches, then return the best one!
-    # ----------------------------------------------------------------
+    # # 5. compare the indices for the found s_matches and q_matches, then return the best one!
+    # # ----------------------------------------------------------------
 
-    # 99 is index of answer tup in s_matches
-    # 66 is num value of answer_tup in s_matches
-    high = (99, 66)
-    if q_matches != []:
-        for listy in q_matches:
-            for tup in listy:
-                q_index = tup[1]
+    # # 99 is index of answer tup in s_matches
+    # # 66 is num value of answer_tup in s_matches
+    # high = (99, 66)
+    # if q_matches != []:
+    #     for listy in q_matches:
+    #         for tup in listy:
+    #             q_index = tup[1]
 
-                # compare indices and return the highest one
-                if s_matches != []:
-                    for i in range(len(s_matches)):
-                        for stup in s_matches[i]:
-                            if stup != []:
-                                print("STUP: ", stup)
-                                s_index = stup[1]
-                                comp = math.fabs(s_index - q_index)
-                                if comp <= high[1]:
-                                    high = (i, comp)
+    #             # compare indices and return the highest one
+    #             if s_matches != []:
+    #                 for i in range(len(s_matches)):
+    #                     for stup in s_matches[i]:
+    #                         if stup != []:
+    #                             print("STUP: ", stup)
+    #                             s_index = stup[1]
+    #                             comp = math.fabs(s_index - q_index)
+    #                             if comp <= high[1]:
+    #                                 high = (i, comp)
 
 
-                # print(q_index)
-    else:
-        high = (0, 0)
+    #             # print(q_index)
+    # else:
+    #     high = (0, 0)
 
-    # print("S: ", s)
+    # # print("S: ", s)
+
     answer = ""
-    if s_matches != []:
-        answer = s_matches[high[0]]
+    # if s_matches != []:
+    #     answer = s_matches[high[0]]
     print(c.OKGREEN + "ANSWER: " + c.ENDC, answer)
 
     return answer

@@ -49,6 +49,14 @@ if __name__ == '__main__':
 
 	print(matchy)
 
+	matches = re.finditer(r, pos_sent)
+	for match in matches:
+		mini_list = match.group(0).split(' ')
+		mini_list = [w.split('/')[0] for w in mini_list]
+		print(mini_list)
+		print(match.start())
+		print(match.group(0))
+
 
 
 
