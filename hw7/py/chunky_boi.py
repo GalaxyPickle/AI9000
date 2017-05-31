@@ -10,6 +10,7 @@
 
 from nltk.stem.wordnet import WordNetLemmatizer
 import argparse, re, nltk, math
+from random import randint
 
 # colorssszzzzzz
 class c:
