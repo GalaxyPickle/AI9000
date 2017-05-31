@@ -8,6 +8,10 @@
 #   fetches sentence with the answer contained in it (92%+ accuracy)
 ##############
 
+import sys, nltk, operator, zipfile, re
+from nltk.stem.wordnet import WordNetLemmatizer
+import chunky_boi
+
 # colorssszzzzzz
 class c:
     HEADER = '\033[95m'
@@ -18,11 +22,6 @@ class c:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-
-import sys, nltk, operator, zipfile
-from nltk.stem.wordnet import WordNetLemmatizer
-import chunky_boi
-
 
 # unzip and read story from zip file
 def unzip_corpus(input_file, name):
@@ -136,9 +135,7 @@ def find_best_sentence(question, fnames):
     print(c.OKGREEN + "Answer Sentence: " + c.ENDC + " ".join(t[0] for t in answer))
 
     qbow = get_sentences(question)[0]
-
     answer = [answer]
-    #print(answer)
 
     return answer, qbow
 
