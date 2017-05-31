@@ -35,9 +35,6 @@ def get_phrase(pos_sent, r):
         ret.append(mini_list)
 
     print(c.OKGREEN + "SEARCH WORDS: " + c.ENDC, ret)
-
-
-
     return ret
 
 # returns a list of matches for the pattern in the myList
@@ -156,6 +153,28 @@ def decide(q, s):
         print('how')
         r = r'(\S+/ninininininin)*\s?(\S+/RB)+\s?'
 
+    answers = get_phrase(s_proc_nostem, r)
+
+    for answer in answers:
+        remove = False
+        for word in answer:
+            q_senty = [word.lower() for word, tag in q]
+            q_senty = [w for w in q_senty if w not in stopwords]
+            if word in q_senty:
+                remove = True
+        if remove:
+            answers.remove(answer)
+
+    print(answers)
+
+    if len(answers) > 0:
+        answer = ' '.join(w for w in answers[0])
+    else:
+        answer = ''
+    # if s_matches != []:
+    #     answer = s_matches[high[0]]
+    print(c.OKGREEN + "ANSWER: " + c.ENDC, answer)
+
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------
 
@@ -212,11 +231,6 @@ def decide(q, s):
     #     high = (0, 0)
 
     # # print("S: ", s)
-
-    answer = ""
-    # if s_matches != []:
-    #     answer = s_matches[high[0]]
-    print(c.OKGREEN + "ANSWER: " + c.ENDC, answer)
 
     return answer
 

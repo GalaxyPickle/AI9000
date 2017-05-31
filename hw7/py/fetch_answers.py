@@ -71,33 +71,21 @@ def start(filename_arg):
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
     answers = [chunky.chunk(q_id, q, q_type)
-        for q_id, q, q_type, q_diff, a in reg_ques[:5]]
+        for q_id, q, q_type, q_diff, a in reg_ques]
 
     # print(answers)
 
-    # # compile list of question/answer sentence
-    # QandA = []
-    # i = 0
-    # for key, val in all_questions.items():
-    #     QandA.append((val[0], answer_sentences[i]))
-    #     i += 1
-    # #print(QandA)
-
-    # # 3.
-    # # finally, we get the proper answer string for each sentence/question
-    # answers = [cull_words.cull(question, sentence) for (question, sentence) in QandA]
-
-    # QandA = []
-    # i = 0
-    # for key, val in all_questions.items():
-    #     answer = ' '.join(w for w in answers[i])
-    #     QandA.append(("QuestionID: " + key, "Answer: " + answer))
-    #     i += 1
-    # #print(QandA)
+    # compile list of question/answer sentence
+    QandA = []
+    i = 0
+    for q_id, q, q_type, q_diff, a in reg_ques:
+        QandA.append((q_id, answers[i]))
+        i += 1
+    #print(QandA)
 
     # # 4.
     # # we return a list of tups [(Q1, A1), (Q2, A2), ...]
-    # return QandA
+    return QandA
 
 #     -----------THIS IS THE FORMAT WE WANT OUR ANSWER LIST TO RETURN IN------------
 #     # this is a list of lists

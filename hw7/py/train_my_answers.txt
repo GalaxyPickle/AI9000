@@ -1,0 +1,384 @@
+QuestionID: fables-01-1
+Answer: on a branch
+
+QuestionID: fables-01-2
+Answer: a branch of a tree
+
+QuestionID: fables-01-3
+Answer: a crow
+
+QuestionID: fables-01-4
+Answer: the crow
+
+QuestionID: fables-01-5
+Answer: under the tree
+
+QuestionID: fables-01-6
+Answer: the fox had flattered
+
+QuestionID: fables-01-7
+Answer: the fox
+
+QuestionID: fables-01-8
+Answer: 
+
+QuestionID: fables-01-9
+Answer: in the beak
+
+QuestionID: fables-01-10
+Answer: a crow
+
+QuestionID: fables-01-11
+Answer: a fox
+
+QuestionID: fables-01-12
+Answer: the beauty of the bird was incomparable
+
+QuestionID: fables-01-13
+Answer: loudly
+
+QuestionID: fables-02-1
+Answer: a lion
+
+QuestionID: fables-02-2
+Answer: the bull
+
+QuestionID: fables-02-3
+Answer: 
+
+QuestionID: fables-02-4
+Answer: the bull
+
+QuestionID: fables-02-5
+Answer: a lion
+
+QuestionID: fables-02-6
+Answer: the bull
+
+QuestionID: fables-02-7
+Answer: a lion
+
+QuestionID: fables-02-8
+Answer: the bull
+
+QuestionID: fables-02-9
+Answer: the bull
+
+QuestionID: fables-02-10
+Answer: e  I N   t h e  D T   l i o n  N N   f e a r e d  V B D   s h a r p  J J   e v e r y  D T   h o r n  N N   o f  I N   t h e  D T   b u l l  N N
+
+QuestionID: fables-02-11
+Answer: the bull because the lion feared sharp
+
+QuestionID: fables-02-12
+Answer: dear friend
+
+QuestionID: fables-02-13
+Answer: a lion
+
+QuestionID: fables-02-14
+Answer: e  I N   t h e  D T   l i o n  N N   w a n t e d  V B D   t o  T O   e a t  V B   t h e  D T   b u l l  N N
+
+QuestionID: fables-02-15
+Answer: the bull to remove
+
+QuestionID: fables-02-16
+Answer: e  I N   e v e r y  D T   h o r n  N N   o f  I N   t h e  D T   b u l l  N N   w a s  V B D   u g l y  R B
+
+QuestionID: fables-02-17
+Answer: the bull
+
+QuestionID: fables-02-18
+Answer: the lion
+
+QuestionID: fables-03-1
+Answer: an eagle
+
+QuestionID: fables-03-2
+Answer: an eagle
+
+QuestionID: fables-03-3
+Answer: a serpent
+
+QuestionID: fables-03-4
+Answer: a countryman
+
+QuestionID: fables-03-5
+Answer: 
+
+QuestionID: fables-03-6
+Answer: 
+
+QuestionID: fables-03-7
+Answer: the drinking vessel
+
+QuestionID: fables-03-8
+Answer: the eagle
+
+QuestionID: fables-03-9
+Answer: the drinking vessel
+
+QuestionID: fables-03-10
+Answer: exertions
+
+QuestionID: fables-03-11
+Answer: exertions
+
+QuestionID: fables-03-12
+Answer: poison into the man drinking-horn
+
+QuestionID: fables-03-13
+Answer: an eagle
+
+QuestionID: fables-03-14
+Answer: 
+
+QuestionID: fables-03-15
+Answer: a countryman
+
+QuestionID: fables-03-16
+Answer: a countryman
+
+QuestionID: fables-03-17
+Answer: a drinking vessel tried
+
+QuestionID: fables-03-18
+Answer: a countryman
+
+QuestionID: fables-03-19
+Answer: a drinking vessel tried
+
+QuestionID: fables-03-20
+Answer: 
+
+QuestionID: fables-03-21
+Answer: exertions
+
+QuestionID: fables-04-1
+Answer: a stork
+
+QuestionID: fables-04-2
+Answer: a fox invited
+
+QuestionID: fables-04-3
+Answer: the fox
+
+QuestionID: fables-04-4
+Answer: a clever fox
+
+QuestionID: fables-04-5
+Answer: some soup in a flat
+
+QuestionID: fables-04-6
+Answer: e  I N   h e  P R P   w a s  V B D   n ' t  R B   a b l e  J J   t o  T O   r e a c h  V B   s o m e  D T   f o o d  N N   t h a t  W D T   w a s  V B D   i n  I N   t h e  D T   p i t c h e r  N N
+
+QuestionID: fables-04-7
+Answer: the long bill of the stork
+
+QuestionID: fables-04-8
+Answer: 
+
+QuestionID: fables-04-9
+Answer: the fox lapped
+
+QuestionID: fables-04-10
+Answer: the stork
+
+QuestionID: fables-04-11
+Answer: the stork
+
+QuestionID: fables-04-12
+Answer: a stork
+
+QuestionID: fables-04-13
+Answer: the fox
+
+QuestionID: blogs-01-1
+Answer: meeting
+
+QuestionID: blogs-01-2
+Answer: meeting
+
+QuestionID: blogs-01-3
+Answer: 
+
+QuestionID: blogs-01-4
+Answer: a police car
+
+QuestionID: blogs-01-5
+Answer: the people
+
+QuestionID: blogs-01-6
+Answer: the people
+
+QuestionID: blogs-01-7
+Answer: the people burned
+
+QuestionID: blogs-01-8
+Answer: the people
+
+QuestionID: blogs-01-9
+Answer: 
+
+QuestionID: blogs-01-10
+Answer: things were thrown
+
+QuestionID: blogs-01-11
+Answer: things got
+
+QuestionID: blogs-01-12
+Answer: things got
+
+QuestionID: blogs-01-13
+Answer: things got
+
+QuestionID: blogs-01-14
+Answer: the police
+
+QuestionID: blogs-01-15
+Answer: things
+
+QuestionID: blogs-01-16
+Answer: e  I N   i t  P R P   d i s a g r e e d  V B D   a b o u t  I N   a  D T   v i e w  N N
+
+QuestionID: blogs-01-17
+Answer: created riot
+
+QuestionID: blogs-01-18
+Answer: 
+
+QuestionID: blogs-02-1
+Answer: 
+
+QuestionID: blogs-02-2
+Answer: 
+
+QuestionID: blogs-02-3
+Answer: 
+
+QuestionID: blogs-02-4
+Answer: e  I N   i t  P R P   w a n t e d  V B D   t h e  D T   y o u n g  J J   m a n  N N   t o  T O   k n o w  V B   t h e  D T   n a r r a t o r  N N   r e g r e t t i n g  V B G   t h a t  I N   i t  P R P   h a d  V B D   n o t  R B   a i d e d  V B N   h i m  P R P
+
+QuestionID: blogs-02-5
+Answer: the house
+
+QuestionID: blogs-02-6
+Answer: 
+
+QuestionID: blogs-02-7
+Answer: logical mind
+
+QuestionID: blogs-02-8
+Answer: a young man
+
+QuestionID: blogs-02-9
+Answer: the narrator
+
+QuestionID: blogs-02-10
+Answer: 
+
+QuestionID: blogs-02-11
+Answer: the flash was
+
+QuestionID: blogs-02-12
+Answer: some bright flash
+
+QuestionID: blogs-02-13
+Answer: a few years ago
+
+QuestionID: blogs-02-14
+Answer: the motorbike
+
+QuestionID: blogs-02-15
+Answer: the motorbike
+
+QuestionID: blogs-02-16
+Answer: the narrator
+
+QuestionID: blogs-03-1
+Answer: hurricane gustav
+
+QuestionID: blogs-03-2
+Answer: the storm
+
+QuestionID: blogs-03-3
+Answer: winds
+
+QuestionID: blogs-03-4
+Answer: president
+
+QuestionID: blogs-03-5
+Answer: in louisiana
+
+QuestionID: blogs-03-6
+Answer: a store
+
+QuestionID: blogs-03-7
+Answer: the narrator had
+
+QuestionID: blogs-03-8
+Answer: e  I N   i t  P R P   o w n e d  V B D   a  D T   g r o u p  N N   o f  I N   t r e e s  N N S   a n d  C C   n e a r  I N   t h e  D T   h o u s e  N N   o f  I N   t h e  D T   n a r r a t o r  N N
+
+QuestionID: blogs-03-9
+Answer: the family
+
+QuestionID: blogs-03-10
+Answer: the narrator
+
+QuestionID: blogs-03-11
+Answer: an area
+
+QuestionID: blogs-03-12
+Answer: the tree split
+
+QuestionID: blogs-03-13
+Answer: the narrator
+
+QuestionID: blogs-03-14
+Answer: the narrator began
+
+QuestionID: blogs-03-15
+Answer: wife
+
+QuestionID: blogs-04-1
+Answer: the squirrel
+
+QuestionID: blogs-04-2
+Answer: the squirrel
+
+QuestionID: blogs-04-3
+Answer: the squirrel
+
+QuestionID: blogs-04-4
+Answer: the bowl
+
+QuestionID: blogs-04-5
+Answer: squirrels
+
+QuestionID: blogs-04-6
+Answer: 
+
+QuestionID: blogs-04-7
+Answer: those times
+
+QuestionID: blogs-04-8
+Answer: the day
+
+QuestionID: blogs-04-9
+Answer: line
+
+QuestionID: blogs-04-10
+Answer: on the deck
+
+QuestionID: blogs-04-11
+Answer: the squirrels
+
+QuestionID: blogs-04-12
+Answer: 
+
+QuestionID: blogs-04-13
+Answer: 
+
+QuestionID: blogs-04-14
+Answer: a large stainless steel bowl of water
+
