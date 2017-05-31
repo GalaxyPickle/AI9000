@@ -22,25 +22,19 @@ class c:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-def get_words(pos_sent):
-    # get words from sentence word/POS
-    return ' '.join(w for w in re.findall(r'(\w+)/', pos_sent))
-
+# returns matches for regex exp passed into a sentence tagged <...> <word>/<POS> <...>
 def get_phrase(pos_sent, r):
-    # Penn Tagset
-    # Determiner can be DT
-    # Adjective can be JJ,JJR,JJS
-    # Noun can be NN,NNS,NNP,NNPS
-    listy = []
 
-    for pair in re.findall(r, pos_sent):
+    matches = re.findall(r, pos_sent)
 
-        words = get_words(' '.join(w for w in pair))
-        listy.append(words.split(' '))
+    ret = []
+    for tup in matches:
+        mini_list = [w.split('/')[0] for w in tup if w != '']
+        ret.append(mini_list)
 
-    print("LISTY: ", listy)
+    print(c.OKGREEN + "SEARCH WORDS: " + c.ENDC, ret)
 
-    return listy
+    return ret
 
 # returns a list of matches for the pattern in the myList
 # returns a list of tuples: (word string, average index in the sentence list)
@@ -75,7 +69,7 @@ def decide(q, s):
     # ----------------------------------------------------------------
     # 2. set demo regex
 
-    r = r'(\w+/NN)+'
+    r = r'(\w/DT)?\s?(\w+/JJ)*\s?(\w+/NN)+'
 
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------

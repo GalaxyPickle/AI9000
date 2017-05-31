@@ -32,11 +32,34 @@ def get_phrase(pos_sent, r):
 
 if __name__ == '__main__':
 	
-	r = r'(\w+/NN)+'
+	r = r'(\w/DT)?\s?(\w+/JJ)*\s?(\w+/NN)+'
 
 	pos_sent = "a/DT crow/NNP was/VBD sit/VBG on/IN a/DT branch/NN of/IN a/DT tre/NN with/IN a/DT piec/NN of/IN chees/NN in/IN her/PRP$ beak/NN when/WRB a/DT fox/NNP observ/VBD her/PRP$ and/CC set/VB his/PRP$ wit/NNS to/TO work/VB to/TO discov/VB som/DT way/NN of/IN get/VBG the/DT chees/NN"
 
 	matches = re.findall(r, pos_sent)
-	matches = [w.split('/')[0] for w in matches]
-
 	print(matches)
+
+
+	matchy = []
+	for tup in matches:
+		mini_list = [w.split('/')[0] for w in tup if w != '']
+		matchy.append(mini_list)
+
+	matches = [ [w.split('/')[0]] for tup in matches for w in tup ]
+
+	print(matchy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
