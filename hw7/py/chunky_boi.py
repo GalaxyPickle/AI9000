@@ -99,10 +99,9 @@ def decide(q, s):
 
     print(s_matches)
 
-    r = r'()'
-
     q_matches = []
     for match in get_phrase(q_proc, r):
+        return
 
     # 1. looks at words in question and decides whether to look for words or POS
     # WHO - looks for a POS NP "DT" "JJ" "NN"
