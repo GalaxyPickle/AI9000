@@ -100,7 +100,7 @@ def baseline(qbow, text, stopwords):
     if len(answers) > 0:
         best_answer = (answers[0])[1]
     else:
-        best_answer = "ERROR: NO ANSWER!!!"
+        best_answer = None
 
     return best_answer
 
@@ -132,10 +132,11 @@ def find_best_sentence(question, fnames):
     text = [get_sentences(story) for story in text]
 
     answer = baseline(qbow, text, stopwords)
-    print(c.OKGREEN + "Answer Sentence: " + c.ENDC + " ".join(t[0] for t in answer))
+    if answer != None:
+        print(c.OKGREEN + "Answer Sentence: " + c.ENDC + " ".join(t[0] for t in answer))
+        answer = [answer]
 
     qbow = get_sentences(question)[0]
-    answer = [answer]
 
     return answer, qbow
 
@@ -158,6 +159,9 @@ def chunk(fnames, question, q_type):
     fnames = [fnames + '.' + t.lower() for t in q_type]
 
     answer_sentence, qbow = find_best_sentence(question, fnames)
+
+    if answer_sentence == None:
+        return ""
 
     return chunky_boi.mah_boi(qbow, answer_sentence[0])
 

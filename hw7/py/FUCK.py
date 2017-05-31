@@ -34,7 +34,7 @@ if __name__ == '__main__':
 	
 	r = r'(\w/DT)?\s?(\w+/JJ)*\s?(\w+/NN)+'
 
-	pos_sent = "a/DT crow/NNP was/VBD sit/VBG on/IN a/DT branch/NN of/IN a/DT tre/NN with/IN a/DT piec/NN of/IN chees/NN in/IN her/PRP$ beak/NN when/WRB a/DT fox/NNP observ/VBD her/PRP$ and/CC set/VB his/PRP$ wit/NNS to/TO work/VB to/TO discov/VB som/DT way/NN of/IN get/VBG the/DT chees/NN"
+	pos_sent = "the/DT lion/NN adv/VBD the/DT bul/NN to/TO remov/VB every/DT horn/NN of/IN the/DT bul/NN becaus/IN every/DT horn/NN of/IN the/DT bul/NN was/VBD ug/RB"
 
 	matches = re.findall(r, pos_sent)
 	print(matches)

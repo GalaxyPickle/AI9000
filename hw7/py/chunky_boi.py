@@ -41,7 +41,7 @@ def get_phrase(pos_sent, r):
 def subfinder(mylist, pattern):
     matches = []
     for i in range(len(mylist)):
-        if mylist[i] == pattern[0] and mylist[i:i+len(pattern)] == pattern:
+        if mylist[i] == pattern[0] and len(mylist) >= i + len(pattern) and mylist[i:i+len(pattern)] == pattern:
             # append a tuple containing the string match and the average i index
             matches.append((
                 [ w for w in mylist[i:i + len(pattern)] ], 
@@ -52,6 +52,8 @@ def subfinder(mylist, pattern):
 
 def decide(q, s):
 
+    print("Q: ", q)
+
     stopwords = set(nltk.corpus.stopwords.words("english"))
 
     # 1. remove all stopwords from q and s, and stem all words remaining in q and s
@@ -61,22 +63,26 @@ def decide(q, s):
         if word not in stopwords ]
     q_proc = " ".join(word + "/" + tag for word, tag in q_proc)
 
-    # print("QPROC: ", q_proc)
+    print("QPROC: ", q_proc)
 
     s_proc = [ (nltk.LancasterStemmer().stem(word), tag) for word, tag in s ]
     s_proc = " ".join(word + "/" + tag for word, tag in s_proc)
 
+    print("SPROC: ", s_proc)
+
     # ----------------------------------------------------------------
     # 2. set demo regex
 
-    r = r'(\w/DT)?\s?(\w+/JJ)*\s?(\w+/NN)+'
+    r = r'(\w+/DT)?\s?(\w+/JJ)*\s?(\w+/NN)+'
+
+    print(c.OKGREEN + "r: " + c.ENDC, r)
 
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------
 
     s_matches = []
     for match in get_phrase(s_proc, r):
-        # print("sent match: ", match)
+        print("sent match: ", match)
         sub_match = subfinder([word for word, tag in s], match)
         if len(sub_match) != 0:
             s_matches.append(sub_match)
@@ -94,7 +100,7 @@ def decide(q, s):
 
     q_matches = []
     for match in q_r:
-        # print("ques match: ", match)
+        print("ques match: ", match)
         sub_match = subfinder([word for word, tag in s], match)
         if len(sub_match) != 0:
             q_matches.append(sub_match)
@@ -106,7 +112,7 @@ def decide(q, s):
     # 5. compare the indices for the found s_matches and q_matches, then return the best one!
     # ----------------------------------------------------------------
 
-
+    # for q in q_matches:
 
 
 
@@ -127,7 +133,7 @@ def decide(q, s):
     # WHY - looks for the word "because" or just the Q and words after it
     if 'why' in q:
         return
-    return 
+    return ""
 
 # get the correct answer using a super top secret algo
 def mah_boi(question, answer_sentence):
