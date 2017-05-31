@@ -78,7 +78,7 @@ def decide(q, s):
 
     # print("SPROC: ", s_proc)
 
-        # ----------------------------------------------------------------
+            # ----------------------------------------------------------------
     # 2. set demo regex
     r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
 
@@ -109,39 +109,52 @@ def decide(q, s):
 
     # 1. looks at words in question and decides whether to look for words or POS
     # WHO - looks for a POS NP "DT" "JJ" "NN"
-    if 'who' in [word for word, tag in q]:
+    search_words = [word for word, tag in q]
+    if 'who' in search_words:
         print('who')
         r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/NN)?\s?(\S+/NN)?'
         #default.
 
     # WHAT - tricky, reads Q last 2 words, then searches for words after them
-    if 'what' in [word for word, tag in q]:
-        print('what')
-        r = r'(\S+/TO)?\s?(\S+/DT)?\s?(\S+/VB)*\w?\s?(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/NN)?\s?(\S+/NN)?\s?(\S+/IN)?\s?(\S+/NN)*\s?(\S+/DT)?\s?(\S+/TO)?\s?(\S+/VB)?\w?\s?(\S+/NN)*\s?(\S+/VB)?\w?\s?(\S+/JJ)*'
+    elif 'what' in search_words:
+        if 'did' in search_words:
+        #('that', 'IN'), ('the', 'DT'), ('lion', 'NN'), ('was', 'VBD'), ('friendly', 'RB')
+        # r = r'(\S+/IN)?\s?(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+(\S+/VB\w?)?\s?(\S+/RB)?'
+            print('what did')
+            r = r'(\S+/TO)?\s?(\S+/DT)?\s?(\S+/VB\w?)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/NN)?\s?(\S+/NN)?\s?(\S+/IN)?\s?(\S+/NN)*\s?(\S+/DT)?\s?(\S+/TO)?\s?(\S+/VB\w?)?\s?(\S+/NN)*\s?(\S+/VB\w?)?\s?(\S+/JJ)*\s?(\S+/NN)?\s?(\S+/RB\w?)?'
+        elif 'happened' in search_words:
+            #('police', 'NNP'), ('cars', 'NNS'), ('were', 'VBD'), ('burned', 'VBN')
+            print('what happened')
+            r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN\w?)+\s?(\S+/NN\w?)?\s?(\S+/NN\w?)?\s?(\S+/VB\w?)?\s?(\S+/VB\w?)?\s?(\S+/VB\w?)?'
+        elif 'was' in search_words:
+            print('what was')
+            #('police', 'NNP'), ('cars', 'NNS'), ('were', 'VBD'), ('burned', 'VBN')
+            #('in', 'IN'), ('a', 'DT'), ('flat', 'JJ'), ('and', 'CC'), ('large', 'JJ'), ('dish', 'NN')]
+            r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/CC)?\s?(\S+/JJ)*\s?(\S+/NN\w?)+\s?(\S+/NN\w?)?\s?(\S+/NN\w?)?\s?(\S+/VB\w?)?\s?(\S+/VB\w?)?\s?(\S+/VB\w?)?'
 
     # WHERE - looks for POS tag "IN" "DT" "NN" ?
-    if 'where' in [word for word, tag in q]:
+    elif 'where' in search_words:
         print('where')
         # ('in', 'IN'), ('a', 'DT'), ('flat', 'JJ'), ('and', 'CC'), ('large', 'JJ'), ('dish', 'NN')
-        r = r'(\S+/IN)*\s?(\S+/DT)?\s?(\S+/IN)?\s?(\S+/JJ)*\s?(\S+/CC)?\s?(\S+/JJ)*\s?(\S+/NN)+'
+        r = r'(\S+/IN)*\s?(\S+/DT)?\s?(\S+/IN)?\s?(\S+/JJ)*\s?(\S+/CC)?\s?(\S+/JJ)*\s?(\S+/NN\w?)+'
 
     # WHEN - tricky as well, looks for POS "IN"
-    if 'when' in [word for word, tag in q]:
+    elif 'when' in search_words:
         print('when')
-        # r = r'(\S+/WRB)?\s?(\S+/PRP)*\s?(\S+/VBD)*'
+        #[('a', 'DT'), ('few', 'JJ'), ('years', 'NNS'), ('ago', 'RB')
+        r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN\w?)+\s?(\S+/RB)?'
 
     # WHY - looks for the word "because" or just the Q and words after it
-    if 'why' in [word for word, tag in q]:
+    elif 'why' in search_words:
         print('why')
-        r = r'(?<=beca).*$'
-
+        #('in', 'IN'), ('order', 'NN'), ('for', 'IN'), ('the', 'DT'), ('birds', 'NNS'), ('to', 'TO'), ('wait', 'VB')
+        # r = r'(\S+/IN)*\s?(\S+/NN\w?)?\s?(\S+/IN)*\s?(\S+/DT)*\s?(\S+/NN\w?)*\s?(\S+/TO)?\s?(\S+/VB\w?)?'
+        r = r'(?<=becaus).*'
         #looks for because
 
-    if 'how' in [word for word, tag in q]:
+    elif 'how' in search_words:
         print('how')
         r = r'(\S+/ninininininin)*\s?(\S+/RB)+\s?'
-
-    sent_matches = get_phrase(s_proc_nostem, r)
 
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------
