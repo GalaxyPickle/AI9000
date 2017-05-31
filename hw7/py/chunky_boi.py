@@ -22,32 +22,6 @@ class c:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-#returns lemma of word added 
-def lemmatizer(tokens):
-    lem_tokens = []
-    # this little bit is because wordnet lemmas don't play nicely with things verb infinitives....... [very rough fix
-    second_form_same_vinfinitive = [('felt','feel'),('fell','fall'),('stood','stand'),('flattered','flatter'),('flattery','flatter')]
-
-    vinfinitive_check = [a for (a,b) in second_form_same_vinfinitive]
-    for token in tokens:
-        for (a,b) in second_form_same_vinfinitive:
-            if a == token:
-                lem_tokens += [b]
-        if token not in vinfinitive_check:
-            lem_tokens += [WordNetLemmatizer().lemmatize(token,'v')]
-
-    return lem_tokens
-
-# def whoSearch(q, s):
-
-# def whatSearch(q, s):
-
-# def whereSearch(q, s):
-
-# def whenSearch(q, s):
-
-# def whySearch(q, s):
-
 def get_words(pos_sent):
     # get words from sentence word/POS
     return ' '.join(w for w in re.findall(r'(\w+)/', pos_sent))
@@ -64,7 +38,7 @@ def get_phrase(pos_sent, r):
         words = get_words(' '.join(w for w in pair))
         listy.append(words.split(' '))
 
-    # print("LISTY: ", listy)
+    print("LISTY: ", listy)
 
     return listy
 
@@ -101,7 +75,7 @@ def decide(q, s):
     # ----------------------------------------------------------------
     # 2. set demo regex
 
-    r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
+    r = r'(\w+/NN)+'
 
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------
@@ -117,8 +91,8 @@ def decide(q, s):
 
     print(c.OKGREEN + "S_MATCHES: " + c.ENDC, s_matches)
 
-    # ----------------------------------------------------------------
     # 4. search answer sentence for all words in processed question and assign index num value
+    # ----------------------------------------------------------------
 
     q_r = re.findall(r'(\w+)/+', q_proc)
     q_r = [[w] for w in q_r]
@@ -135,8 +109,13 @@ def decide(q, s):
 
     print(c.OKGREEN + "Q_MATCHES: " + c.ENDC, q_matches)
 
-    # 5.
+    # 5. compare the indices for the found s_matches and q_matches, then return the best one!
     # ----------------------------------------------------------------
+
+
+
+
+
 
     # 1. looks at words in question and decides whether to look for words or POS
     # WHO - looks for a POS NP "DT" "JJ" "NN"
