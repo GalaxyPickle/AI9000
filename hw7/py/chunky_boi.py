@@ -89,12 +89,68 @@ def decide(q, s):
 
     print("SPROC: ", s_proc)
 
-    # ----------------------------------------------------------------
+        # ----------------------------------------------------------------
     # 2. set demo regex
+    r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
 
-    r = r'(\w+/DT)?\s?(\w+/JJ)*\s?(\w+/NN)+'
+    # r = r'(\S+/TO)?\s?(\S+/VB)*\s?(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/NN)?\s?(\S+/NN)?\s?(\S+/NN)?\s?(\S+/NN)?\s?(\S+/IN)?\s?(\S+/NN)*'
 
-    # print(c.OKGREEN + "r: " + c.ENDC, r)
+
+    # how:
+    # r = r'(\S+/ninininininin)*\s?(\S+/RB)+\s?'
+
+    # why:
+    # r = r'(\S+/IN)+\s?(\S+/DT)?\s?(\S+/IN)*\s?(\S+/NN)+\s?(\S+/NN)+\s?(\S+/NN)+\s?(\S+/NN)+'
+        #everything after because...
+
+
+    # where:
+    # r = r'(\S+/IN)*\s?(\S+/DT)?\s?(\S+/IN)*\s?(\S+/NN)+'
+
+    # what:
+    # r = r'(\S+/TO)?\s?(\S+/VB)*\s?(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
+    # r = r'(\S+/TO)?\s?(\S+/VB)*\w?\s?(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/IN)?\s?(\S+/DT)?\s?(\S+/NN)*\s?(\S+/VB)?\w?\s?(\S+/JJ)*'
+
+    # when:
+    # r = r'(\S+/WRB)?\s?(\S+/PRP)*\s?(\S+/VBD)*'
+
+
+    # who:
+    # r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
+
+    # 1. looks at words in question and decides whether to look for words or POS
+    # WHO - looks for a POS NP "DT" "JJ" "NN"
+    if 'who' in [word for word, tag in q]:
+        print('who')
+        r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/NN)?\s?(\S+/NN)?'
+        #default.
+
+    # WHAT - tricky, reads Q last 2 words, then searches for words after them
+    if 'what' in [word for word, tag in q]:
+        print('what')
+        r = r'(\S+/TO)?\s?(\S+/DT)?\s?(\S+/VB)*\w?\s?(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/NN)?\s?(\S+/NN)?\s?(\S+/IN)?\s?(\S+/NN)*\s?(\S+/DT)?\s?(\S+/TO)?\s?(\S+/VB)?\w?\s?(\S+/NN)*\s?(\S+/VB)?\w?\s?(\S+/JJ)*'
+
+    # WHERE - looks for POS tag "IN" "DT" "NN" ?
+    if 'where' in [word for word, tag in q]:
+        print('where')
+        # ('in', 'IN'), ('a', 'DT'), ('flat', 'JJ'), ('and', 'CC'), ('large', 'JJ'), ('dish', 'NN')
+        r = r'(\S+/IN)*\s?(\S+/DT)?\s?(\S+/IN)?\s?(\S+/JJ)*\s?(\S+/CC)?\s?(\S+/JJ)*\s?(\S+/NN)+'
+
+    # WHEN - tricky as well, looks for POS "IN"
+    if 'when' in [word for word, tag in q]:
+        print('when')
+        # r = r'(\S+/WRB)?\s?(\S+/PRP)*\s?(\S+/VBD)*'
+
+    # WHY - looks for the word "because" or just the Q and words after it
+    if 'why' in [word for word, tag in q]:
+        print('why')
+        r = r'(?<=beca).*$'
+
+        #looks for because
+
+    if 'how' in [word for word, tag in q]:
+        print('how')
+        r = r'(\S+/ninininininin)*\s?(\S+/RB)+\s?'
 
     # 3. search answer sentence for phrases matching reg exp and assign index num value
     # ----------------------------------------------------------------
