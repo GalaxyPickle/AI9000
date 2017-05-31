@@ -71,7 +71,7 @@ def baseline(qbow, text, stopwords):
     answers = []
     qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
     qbow.update(set(lemmatizer(qbow)))
-    print(qbow)
+    # print(qbow)
 
     for f in text:
         for sent in f:
@@ -121,7 +121,7 @@ def find_best_sentence(question, fnames):
     print("Q: " + c.ENDC + question + c.OKGREEN)
     question = question[:len(question) - 1]
     qbow = get_bow(get_sentences(question)[0], stopwords)
-    print("Q BOW: " + c.ENDC + str(qbow))
+    # print("Q BOW: " + c.ENDC + str(qbow))
     
     # get list of list of POS tag tup sentences in story
     #   [ 

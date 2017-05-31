@@ -62,8 +62,9 @@ def get_phrase(pos_sent, r):
     for pair in re.findall(r, pos_sent):
 
         words = get_words(' '.join(w for w in pair))
-        print("words: ", words)
         listy.append(words.split(' '))
+
+    # print("LISTY: ", listy)
 
     return listy
 
@@ -83,25 +84,59 @@ def subfinder(mylist, pattern):
 
 def decide(q, s):
 
-    q_proc = " ".join(word + "/" + tag for word, tag in q)
-    s_proc = " ".join(word + "/" + tag for word, tag in s)
+    stopwords = set(nltk.corpus.stopwords.words("english"))
 
-    # print("\s_proc: " + c.OKGREEN + s_proc + c.ENDC)
-    # print("\s_proc words: " + c.OKGREEN + str(get_words(s_proc)) + c.ENDC)
-    # print("\ns_proc noun phrase: " + c.OKGREEN + str(get_noun_phrase(s_proc)) + c.ENDC)
+    # 1. remove all stopwords from q and s, and stem all words remaining in q and s
+    # ----------------------------------------------------------------
+
+    q_proc = [ (nltk.LancasterStemmer().stem(word), tag) for word, tag in q 
+        if word not in stopwords ]
+    q_proc = " ".join(word + "/" + tag for word, tag in q_proc)
+
+    # print("QPROC: ", q_proc)
+
+    s_proc = [ (nltk.LancasterStemmer().stem(word), tag) for word, tag in s ]
+    s_proc = " ".join(word + "/" + tag for word, tag in s_proc)
+
+    # ----------------------------------------------------------------
+    # 2. set demo regex
 
     r = r'(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+'
 
+    # 3. search answer sentence for phrases matching reg exp and assign index num value
+    # ----------------------------------------------------------------
+
     s_matches = []
     for match in get_phrase(s_proc, r):
+        # print("sent match: ", match)
         sub_match = subfinder([word for word, tag in s], match)
-        s_matches.append(sub_match)
+        if len(sub_match) != 0:
+            s_matches.append(sub_match)
+    if s_matches == []:
+        s_matches = c.FAIL + "ERROR: NO MATCHES FOR REG EXP" + c.ENDC
 
-    print(s_matches)
+    print(c.OKGREEN + "S_MATCHES: " + c.ENDC, s_matches)
+
+    # ----------------------------------------------------------------
+    # 4. search answer sentence for all words in processed question and assign index num value
+
+    q_r = re.findall(r'(\w+)/+', q_proc)
+    q_r = [[w] for w in q_r]
+    # print(c.OKGREEN + "QR" + c.ENDC, q_r)
 
     q_matches = []
-    for match in get_phrase(q_proc, r):
-        return
+    for match in q_r:
+        # print("ques match: ", match)
+        sub_match = subfinder([word for word, tag in s], match)
+        if len(sub_match) != 0:
+            q_matches.append(sub_match)
+    if q_matches == []:
+        q_matches = c.FAIL + "ERROR: NO MATCHES FOR QUESTION WORDS" + c.ENDC
+
+    print(c.OKGREEN + "Q_MATCHES: " + c.ENDC, q_matches)
+
+    # 5.
+    # ----------------------------------------------------------------
 
     # 1. looks at words in question and decides whether to look for words or POS
     # WHO - looks for a POS NP "DT" "JJ" "NN"
@@ -127,10 +162,10 @@ def mah_boi(question, answer_sentence):
     question = [(word.lower(), tag) for word, tag in question if re.match(r'\w+', word)]
     answer_sentence = [(word.lower(), tag) for word, tag in answer_sentence if re.match(r'\w+', word)]
 
-    print()
-    print(c.OKGREEN + "Q Sent: " + c.ENDC, question)
-    print(c.OKGREEN + "A Sent: " + c.ENDC, answer_sentence)
-    print()
+    # print()
+    # print(c.OKGREEN + "Q Sent: " + c.ENDC, question)
+    # print(c.OKGREEN + "A Sent: " + c.ENDC, answer_sentence)
+    # print()
 
     return decide(question, answer_sentence)
 
