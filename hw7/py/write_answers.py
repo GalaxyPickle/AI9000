@@ -10,7 +10,7 @@
 
 # this writes to the output file [question, answer, newline] ...
 def start(response):
-	with open('train_my_answers.txt', 'w') as f:
+	with open('lang_rogers_answers.txt', 'w') as f:
 		[f.write('QuestionID: {0}\nAnswer: {1}\n\n'.format(q, a))
 			for q, a in response]
 

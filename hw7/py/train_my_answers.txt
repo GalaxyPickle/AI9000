@@ -14,7 +14,7 @@ QuestionID: fables-01-5
 Answer: under the tree
 
 QuestionID: fables-01-6
-Answer: the fox had flattered
+Answer: the fox
 
 QuestionID: fables-01-7
 Answer: the fox
@@ -32,7 +32,7 @@ QuestionID: fables-01-11
 Answer: a fox
 
 QuestionID: fables-01-12
-Answer: the beauty of the bird was incomparable
+Answer: the beauty of the bird
 
 QuestionID: fables-01-13
 Answer: loudly
@@ -65,10 +65,10 @@ QuestionID: fables-02-9
 Answer: the bull
 
 QuestionID: fables-02-10
-Answer: e  I N   t h e  D T   l i o n  N N   f e a r e d  V B D   s h a r p  J J   e v e r y  D T   h o r n  N N   o f  I N   t h e  D T   b u l l  N N
+Answer: the bull because the lion feared
 
 QuestionID: fables-02-11
-Answer: the bull because the lion feared sharp
+Answer: the bull because the lion
 
 QuestionID: fables-02-12
 Answer: dear friend
@@ -77,13 +77,13 @@ QuestionID: fables-02-13
 Answer: a lion
 
 QuestionID: fables-02-14
-Answer: e  I N   t h e  D T   l i o n  N N   w a n t e d  V B D   t o  T O   e a t  V B   t h e  D T   b u l l  N N
+Answer: the bull
 
 QuestionID: fables-02-15
-Answer: the bull to remove
+Answer: the bull
 
 QuestionID: fables-02-16
-Answer: e  I N   e v e r y  D T   h o r n  N N   o f  I N   t h e  D T   b u l l  N N   w a s  V B D   u g l y  R B
+Answer: the bull to remove
 
 QuestionID: fables-02-17
 Answer: the bull
@@ -125,7 +125,7 @@ QuestionID: fables-03-11
 Answer: exertions
 
 QuestionID: fables-03-12
-Answer: poison into the man drinking-horn
+Answer: poison into the man
 
 QuestionID: fables-03-13
 Answer: an eagle
@@ -140,13 +140,13 @@ QuestionID: fables-03-16
 Answer: a countryman
 
 QuestionID: fables-03-17
-Answer: a drinking vessel tried
+Answer: a drinking vessel
 
 QuestionID: fables-03-18
 Answer: a countryman
 
 QuestionID: fables-03-19
-Answer: a drinking vessel tried
+Answer: a drinking vessel
 
 QuestionID: fables-03-20
 Answer: 
@@ -167,16 +167,16 @@ QuestionID: fables-04-4
 Answer: a clever fox
 
 QuestionID: fables-04-5
-Answer: some soup in a flat
+Answer: some soup in a
 
 QuestionID: fables-04-6
-Answer: e  I N   h e  P R P   w a s  V B D   n ' t  R B   a b l e  J J   t o  T O   r e a c h  V B   s o m e  D T   f o o d  N N   t h a t  W D T   w a s  V B D   i n  I N   t h e  D T   p i t c h e r  N N
+Answer: some food
 
 QuestionID: fables-04-7
 Answer: the long bill of the stork
 
 QuestionID: fables-04-8
-Answer: 
+Answer: contents of the vessel
 
 QuestionID: fables-04-9
 Answer: the fox lapped
@@ -239,13 +239,13 @@ QuestionID: blogs-01-15
 Answer: things
 
 QuestionID: blogs-01-16
-Answer: e  I N   i t  P R P   d i s a g r e e d  V B D   a b o u t  I N   a  D T   v i e w  N N
+Answer: because it disagreed about a view
 
 QuestionID: blogs-01-17
 Answer: created riot
 
 QuestionID: blogs-01-18
-Answer: 
+Answer: riot gear to alleviate
 
 QuestionID: blogs-02-1
 Answer: 
@@ -257,7 +257,7 @@ QuestionID: blogs-02-3
 Answer: 
 
 QuestionID: blogs-02-4
-Answer: e  I N   i t  P R P   w a n t e d  V B D   t h e  D T   y o u n g  J J   m a n  N N   t o  T O   k n o w  V B   t h e  D T   n a r r a t o r  N N   r e g r e t t i n g  V B G   t h a t  I N   i t  P R P   h a d  V B D   n o t  R B   a i d e d  V B N   h i m  P R P
+Answer: the spot of the yard
 
 QuestionID: blogs-02-5
 Answer: the house
@@ -278,7 +278,7 @@ QuestionID: blogs-02-10
 Answer: 
 
 QuestionID: blogs-02-11
-Answer: the flash was
+Answer: the flash
 
 QuestionID: blogs-02-12
 Answer: some bright flash
@@ -314,10 +314,10 @@ QuestionID: blogs-03-6
 Answer: a store
 
 QuestionID: blogs-03-7
-Answer: the narrator had
+Answer: the narrator
 
 QuestionID: blogs-03-8
-Answer: e  I N   i t  P R P   o w n e d  V B D   a  D T   g r o u p  N N   o f  I N   t r e e s  N N S   a n d  C C   n e a r  I N   t h e  D T   h o u s e  N N   o f  I N   t h e  D T   n a r r a t o r  N N
+Answer: because it owned a group of trees
 
 QuestionID: blogs-03-9
 Answer: the family
@@ -335,7 +335,7 @@ QuestionID: blogs-03-13
 Answer: the narrator
 
 QuestionID: blogs-03-14
-Answer: the narrator began
+Answer: the narrator
 
 QuestionID: blogs-03-15
 Answer: wife
@@ -374,10 +374,10 @@ QuestionID: blogs-04-11
 Answer: the squirrels
 
 QuestionID: blogs-04-12
-Answer: 
+Answer: the bowl on the deck
 
 QuestionID: blogs-04-13
-Answer: 
+Answer: themselves on the deck
 
 QuestionID: blogs-04-14
 Answer: a large stainless steel bowl of water
