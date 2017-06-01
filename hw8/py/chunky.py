@@ -110,7 +110,7 @@ def find_best_sentence(question, fnames):
     print(fnames)
 
     # raw story / sch
-    dataset = "hw7_dataset"
+    dataset = "hw8_dataset"
     text = [unzip_corpus(dataset + ".zip", dataset + "/" + f) for f in fnames]
 
     # get words for every sentence in sentence

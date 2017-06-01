@@ -51,7 +51,7 @@ def start(filename_arg):
     pickles_par_path = 'par/'
 
     #zipfile
-    input_file = "../hw7_dataset.zip"
+    input_file = "../hw8_dataset.zip"
 
     #filenames such as fables-01, fables-02, ect.
     filenames = process_questions.get_file_order(filename_arg)
@@ -66,7 +66,7 @@ def start(filename_arg):
     reg_ques = list(collections.OrderedDict.fromkeys(reg_ques).items())
     reg_ques = [first for first, second in reg_ques]
 
-    #print(reg_ques)
+    print(reg_ques)
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence

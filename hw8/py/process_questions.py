@@ -84,7 +84,7 @@ def pickler(filename,data):
     f.close()
 
 def get_file_order(filename):
-    return unzip_corpus('hw7_dataset.zip','hw7_dataset/' + filename).splitlines()
+    return unzip_corpus('hw8_dataset.zip','hw8_dataset/' + filename).splitlines()
 
 def quick_mkdir(newpath):
     if not os.path.exists(newpath):
@@ -164,7 +164,7 @@ def start(filename_arg):
     # quick_mkdir(pickles_path + pickles_dep_path)
 
 
-    input_file = "hw7_dataset.zip"
+    input_file = "hw8_dataset.zip"
 
     #Questions:
     # question_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.questions') for i in range(len(question_order))]
@@ -172,7 +172,7 @@ def start(filename_arg):
 
 
     #Questions + Answers:
-    answer_raw = [unzip_corpus(input_file, 'hw7_dataset/' + question_order[i] + '.answers') for i in range(len(question_order))]
+    answer_raw = [unzip_corpus(input_file, 'hw8_dataset/' + question_order[i] + '.answers') for i in range(len(question_order))]
     questionID, question, q_type, diff, answer = question_process(answer_raw,1,True)
 
 
@@ -181,7 +181,7 @@ def start(filename_arg):
     # dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
     # # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
     # print(dep_graphs)
-    dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw7_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw8_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
     dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
     # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
     # print(dep_graphs)
