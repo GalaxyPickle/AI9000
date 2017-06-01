@@ -181,8 +181,8 @@ def start(filename_arg):
     # dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
     # # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
     # print(dep_graphs)
-    dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw8_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
-    dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
+    # dep_graphs_listofEachFile = [dep_parse.read_dep_parses(input_file,'hw8_dataset/' + question_order[i] + '.questions.dep') for i in range(len(question_order))]
+    # dep_graphs = [j for i in dep_graphs_listofEachFile for j in i]
     # [print(DependencyGraph(y)) for val in dep_graphs for (x,y) in val]
     # print(dep_graphs)
 
@@ -223,7 +223,7 @@ def start(filename_arg):
 
 
 if __name__ == '__main__':
-    start('process_stories.txt')
+    start('hw8_process_stories.txt')
 
 
 
