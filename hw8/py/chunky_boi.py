@@ -133,7 +133,7 @@ def decide(q, s):
         #('the', 'DT'), ('house', 'NN'), ('of', 'IN'), ('the', 'DT'), ('narrator', 'NN')
         # r = r'(\S+/IN)?\s?(\S+/DT)?\s?(\S+/JJ)*\s?(\S+/NN)+(\S+/VB\w?)?\s?(\S+/RB)?'
             print('what did')
-            r = r'(\S+/TO)?\s?(\S+/DT)?\s?(\S+/VB\w?)?\s?(\S+/JJ)*\s?(\S+/NN)+\s?(\S+/NN)?\s?(\S+/NN)?\s?(\S+/IN)?\s?(\S+/DT)?\s?(\S+/NN)*\s?'
+            r = r'(\S+/TO)?\s?(\S+/DT)?\s?(\S+/VB\w?)?\s?(\S+/JJ)*\s?(\S+/NN\w?)+\s?(\S+/NN\w?)?\s?(\S+/NN\w?)?\s?(\S+/IN)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/DT)?\s?(\S+/NN\w?)?'
             #(\S+/DT)?\s?(\S+/TO)?\s?(\S+/VB\w?)?\s?(\S+/NN)*\s?(\S+/VB\w?)?\s?(\S+/JJ)*\s?(\S+/NN)?\s?(\S+/RB\w?)?'
         elif 'happened' in search_words:
             #('police', 'NNP'), ('cars', 'NNS'), ('were', 'VBD'), ('burned', 'VBN')
@@ -162,7 +162,7 @@ def decide(q, s):
         print('why')
         #('in', 'IN'), ('order', 'NN'), ('for', 'IN'), ('the', 'DT'), ('birds', 'NNS'), ('to', 'TO'), ('wait', 'VB')
         #('because', 'IN'), ('it', 'PRP'), ('owned', 'VBD'), ('a', 'DT'), ('group', 'NN'), ('of', 'IN'), ('trees', 'NNS'), ('and', 'CC'), ('near', 'IN'), ('the', 'DT'), ('house', 'NN')
-        r = r'(\S+/IN)*\s?(\S+/PRP)?\s?(\S+/NN\w?)?\s?(\S+/VBD)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/IN)*\s?(\S+/DT)*\s?(\S+/NN\w?)+\s?(\S+/TO)?\s?(\S+/VB\w?)?'
+        r = r'(\S+/IN)*\s?(\S+/PRP)?\s?(\S+/NN\w?)?\s?(\S+/VBD)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/IN)*\s?(\S+/DT)*\s?(\S+/RB)?\s?(\S+/JJ)?\s?(\S+/NN\w?)+\s?(\S+/TO)?\s?(\S+/VB\w?)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/DT)?\s?(\S+/NN\w?)?\s?(\S+/DT)?\s?(\S+/NN\w?)?'
         # r = r'(?<=because).+'
         #looks for because
 
