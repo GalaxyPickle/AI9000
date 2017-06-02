@@ -101,24 +101,26 @@ def baseline_word2vec_verb(question, sentences, stopwords, W2vecextractor, q_ver
 
 if __name__ == '__main__':
 
+    dataset = 'hw8_dataset/'
+
     W2vecextractor = Word2vecExtractor()
-    text_file = "fables-01.sch"
+    text_file = dataset + "fables-01.sch"
 	
     stopwords = set(nltk.corpus.stopwords.words("english"))
     text = read_file(text_file)
     question = "Where was the crow sitting?"
 
-    qgraphs = read_dep_parses("fables-01.questions.dep")
+    qgraphs = read_dep_parses(dataset + "fables-01.questions.dep")
     qgraph = qgraphs[0]
     q_verb = find_main(qgraph)['word']
-    ans_dep_file = "fables-01.sch.dep"
+    ans_dep_file = dataset + "fables-01.sch.dep"
     sgraphs = read_dep_parses(ans_dep_file)
 
     sentences = get_sentences(text)
 	
     #answer = baseline(question, sentences, stopwords)
-    answer = baseline_word2vec(question, sentences, stopwords, W2vecextractor)
-    #answer = baseline_word2vec_verb(question, sentences, stopwords, W2vecextractor, q_verb, sgraphs)
+    #answer = baseline_word2vec(question, sentences, stopwords, W2vecextractor)
+    answer = baseline_word2vec_verb(question, sentences, stopwords, W2vecextractor, q_verb, sgraphs)
 
     print("The answer is: \n"+str(answer))
 

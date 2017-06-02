@@ -1,5 +1,6 @@
 # Compiled source #
 ###################
+GoogleNews-vectors-negative300.bin
 *.pickle
 *.pyc
 *.com
