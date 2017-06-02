@@ -1,0 +1,699 @@
+QuestionID: blogs-01-1
+Answer: meeting
+
+QuestionID: blogs-01-2
+Answer: meeting
+
+QuestionID: blogs-01-3
+Answer: along the street
+
+QuestionID: blogs-01-4
+Answer: a police car
+
+QuestionID: blogs-01-5
+Answer: the people
+
+QuestionID: blogs-01-6
+Answer: the people
+
+QuestionID: blogs-01-7
+Answer: the people burned
+
+QuestionID: blogs-01-8
+Answer: the people
+
+QuestionID: blogs-01-9
+Answer: and things were thrown
+
+QuestionID: blogs-01-10
+Answer: things were thrown
+
+QuestionID: blogs-01-11
+Answer: things got
+
+QuestionID: blogs-01-12
+Answer: things got
+
+QuestionID: blogs-01-13
+Answer: things got
+
+QuestionID: blogs-01-14
+Answer: the police
+
+QuestionID: blogs-01-15
+Answer: things
+
+QuestionID: blogs-01-16
+Answer: because it disagreed about a view
+
+QuestionID: blogs-01-17
+Answer: created riot
+
+QuestionID: blogs-01-18
+Answer: the violence
+
+QuestionID: blogs-01-19
+Answer: the police
+
+QuestionID: blogs-01-20
+Answer: the people
+
+QuestionID: blogs-01-21
+Answer: the police
+
+QuestionID: blogs-01-22
+Answer: a summit meeting
+
+QuestionID: blogs-01-23
+Answer: a summit
+
+QuestionID: blogs-01-24
+Answer: the police
+
+QuestionID: blogs-02-1
+Answer: a few years
+
+QuestionID: blogs-02-2
+Answer: a few years
+
+QuestionID: blogs-02-3
+Answer: 
+
+QuestionID: blogs-02-4
+Answer: the spot of the yard
+
+QuestionID: blogs-02-5
+Answer: the house
+
+QuestionID: blogs-02-6
+Answer: a young man
+
+QuestionID: blogs-02-7
+Answer: logical mind
+
+QuestionID: blogs-02-8
+Answer: a young man
+
+QuestionID: blogs-02-9
+Answer: the narrator
+
+QuestionID: blogs-02-10
+Answer: a few years
+
+QuestionID: blogs-02-11
+Answer: the flash
+
+QuestionID: blogs-02-12
+Answer: some bright flash
+
+QuestionID: blogs-02-13
+Answer: a few years ago
+
+QuestionID: blogs-02-14
+Answer: the motorbike
+
+QuestionID: blogs-02-15
+Answer: the motorbike
+
+QuestionID: blogs-02-16
+Answer: the narrator
+
+QuestionID: blogs-02-17
+Answer: to the spot of the yard
+
+QuestionID: blogs-02-18
+Answer: a young man
+
+QuestionID: blogs-02-19
+Answer: the house
+
+QuestionID: blogs-02-20
+Answer: a young man
+
+QuestionID: blogs-03-1
+Answer: hurricane gustav
+
+QuestionID: blogs-03-2
+Answer: the storm
+
+QuestionID: blogs-03-3
+Answer: winds
+
+QuestionID: blogs-03-4
+Answer: president
+
+QuestionID: blogs-03-5
+Answer: in louisiana
+
+QuestionID: blogs-03-6
+Answer: a store
+
+QuestionID: blogs-03-7
+Answer: the narrator
+
+QuestionID: blogs-03-8
+Answer: because it owned a group of trees
+
+QuestionID: blogs-03-9
+Answer: the family
+
+QuestionID: blogs-03-10
+Answer: the narrator
+
+QuestionID: blogs-03-11
+Answer: an area
+
+QuestionID: blogs-03-12
+Answer: the tree split
+
+QuestionID: blogs-03-13
+Answer: the narrator
+
+QuestionID: blogs-03-14
+Answer: the narrator
+
+QuestionID: blogs-03-15
+Answer: wife
+
+QuestionID: blogs-03-16
+Answer: the narrator
+
+QuestionID: blogs-03-17
+Answer: storm was occurring
+
+QuestionID: blogs-03-18
+Answer: the narrator
+
+QuestionID: blogs-03-19
+Answer: storm
+
+QuestionID: blogs-03-20
+Answer: the narrator
+
+QuestionID: blogs-04-1
+Answer: the squirrel
+
+QuestionID: blogs-04-2
+Answer: the squirrel
+
+QuestionID: blogs-04-3
+Answer: the squirrel
+
+QuestionID: blogs-04-4
+Answer: the bowl
+
+QuestionID: blogs-04-5
+Answer: squirrels
+
+QuestionID: blogs-04-6
+Answer: 
+
+QuestionID: blogs-04-7
+Answer: those times
+
+QuestionID: blogs-04-8
+Answer: the day
+
+QuestionID: blogs-04-9
+Answer: line
+
+QuestionID: blogs-04-10
+Answer: on the deck
+
+QuestionID: blogs-04-11
+Answer: the squirrels
+
+QuestionID: blogs-04-12
+Answer: themselves on the deck railing
+
+QuestionID: blogs-04-13
+Answer: a large stainless steel bowl of water
+
+QuestionID: blogs-04-14
+Answer: the bowl
+
+QuestionID: blogs-04-15
+Answer: the birds
+
+QuestionID: blogs-05-1
+Answer: a group
+
+QuestionID: blogs-05-2
+Answer: the group of students
+
+QuestionID: blogs-05-3
+Answer: the ankle
+
+QuestionID: blogs-05-4
+Answer: resumed teaching
+
+QuestionID: blogs-05-5
+Answer: the narrator
+
+QuestionID: blogs-05-6
+Answer: the slip
+
+QuestionID: blogs-05-7
+Answer: way
+
+QuestionID: blogs-05-8
+Answer: embarassing moments as a teacher
+
+QuestionID: blogs-05-9
+Answer: underslip
+
+QuestionID: blogs-05-10
+Answer: the slip
+
+QuestionID: blogs-05-11
+Answer: the group of students saw
+
+QuestionID: blogs-05-12
+Answer: the narrator
+
+QuestionID: blogs-05-13
+Answer: share
+
+QuestionID: blogs-05-14
+Answer: that day
+
+QuestionID: blogs-05-15
+Answer: no one
+
+QuestionID: blogs-05-16
+Answer: the ankle
+
+QuestionID: blogs-05-17
+Answer: a group of students
+
+QuestionID: blogs-06-1
+Answer: the broiler
+
+QuestionID: blogs-06-2
+Answer: a group of treats
+
+QuestionID: blogs-06-3
+Answer: the husband
+
+QuestionID: blogs-06-4
+Answer: the door of the oven
+
+QuestionID: blogs-06-5
+Answer: a couple
+
+QuestionID: blogs-06-6
+Answer: the oven
+
+QuestionID: blogs-06-7
+Answer: the oven
+
+QuestionID: blogs-06-8
+Answer: the fire extinguisher worked
+
+QuestionID: blogs-06-9
+Answer: a plug-in burner
+
+QuestionID: blogs-06-10
+Answer: because the broiler
+
+QuestionID: blogs-06-11
+Answer: the ceiling
+
+QuestionID: blogs-06-12
+Answer: the fire
+
+QuestionID: blogs-06-13
+Answer: the door of the oven
+
+QuestionID: blogs-06-14
+Answer: new range
+
+QuestionID: blogs-06-15
+Answer: a batch of cookies
+
+QuestionID: blogs-06-16
+Answer: the oven
+
+QuestionID: blogs-06-17
+Answer: the husband
+
+QuestionID: blogs-06-18
+Answer: the broiler
+
+QuestionID: fables-01-1
+Answer: on a branch
+
+QuestionID: fables-01-2
+Answer: a branch of a tree
+
+QuestionID: fables-01-3
+Answer: a crow
+
+QuestionID: fables-01-4
+Answer: the crow
+
+QuestionID: fables-01-5
+Answer: under the tree
+
+QuestionID: fables-01-6
+Answer: the fox
+
+QuestionID: fables-01-7
+Answer: the fox
+
+QuestionID: fables-01-8
+Answer: 
+
+QuestionID: fables-01-9
+Answer: in the beak
+
+QuestionID: fables-01-10
+Answer: a crow
+
+QuestionID: fables-01-11
+Answer: a fox
+
+QuestionID: fables-01-12
+Answer: the beauty of the bird
+
+QuestionID: fables-01-13
+Answer: loudly
+
+QuestionID: fables-01-14
+Answer: the crow
+
+QuestionID: fables-01-15
+Answer: a fox
+
+QuestionID: fables-01-16
+Answer: the fox
+
+QuestionID: fables-01-17
+Answer: the crow
+
+QuestionID: fables-01-18
+Answer: the crow
+
+QuestionID: fables-02-1
+Answer: a lion
+
+QuestionID: fables-02-2
+Answer: the bull
+
+QuestionID: fables-02-3
+Answer: 
+
+QuestionID: fables-02-4
+Answer: the bull
+
+QuestionID: fables-02-5
+Answer: a lion
+
+QuestionID: fables-02-6
+Answer: the bull
+
+QuestionID: fables-02-7
+Answer: a lion
+
+QuestionID: fables-02-8
+Answer: the bull
+
+QuestionID: fables-02-9
+Answer: the bull
+
+QuestionID: fables-02-10
+Answer: the bull because the lion feared
+
+QuestionID: fables-02-11
+Answer: the bull because the lion
+
+QuestionID: fables-02-12
+Answer: dear friend
+
+QuestionID: fables-02-13
+Answer: a lion
+
+QuestionID: fables-02-14
+Answer: because the lion wanted
+
+QuestionID: fables-02-15
+Answer: the bull
+
+QuestionID: fables-02-16
+Answer: every horn of the bull
+
+QuestionID: fables-02-17
+Answer: the bull
+
+QuestionID: fables-02-18
+Answer: the lion
+
+QuestionID: fables-02-19
+Answer: a fat bull
+
+QuestionID: fables-02-20
+Answer: because the lion wanted
+
+QuestionID: fables-02-21
+Answer: the bull
+
+QuestionID: fables-02-22
+Answer: the bull
+
+QuestionID: fables-02-23
+Answer: the lion
+
+QuestionID: fables-03-1
+Answer: an eagle
+
+QuestionID: fables-03-2
+Answer: an eagle
+
+QuestionID: fables-03-3
+Answer: a serpent
+
+QuestionID: fables-03-4
+Answer: a countryman
+
+QuestionID: fables-03-5
+Answer: an eagle
+
+QuestionID: fables-03-6
+Answer: in revenge
+
+QuestionID: fables-03-7
+Answer: the drinking vessel
+
+QuestionID: fables-03-8
+Answer: the eagle
+
+QuestionID: fables-03-9
+Answer: the drinking vessel
+
+QuestionID: fables-03-10
+Answer: exertions
+
+QuestionID: fables-03-11
+Answer: exertions
+
+QuestionID: fables-03-12
+Answer: poison into the man
+
+QuestionID: fables-03-13
+Answer: an eagle
+
+QuestionID: fables-03-14
+Answer: the eagle fought
+
+QuestionID: fables-03-15
+Answer: a countryman
+
+QuestionID: fables-03-16
+Answer: a countryman
+
+QuestionID: fables-03-17
+Answer: a drinking vessel
+
+QuestionID: fables-03-18
+Answer: a countryman
+
+QuestionID: fables-03-19
+Answer: a drinking vessel
+
+QuestionID: fables-03-20
+Answer: some poison in the drinking vessel
+
+QuestionID: fables-03-21
+Answer: exertions
+
+QuestionID: fables-03-22
+Answer: an eagle
+
+QuestionID: fables-03-23
+Answer: the serpent
+
+QuestionID: fables-03-24
+Answer: an eagle
+
+QuestionID: fables-03-25
+Answer: an eagle
+
+QuestionID: fables-03-26
+Answer: a countryman
+
+QuestionID: fables-03-27
+Answer: some poison
+
+QuestionID: fables-04-1
+Answer: a stork
+
+QuestionID: fables-04-2
+Answer: a fox invited
+
+QuestionID: fables-04-3
+Answer: the fox
+
+QuestionID: fables-04-4
+Answer: a clever fox
+
+QuestionID: fables-04-5
+Answer: some soup in a
+
+QuestionID: fables-04-6
+Answer: some food
+
+QuestionID: fables-04-7
+Answer: the long bill of the stork
+
+QuestionID: fables-04-8
+Answer: the tempting contents
+
+QuestionID: fables-04-9
+Answer: the fox lapped
+
+QuestionID: fables-04-10
+Answer: the stork
+
+QuestionID: fables-04-11
+Answer: the stork
+
+QuestionID: fables-04-12
+Answer: a stork
+
+QuestionID: fables-04-13
+Answer: the fox
+
+QuestionID: fables-04-14
+Answer: the stork
+
+QuestionID: fables-04-15
+Answer: the stork
+
+QuestionID: fables-04-16
+Answer: the fox
+
+QuestionID: fables-04-17
+Answer: the stork
+
+QuestionID: fables-05-1
+Answer: a fox
+
+QuestionID: fables-05-2
+Answer: as ill-luck
+
+QuestionID: fables-05-3
+Answer: fire
+
+QuestionID: fables-05-4
+Answer: the agriculturist
+
+QuestionID: fables-05-5
+Answer: some fiber
+
+QuestionID: fables-05-6
+Answer: the agriculturist
+
+QuestionID: fables-05-7
+Answer: the corn
+
+QuestionID: fables-05-8
+Answer: the agriculturist
+
+QuestionID: fables-05-9
+Answer: a fox
+
+QuestionID: fables-05-10
+Answer: the agriculturist
+
+QuestionID: fables-05-11
+Answer: the agriculturist
+
+QuestionID: fables-05-12
+Answer: because the fox ran
+
+QuestionID: fables-05-13
+Answer: the corn
+
+QuestionID: fables-05-14
+Answer: the fowl
+
+QuestionID: fables-05-15
+Answer: the fox
+
+QuestionID: fables-05-16
+Answer: the fox
+
+QuestionID: fables-06-1
+Answer: in a lair
+
+QuestionID: fables-06-2
+Answer: the mouse
+
+QuestionID: fables-06-3
+Answer: the idea
+
+QuestionID: fables-06-4
+Answer: the lion
+
+QuestionID: fables-06-5
+Answer: because a mouse ran
+
+QuestionID: fables-06-6
+Answer: order
+
+QuestionID: fables-06-7
+Answer: the lion
+
+QuestionID: fables-06-8
+Answer: the rope of the
+
+QuestionID: fables-06-9
+Answer: asleep
+
+QuestionID: fables-06-10
+Answer: in order to catch a
+
+QuestionID: fables-06-11
+Answer: the mouse
+
+QuestionID: fables-06-12
+Answer: the voice of the lion
+
+QuestionID: fables-06-13
+Answer: ado
+
+QuestionID: fables-06-14
+Answer: a lion
+
+QuestionID: fables-06-15
+Answer: the mouse
+
+QuestionID: fables-06-16
+Answer: the lion laughed
+
+QuestionID: fables-06-17
+Answer: the lion
+
+QuestionID: fables-06-18
+Answer: order
+

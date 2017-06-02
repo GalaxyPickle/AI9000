@@ -155,15 +155,21 @@ def chunk(fnames, question, q_type):
         q_type = q_type.split('|')
     else:
         q_type = [q_type]
+    q_type = [w.strip() for w in q_type]
 
     fnames = [fnames + '.' + t.lower() for t in q_type]
 
     answer_sentence, qbow = find_best_sentence(question, fnames)
 
     if answer_sentence == None:
-        return ""
+        answer = ""
+    else:
+        answer = chunky_boi.mah_boi(qbow, answer_sentence[0])
 
-    return chunky_boi.mah_boi(qbow, answer_sentence[0])
+    # if answer == "":
+    #     answer = question
+
+    return answer
 
 
 if __name__ == '__main__':

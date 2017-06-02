@@ -11,7 +11,7 @@ Modified on May 23, 2017 by geetanjali
 import sys, nltk, operator
 from sklearn.metrics.pairwise import cosine_similarity
 from word2vec_extractor import Word2vecExtractor
-from dependency_demo_stub import read_dep_parses, find_main
+from dependency_demo_new_stub import read_dep_parses, find_main
 
 
 # Read the file from disk

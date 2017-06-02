@@ -69,6 +69,12 @@ def find_node(word, graph):
             return node
     return None
 
+def find_main(graph):
+    for node in graph.nodes.values():
+        if node['rel'] == 'ROOT':
+            return node
+    return None
+
 def get_dependents(node, graph):
     results = []
     for item in node["deps"]:

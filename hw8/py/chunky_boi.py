@@ -43,7 +43,9 @@ def get_phrase(pos_sent, r):
     ret = []
     for tup in matches:
 
-        mini_list = [ w.split('/')[0] for w in tup if w != '']
+        mini_list = [ w.split(' ') for w in tup]
+        # print(mini_list)
+        mini_list = [ sack.split('/')[0] for w in mini_list for sack in w if sack != '']
 
         ret.append(mini_list)
 
@@ -68,7 +70,7 @@ def decide(q, s):
 
     # ----------------------------------------------------------------------------------------
 
-    print("Q: ", q)
+    # print("Q: ", q)
 
     stopwords = set(nltk.corpus.stopwords.words("english"))
 
@@ -168,7 +170,7 @@ def decide(q, s):
 
     elif 'how' in search_words:
         print('how')
-        r = r'(\S+/ninininininin)*\s?(\S+/RB)+\s?'
+        r = r'(\S+/wowthisisareallylongregexexpressionthatworksgreatanditisawesome)*\s?(\S+/RB)+\s?'
 
     answers = get_phrase(s_proc_nostem, r)
 
@@ -182,7 +184,7 @@ def decide(q, s):
         if remove:
             answers.remove(answer)
 
-    print(answers)
+    # print(answers)
 
     if len(answers) > 0:
         answer = ' '.join(w for w in answers[0])

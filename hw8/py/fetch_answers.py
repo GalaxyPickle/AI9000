@@ -66,7 +66,7 @@ def start(filename_arg):
     reg_ques = list(collections.OrderedDict.fromkeys(reg_ques).items())
     reg_ques = [first for first, second in reg_ques]
 
-    print(reg_ques)
+    #print(reg_ques)
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
