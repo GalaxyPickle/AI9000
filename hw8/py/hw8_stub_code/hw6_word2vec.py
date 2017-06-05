@@ -148,7 +148,7 @@ if __name__ == '__main__':
     else:
              output_file = open("train_my_answers.txt", "w", encoding="utf-8")
 
-    cname_size_dict = OrderedDict();
+    cname_size_dict = OrderedDict()
     cname_size_dict.update({"fables":2})
     cname_size_dict.update({"blogs":1})
     for cname, size in cname_size_dict.items():
