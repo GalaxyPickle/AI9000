@@ -162,13 +162,12 @@ def chunk(fnames, question, q_type):
     answer_sentence, qbow = find_best_sentence(question, fnames)
 
     answer_sentence = ' '.join(word for word, tag in answer_sentence[0])
-    answer_sentence = answer_sentence[1:len(answer_sentence)]
 
-    # print("FNAME FNAME: ", fnames[0])
+    print("FNAME FNAME: ", fnames[0])
 
-    # print("QUESTION QUESTION: ", question)
+    print("QUESTION QUESTION: ", question)
 
-    # print("ANSWER SENT ANSWER SENT: ", answer_sentence)
+    print("ANSWER SENT ANSWER SENT: ", answer_sentence)
 
     # if answer_sentence == None:
     #     answer = ""
