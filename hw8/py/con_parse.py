@@ -206,25 +206,33 @@ def q_determine(question,tree):
 
 def get_index(answer_sentence,paths):
     fh = open(paths, 'r')
-    lines = fh.readlines()
+    lines = fh.read()
     fh.close()
 
     # fname = paths[0]
-
-    lines = [x.splitlines() for x in lines]
-    lines = [x.split('.') for val in lines for x in val if '' not in val]
-    lines = [" ".join(x.split()) for val in lines for x in val]
+    # lines = [' '.join(x.splitlines()) for x in lines]
+    lines = ''.join(lines.replace('"',''))
+    lines = ' '.join(lines.splitlines())
+    # lines = ' '.join(lines)
+    print(lines)
+    lines = re.split(r"(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<![A-Z][a-z][a-z]\.)(?<![a-z]\.\.\.)(?<=\.|\?|\!)\s",lines) 
+    print(lines)
+    # lines = [x.split('.') for val in lines for x in val if '' not in val]
+    lines = [" ".join(x.split()) for x in lines]
     lines = [x.replace(' ','') for x in lines]
-    lines = [x.replace(',','') for x in lines]
+    # lines = [x.replace(',','') for x in lines]
     lines = [x.lower() for x in lines]
     lines = list(filter(None,lines))
     print(lines)
-    answer_sentence = ' '.join(answer_sentence.replace('.','').split())
-    answer_sentence = ' '.join(answer_sentence.replace(',','').split())
+    # answer_sentence = ' '.join(answer_sentence.replace('.','').split())
+    # answer_sentence = ' '.join(answer_sentence.replace(',','').split())
+    # answer_sentence = ' '.join(answer_sentence.replace(',','').split())
+
     answer_sentence = answer_sentence.lower()
 
     answer_sentence = answer_sentence.replace(' ','')
     print(answer_sentence)
+
 
     # try:
 

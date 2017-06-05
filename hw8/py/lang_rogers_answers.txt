@@ -1,0 +1,699 @@
+QuestionID: blogs-01-1
+Answer: answer was none.
+
+QuestionID: blogs-01-2
+Answer: A summit meeting named G20 summit
+
+QuestionID: blogs-01-3
+Answer: along the street
+
+QuestionID: blogs-01-4
+Answer: a police car
+
+QuestionID: blogs-01-5
+Answer: The people
+
+QuestionID: blogs-01-6
+Answer: The people
+
+QuestionID: blogs-01-7
+Answer: The people
+
+QuestionID: blogs-01-8
+Answer: The people
+
+QuestionID: blogs-01-9
+Answer: Police cars
+
+QuestionID: blogs-01-10
+Answer: Police cars
+
+QuestionID: blogs-01-11
+Answer: things
+
+QuestionID: blogs-01-12
+Answer: things
+
+QuestionID: blogs-01-13
+Answer: things
+
+QuestionID: blogs-01-14
+Answer: The police
+
+QuestionID: blogs-01-15
+Answer: things
+
+QuestionID: blogs-01-16
+Answer: because it disagreed about a view
+
+QuestionID: blogs-01-17
+Answer: riot
+
+QuestionID: blogs-01-18
+Answer: answer was none.
+
+QuestionID: blogs-01-19
+Answer: The police
+
+QuestionID: blogs-01-20
+Answer: The people
+
+QuestionID: blogs-01-21
+Answer: The police
+
+QuestionID: blogs-01-22
+Answer: A summit meeting named G20 summit
+
+QuestionID: blogs-01-23
+Answer: A summit meeting named G20 summit
+
+QuestionID: blogs-01-24
+Answer: The police
+
+QuestionID: blogs-02-1
+Answer: A few years
+
+QuestionID: blogs-02-2
+Answer: on my front lawn
+
+QuestionID: blogs-02-3
+Answer: I
+
+QuestionID: blogs-02-4
+Answer: because it wanted the young man to know the narrator regretting that it had not aided him
+
+QuestionID: blogs-02-5
+Answer: of the narrator
+
+QuestionID: blogs-02-6
+Answer: the motorbike of the young man
+
+QuestionID: blogs-02-7
+Answer: my logical mind
+
+QuestionID: blogs-02-8
+Answer: A young man
+
+QuestionID: blogs-02-9
+Answer: The narrator
+
+QuestionID: blogs-02-10
+Answer: A few years
+
+QuestionID: blogs-02-11
+Answer: the flash
+
+QuestionID: blogs-02-12
+Answer: The narrator
+
+QuestionID: blogs-02-13
+Answer: when he crashed his motorbike
+
+QuestionID: blogs-02-14
+Answer: of the young man
+
+QuestionID: blogs-02-15
+Answer: A young man
+
+QuestionID: blogs-02-16
+Answer: The narrator
+
+QuestionID: blogs-02-17
+Answer: the spot of the yard of the narrator
+
+QuestionID: blogs-02-18
+Answer: A young man
+
+QuestionID: blogs-02-19
+Answer: The narrator
+
+QuestionID: blogs-02-20
+Answer: the motorbike of the young man
+
+QuestionID: blogs-03-1
+Answer: Louisiana
+
+QuestionID: blogs-03-2
+Answer: The storm
+
+QuestionID: blogs-03-3
+Answer: Winds
+
+QuestionID: blogs-03-4
+Answer: President Bush
+
+QuestionID: blogs-03-5
+Answer: in Louisiana
+
+QuestionID: blogs-03-6
+Answer: in order
+
+QuestionID: blogs-03-7
+Answer: a large group of pine trees
+
+QuestionID: blogs-03-8
+Answer: because it owned a group of trees
+
+QuestionID: blogs-03-9
+Answer: of the narrator
+
+QuestionID: blogs-03-10
+Answer: The narrator
+
+QuestionID: blogs-03-11
+Answer: An area of a neighborhood of the narrator
+
+QuestionID: blogs-03-12
+Answer: The tree
+
+QuestionID: blogs-03-13
+Answer: The narrator
+
+QuestionID: blogs-03-14
+Answer: the first tree
+
+QuestionID: blogs-03-15
+Answer: My wife , our five children , and our dog ,
+
+QuestionID: blogs-03-16
+Answer: The narrator
+
+QuestionID: blogs-03-17
+Answer: storm
+
+QuestionID: blogs-03-18
+Answer: The narrator
+
+QuestionID: blogs-03-19
+Answer: in Louisiana
+
+QuestionID: blogs-03-20
+Answer: The narrator
+
+QuestionID: blogs-04-1
+Answer: The squirrel
+
+QuestionID: blogs-04-2
+Answer: The squirrel
+
+QuestionID: blogs-04-3
+Answer: The squirrel 's paw
+
+QuestionID: blogs-04-4
+Answer: themselves
+
+QuestionID: blogs-04-5
+Answer: Squirrels
+
+QuestionID: blogs-04-6
+Answer: I
+
+QuestionID: blogs-04-7
+Answer: one of those times I wish I had a digital camera
+
+QuestionID: blogs-04-8
+Answer: the day
+
+QuestionID: blogs-04-9
+Answer: on the railing
+
+QuestionID: blogs-04-10
+Answer: on the deck in order for Benjamin
+
+QuestionID: blogs-04-11
+Answer: answer was none.
+
+QuestionID: blogs-04-12
+Answer: answer was none.
+
+QuestionID: blogs-04-13
+Answer: a large stainless steel bowl of water
+
+QuestionID: blogs-04-14
+Answer: answer was none.
+
+QuestionID: blogs-04-15
+Answer: The birds
+
+QuestionID: blogs-05-1
+Answer: There
+
+QuestionID: blogs-05-2
+Answer: the group of students for presence
+
+QuestionID: blogs-05-3
+Answer: The narrator
+
+QuestionID: blogs-05-4
+Answer: teaching
+
+QuestionID: blogs-05-5
+Answer: The narrator
+
+QuestionID: blogs-05-6
+Answer: the slip
+
+QuestionID: blogs-05-7
+Answer: I
+
+QuestionID: blogs-05-8
+Answer: I
+
+QuestionID: blogs-05-9
+Answer: that my underslip had somehow made its way to the floor
+
+QuestionID: blogs-05-10
+Answer: the slip
+
+QuestionID: blogs-05-11
+Answer: that the slip had fallen because the elastic of the slip was dysfunctional
+
+QuestionID: blogs-05-12
+Answer: The narrator
+
+QuestionID: blogs-05-13
+Answer: I
+
+QuestionID: blogs-05-14
+Answer: an eyelid
+
+QuestionID: blogs-05-15
+Answer: I
+
+QuestionID: blogs-05-16
+Answer: The narrator
+
+QuestionID: blogs-05-17
+Answer: a group of students and a narrator
+
+QuestionID: blogs-06-1
+Answer: An oven
+
+QuestionID: blogs-06-2
+Answer: a group of
+
+QuestionID: blogs-06-3
+Answer: The husband of the narrator
+
+QuestionID: blogs-06-4
+Answer: the door of the oven
+
+QuestionID: blogs-06-5
+Answer: A couple of weeks
+
+QuestionID: blogs-06-6
+Answer: The oven
+
+QuestionID: blogs-06-7
+Answer: answer was none.
+
+QuestionID: blogs-06-8
+Answer: the fire extinguisher
+
+QuestionID: blogs-06-9
+Answer: then
+
+QuestionID: blogs-06-10
+Answer: because the broiler of the oven activated
+
+QuestionID: blogs-06-11
+Answer: of the house
+
+QuestionID: blogs-06-12
+Answer: The fire
+
+QuestionID: blogs-06-13
+Answer: the door of the oven
+
+QuestionID: blogs-06-14
+Answer: my new range
+
+QuestionID: blogs-06-15
+Answer: a batch of cookies
+
+QuestionID: blogs-06-16
+Answer: The oven
+
+QuestionID: blogs-06-17
+Answer: The husband of the narrator
+
+QuestionID: blogs-06-18
+Answer: An oven
+
+QuestionID: fables-01-1
+Answer: on a branch of a tree with a piece of cheese in her beak
+
+QuestionID: fables-01-2
+Answer: a branch of a tree with a piece of cheese in her beak
+
+QuestionID: fables-01-3
+Answer: A Crow
+
+QuestionID: fables-01-4
+Answer: the crow
+
+QuestionID: fables-01-5
+Answer: under the tree
+
+QuestionID: fables-01-6
+Answer: the fox
+
+QuestionID: fables-01-7
+Answer: The crow
+
+QuestionID: fables-01-8
+Answer: There
+
+QuestionID: fables-01-9
+Answer: in the beak of the crow
+
+QuestionID: fables-01-10
+Answer: A Crow
+
+QuestionID: fables-01-11
+Answer: A fox
+
+QuestionID: fables-01-12
+Answer: the beauty of the bird
+
+QuestionID: fables-01-13
+Answer: answer was none.
+
+QuestionID: fables-01-14
+Answer: A fox
+
+QuestionID: fables-01-15
+Answer: A fox
+
+QuestionID: fables-01-16
+Answer: The fox
+
+QuestionID: fables-01-17
+Answer: The crow
+
+QuestionID: fables-01-18
+Answer: The crow
+
+QuestionID: fables-02-1
+Answer: A Lion
+
+QuestionID: fables-02-2
+Answer: The Bull
+
+QuestionID: fables-02-3
+Answer: answer was none.
+
+QuestionID: fables-02-4
+Answer: The bull
+
+QuestionID: fables-02-5
+Answer: A lion
+
+QuestionID: fables-02-6
+Answer: the bull
+
+QuestionID: fables-02-7
+Answer: A Lion
+
+QuestionID: fables-02-8
+Answer: The Bull
+
+QuestionID: fables-02-9
+Answer: the bull
+
+QuestionID: fables-02-10
+Answer: because the lion feared sharp every horn of the bull
+
+QuestionID: fables-02-11
+Answer: the bull
+
+QuestionID: fables-02-12
+Answer: my dear friend , what in the world makes you
+
+QuestionID: fables-02-13
+Answer: A lion
+
+QuestionID: fables-02-14
+Answer: because the lion wanted to eat the bull
+
+QuestionID: fables-02-15
+Answer: the bull to remove every horn of the bull because every horn of the bull was ugly
+
+QuestionID: fables-02-16
+Answer: because every horn of the bull was ugly
+
+QuestionID: fables-02-17
+Answer: the bull
+
+QuestionID: fables-02-18
+Answer: The lion
+
+QuestionID: fables-02-19
+Answer: There
+
+QuestionID: fables-02-20
+Answer: because the lion wanted to eat the bull
+
+QuestionID: fables-02-21
+Answer: the bull
+
+QuestionID: fables-02-22
+Answer: the bull
+
+QuestionID: fables-02-23
+Answer: The lion
+
+QuestionID: fables-03-1
+Answer: An Eagle
+
+QuestionID: fables-03-2
+Answer: An Eagle
+
+QuestionID: fables-03-3
+Answer: a Serpent
+
+QuestionID: fables-03-4
+Answer: A countryman , who was a witness of the encounter ,
+
+QuestionID: fables-03-5
+Answer: a Serpent
+
+QuestionID: fables-03-6
+Answer: In revenge the Serpent spat some of his poison into the man 's drinking-horn
+
+QuestionID: fables-03-7
+Answer: the drinking vessel
+
+QuestionID: fables-03-8
+Answer: The eagle
+
+QuestionID: fables-03-9
+Answer: the drinking vessel
+
+QuestionID: fables-03-10
+Answer: with his exertions
+
+QuestionID: fables-03-11
+Answer: his exertions
+
+QuestionID: fables-03-12
+Answer: the Serpent spat
+
+QuestionID: fables-03-13
+Answer: An Eagle
+
+QuestionID: fables-03-14
+Answer: The eagle
+
+QuestionID: fables-03-15
+Answer: A countryman , who was a witness of the encounter ,
+
+QuestionID: fables-03-16
+Answer: A countryman , who was a witness of the encounter ,
+
+QuestionID: fables-03-17
+Answer: a drinking vessel
+
+QuestionID: fables-03-18
+Answer: A countryman , who was a witness of the encounter ,
+
+QuestionID: fables-03-19
+Answer: a drinking vessel
+
+QuestionID: fables-03-20
+Answer: some poison
+
+QuestionID: fables-03-21
+Answer: his exertions
+
+QuestionID: fables-03-22
+Answer: An eagle
+
+QuestionID: fables-03-23
+Answer: The eagle
+
+QuestionID: fables-03-24
+Answer: a serpent
+
+QuestionID: fables-03-25
+Answer: An eagle
+
+QuestionID: fables-03-26
+Answer: A countryman who owned a drinking vessel
+
+QuestionID: fables-03-27
+Answer: in the drinking vessel
+
+QuestionID: fables-04-1
+Answer: A Fox
+
+QuestionID: fables-04-2
+Answer: A Fox
+
+QuestionID: fables-04-3
+Answer: in a flat and large dish
+
+QuestionID: fables-04-4
+Answer: A clever fox
+
+QuestionID: fables-04-5
+Answer: some soup
+
+QuestionID: fables-04-6
+Answer: because he was n't able to reach some food that was in the pitcher
+
+QuestionID: fables-04-7
+Answer: the long bill of the stork
+
+QuestionID: fables-04-8
+Answer: while she enjoyed her dinner
+
+QuestionID: fables-04-9
+Answer: The Fox
+
+QuestionID: fables-04-10
+Answer: The stork
+
+QuestionID: fables-04-11
+Answer: The stork
+
+QuestionID: fables-04-12
+Answer: A clever fox
+
+QuestionID: fables-04-13
+Answer: The fox
+
+QuestionID: fables-04-14
+Answer: The stork
+
+QuestionID: fables-04-15
+Answer: The stork
+
+QuestionID: fables-04-16
+Answer: some soup
+
+QuestionID: fables-04-17
+Answer: The stork
+
+QuestionID: fables-05-1
+Answer: A Farmer
+
+QuestionID: fables-05-2
+Answer: for the fields
+
+QuestionID: fables-05-3
+Answer: It
+
+QuestionID: fables-05-4
+Answer: The agriculturist set a
+
+QuestionID: fables-05-5
+Answer: onto the tail of the fox
+
+QuestionID: fables-05-6
+Answer: The agriculturist
+
+QuestionID: fables-05-7
+Answer: The corn
+
+QuestionID: fables-05-8
+Answer: The agriculturist
+
+QuestionID: fables-05-9
+Answer: a Fox , which came prowling about his yard at night and carried off his fowls
+
+QuestionID: fables-05-10
+Answer: The agriculturist set a
+
+QuestionID: fables-05-11
+Answer: The agriculturist
+
+QuestionID: fables-05-12
+Answer: because the fox ran into a field
+
+QuestionID: fables-05-13
+Answer: The corn
+
+QuestionID: fables-05-14
+Answer: He
+
+QuestionID: fables-05-15
+Answer: the fox
+
+QuestionID: fables-05-16
+Answer: An agriculturist
+
+QuestionID: fables-06-1
+Answer: in a lair
+
+QuestionID: fables-06-2
+Answer: The Mouse , terrified ,
+
+QuestionID: fables-06-3
+Answer: The idea of so insignificant a creature
+
+QuestionID: fables-06-4
+Answer: in a net which had been spread for game by some hunters
+
+QuestionID: fables-06-5
+Answer: because a mouse ran into the face of the lion
+
+QuestionID: fables-06-6
+Answer: A trapper
+
+QuestionID: fables-06-7
+Answer: The lion
+
+QuestionID: fables-06-8
+Answer: the rope of the net
+
+QuestionID: fables-06-9
+Answer: A Lion asleep in his lair
+
+QuestionID: fables-06-10
+Answer: in order to catch a big game
+
+QuestionID: fables-06-11
+Answer: The mouse
+
+QuestionID: fables-06-12
+Answer: the voice of the lion
+
+QuestionID: fables-06-13
+Answer: more ado
+
+QuestionID: fables-06-14
+Answer: There
+
+QuestionID: fables-06-15
+Answer: The mouse
+
+QuestionID: fables-06-16
+Answer: because he thought that the mouse is extremely not able to help him
+
+QuestionID: fables-06-17
+Answer: The lion
+
+QuestionID: fables-06-18
+Answer: some net
+
