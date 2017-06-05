@@ -410,7 +410,7 @@ def mr_toads_wild_ride(answer_sentence, question, fname):
     answer = q_determine(question,tree)
 
     if answer is not None and answer is not 'nopes':
-        # print('answer: ' + ' '.join(answer.leaves()))
+        print('answer: ' + ' '.join(answer.leaves()))
  
 
 
