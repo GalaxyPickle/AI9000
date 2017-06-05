@@ -154,7 +154,7 @@ def find_best_sentence(question, fnames):
 # 2. use super s1ck algorithms to find the best sentence
 #   (if story | sch, open both and find best matching sentence)
 # 3. return best sentence
-def chunk(fnames, question, q_type):
+def chunk(fnames, question, q_type,a):
 
     # ready storyname to open
     fnames = fnames.split('-')
@@ -189,6 +189,8 @@ def chunk(fnames, question, q_type):
     #con_parse.mr_toads_wild_ride("A trapper spread some net in order to catch a big game .","What did the hunter spread?",'fables-06.sch')
 
     answer = con_parse.mr_toads_wild_ride(answer_sentence, question, filename)
+    print(c.OKGREEN + "REAL ANSWER: " + c.ENDC + a)
+
 
     # if answer == "":
     #     answer = question

@@ -70,8 +70,10 @@ def start(filename_arg):
 
     # 2.
     # now we want to read from the proper story/sch for each question and find answer sentence
-    answers = [chunky.chunk(q_id, q, q_type)
+    answers = [chunky.chunk(q_id, q, q_type, a)
         for q_id, q, q_type, q_diff, a in reg_ques]
+
+
 
     # print(answers)
 

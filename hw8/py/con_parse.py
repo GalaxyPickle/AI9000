@@ -88,14 +88,14 @@ def subtree_master(pattern,tree):
         return 'nopes'
 
 
-    print(subtree)
-    print(" ".join(subtree.leaves()))
+    # print(subtree)
+    # print(" ".join(subtree.leaves()))
     return subtree
 
 
 def q_determine(question,tree):
     search_words = question.lower().split()
-    print(search_words)
+    # print(search_words)
     if 'who' in search_words:
         print('who')
         pattern = nltk.ParentedTree.fromstring("(NP (*) )")
@@ -214,16 +214,16 @@ def get_index(answer_sentence,paths):
     lines = ''.join(lines.replace('"',''))
     lines = ' '.join(lines.splitlines())
     # lines = ' '.join(lines)
-    print(lines)
+    # print(lines)
     lines = re.split(r"(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<![A-Z][a-z][a-z]\.)(?<![a-z]\.\.\.)(?<=\.|\?|\!)\s",lines) 
-    print(lines)
+    # print(lines)
     # lines = [x.split('.') for val in lines for x in val if '' not in val]
     lines = [" ".join(x.split()) for x in lines]
     lines = [x.replace(' ','') for x in lines]
     # lines = [x.replace(',','') for x in lines]
     lines = [x.lower() for x in lines]
     lines = list(filter(None,lines))
-    print(lines)
+    # print(lines)
     # answer_sentence = ' '.join(answer_sentence.replace('.','').split())
     # answer_sentence = ' '.join(answer_sentence.replace(',','').split())
     # answer_sentence = ' '.join(answer_sentence.replace(',','').split())
@@ -231,7 +231,7 @@ def get_index(answer_sentence,paths):
     answer_sentence = answer_sentence.lower()
 
     answer_sentence = answer_sentence.replace(' ','')
-    print(answer_sentence)
+    # print(answer_sentence)
 
 
     # try:
@@ -288,7 +288,7 @@ def mr_toads_wild_ride(answer_sentence, question, fname):
     #gets file name, ex: fables-02
     #how to append? .+type ex: .story ONLY SEND IN ONE TYPE AT A TIME
     par_path = folder + fname + '.par'
-    print(par_path)
+    # print(par_path)
 
     
     # Read the constituency parses into a list 
@@ -298,14 +298,13 @@ def mr_toads_wild_ride(answer_sentence, question, fname):
     # We choose trees[1] because we already know that the answer we're looking
     # for is in the second sentence of the text
     tree = trees[index]
-    print(tree)
+    # print(tree)
 
     answer = q_determine(question,tree)
 
     if answer is not None and answer is not 'nopes':
         print('answer: ' + ' '.join(answer.leaves()))
-        print()
-        print()
+ 
 
 
         return ' '.join(answer.leaves())
