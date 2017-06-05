@@ -74,7 +74,6 @@ def baseline(qbow, text, fnames, stopwords):
     # print(qbow)
 
     i = 0
-    print(c.OKGREEN + str(len(text)) + c.ENDC)
     for f in text:
         fileN = fnames[i]
         for sent in f:
@@ -189,7 +188,9 @@ def chunk(fnames, question, q_type,a):
     #con_parse.mr_toads_wild_ride("A trapper spread some net in order to catch a big game .","What did the hunter spread?",'fables-06.sch')
 
     answer = con_parse.mr_toads_wild_ride(answer_sentence, question, filename)
+
     print(c.OKGREEN + "REAL ANSWER: " + c.ENDC + a)
+    print(c.OKGREEN + "Our Answer: " + c.ENDC + answer)
 
 
     # if answer == "":
