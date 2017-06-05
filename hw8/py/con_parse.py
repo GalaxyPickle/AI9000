@@ -221,8 +221,10 @@ def get_index(answer_sentence,paths):
     print(lines)
     answer_sentence = ' '.join(answer_sentence.replace('.','').split())
     answer_sentence = ' '.join(answer_sentence.replace(',','').split())
+    answer_sentence = answer_sentence.lower()
 
     answer_sentence = answer_sentence.replace(' ','')
+    print(answer_sentence)
 
     # try:
 
