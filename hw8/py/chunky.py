@@ -66,14 +66,16 @@ def lemmatizer(tokens):
 # text: list of a list of pos tagged story sentences
 # stopwords is a set of stopwords
 # matches words to sentences for each text and returns the best answer
-def baseline(qbow, text, stopwords):
+def baseline(qbow, text, fnames, stopwords):
     # Collect all the candidate answers
     answers = []
     qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
     qbow.update(set(lemmatizer(qbow)))
     # print(qbow)
 
+    i = 0
     for f in text:
+        fileN = fnames[i]
         for sent in f:
             # A list of all the word tokens in the sentence
             sbow = get_bow(sent, stopwords)
@@ -91,6 +93,8 @@ def baseline(qbow, text, stopwords):
             # print(c.OKGREEN + "overlap: " + c.ENDC + str(overlap))
             
             answers.append((overlap, sent))
+
+        i += 1
         
     # Sort the results by the first element of the tuple (i.e., the count)
     # Sort answers from smallest to largest by default, so reverse it
@@ -102,7 +106,7 @@ def baseline(qbow, text, stopwords):
     else:
         best_answer = None
 
-    return best_answer
+    return best_answer, fileN
 
 # reads file and finds best sentence
 def find_best_sentence(question, fnames):
@@ -131,7 +135,8 @@ def find_best_sentence(question, fnames):
     #   (usually just .story or .sch, not both)
     text = [get_sentences(story) for story in text]
 
-    answer = baseline(qbow, text, stopwords)
+    answer, filename = baseline(qbow, text, fnames, stopwords)
+    print('filename: ', filename)
     if answer != None:
         print(c.OKGREEN + "Answer Sentence: " + c.ENDC + " ".join(t[0] for t in answer))
         answer = [answer]
