@@ -74,6 +74,7 @@ def baseline(qbow, text, fnames, stopwords):
     # print(qbow)
 
     i = 0
+    print(c.OKGREEN + str(len(text)) + c.ENDC)
     for f in text:
         fileN = fnames[i]
         for sent in f:
@@ -92,13 +93,17 @@ def baseline(qbow, text, fnames, stopwords):
             overlap = len(qbow & sbow)
             # print(c.OKGREEN + "overlap: " + c.ENDC + str(overlap))
             
-            answers.append((overlap, sent))
+            answers.append((overlap, sent, fileN))
 
         i += 1
         
     # Sort the results by the first element of the tuple (i.e., the count)
     # Sort answers from smallest to largest by default, so reverse it
     answers = sorted(answers, key=operator.itemgetter(0), reverse=True)
+    # print(answers)
+
+    fileN = answers[0][2]
+    # print("FILEN NNNNNNNN N N N N N: ", fileN)
 
     # Return the best answer
     if len(answers) > 0:
@@ -136,14 +141,14 @@ def find_best_sentence(question, fnames):
     text = [get_sentences(story) for story in text]
 
     answer, filename = baseline(qbow, text, fnames, stopwords)
-    print('filename: ', filename)
+    # print('filename: ', filename)
     if answer != None:
         print(c.OKGREEN + "Answer Sentence: " + c.ENDC + " ".join(t[0] for t in answer))
         answer = [answer]
 
     qbow = get_sentences(question)[0]
 
-    return answer, qbow
+    return answer, qbow, filename
 
 # 1. open story/sch file or both for q
 # 2. use super s1ck algorithms to find the best sentence
@@ -164,15 +169,17 @@ def chunk(fnames, question, q_type):
 
     fnames = [fnames + '.' + t.lower() for t in q_type]
 
-    answer_sentence, qbow = find_best_sentence(question, fnames)
+    answer_sentence, qbow, filename = find_best_sentence(question, fnames)
 
     answer_sentence = ' '.join(word for word, tag in answer_sentence[0])
 
-    print("FNAME FNAME: ", fnames[0])
+    # print("FNAME FNAME: ", fnames[0])
 
-    print("QUESTION QUESTION: ", question)
+    # print("QUESTION QUESTION: ", question)
 
-    print("ANSWER SENT ANSWER SENT: ", answer_sentence)
+    # print("ANSWER SENT ANSWER SENT: ", answer_sentence)
+
+    # print("FILE NAME FILE NAME: ", filename)
 
     # if answer_sentence == None:
     #     answer = ""
@@ -181,7 +188,7 @@ def chunk(fnames, question, q_type):
 
     #con_parse.mr_toads_wild_ride("A trapper spread some net in order to catch a big game .","What did the hunter spread?",'fables-06.sch')
 
-    answer = con_parse.mr_toads_wild_ride(answer_sentence, question, fnames[0])
+    answer = con_parse.mr_toads_wild_ride(answer_sentence, question, filename)
 
     # if answer == "":
     #     answer = question
