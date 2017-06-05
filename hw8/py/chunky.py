@@ -10,7 +10,7 @@
 
 import sys, nltk, operator, zipfile, re
 from nltk.stem.wordnet import WordNetLemmatizer
-import chunky_boi
+import con_parse
 
 # colorssszzzzzz
 class c:
@@ -161,10 +161,23 @@ def chunk(fnames, question, q_type):
 
     answer_sentence, qbow = find_best_sentence(question, fnames)
 
-    if answer_sentence == None:
-        answer = ""
-    else:
-        answer = chunky_boi.mah_boi(qbow, answer_sentence[0])
+    answer_sentence = ' '.join(word for word, tag in answer_sentence[0])
+    answer_sentence = answer_sentence[1:len(answer_sentence)]
+
+    # print("FNAME FNAME: ", fnames[0])
+
+    # print("QUESTION QUESTION: ", question)
+
+    # print("ANSWER SENT ANSWER SENT: ", answer_sentence)
+
+    # if answer_sentence == None:
+    #     answer = ""
+    # else:
+    #     answer = chunky_boi.mah_boi(qbow, answer_sentence[0])
+
+    #con_parse.mr_toads_wild_ride("A trapper spread some net in order to catch a big game .","What did the hunter spread?",'fables-06.sch')
+
+    answer = con_parse.mr_toads_wild_ride(answer_sentence, question, fnames[0])
 
     # if answer == "":
     #     answer = question
