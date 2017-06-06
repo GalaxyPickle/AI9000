@@ -147,9 +147,6 @@ def q_determine(question,tree):
         # Match our pattern to the tree  
         subtree = subtree_master(pattern,tree) 
 
-
-
-
         pattern = nltk.ParentedTree.fromstring("(EX)")
 
         if subtree_master(pattern, subtree) == 'nopes':
@@ -221,36 +218,43 @@ def q_determine(question,tree):
         elif 'was' in search_words:
             print('what was')
 
-        
-        pattern = nltk.ParentedTree.fromstring("(VP  )")
+        pattern = nltk.ParentedTree.fromstring("(NP (*) )")
         
         # Match our pattern to the tree  
         subtree = subtree_master(pattern,tree)       
-
-        pattern = nltk.ParentedTree.fromstring("(PP)")
-
-        subtree1 = subtree_master(pattern,subtree)
-
-        if (subtree1 == 'nopes'):
-
-            pattern = nltk.ParentedTree.fromstring("(NP  )")
         
-            # Match our pattern to the tree  
-            subtree = subtree_master(pattern,tree) 
+        return subtree
 
-            return subtree
+        
+        # pattern = nltk.ParentedTree.fromstring("(VP  )")
+        
+        # # Match our pattern to the tree  
+        # subtree = subtree_master(pattern,tree)       
 
-        pattern = nltk.ParentedTree.fromstring("(NP)")
+        # pattern = nltk.ParentedTree.fromstring("(PP)")
 
-        subtree2 = subtree_master(pattern,subtree1)  
+        # subtree1 = subtree_master(pattern,subtree)
 
-        if (subtree2 == 'nopes'):
-            return subtree1     
+        # if (subtree1 == 'nopes'):
+
+        #     pattern = nltk.ParentedTree.fromstring("(NP  )")
+        
+        #     # Match our pattern to the tree  
+        #     subtree = subtree_master(pattern,tree) 
+
+        #     return subtree
+
+        # pattern = nltk.ParentedTree.fromstring("(NP)")
+
+        # subtree2 = subtree_master(pattern,subtree1)  
+
+        # if (subtree2 == 'nopes'):
+        #     return subtree1     
 
 
 
 
-        return subtree2
+        # return subtree2
 
 
         
