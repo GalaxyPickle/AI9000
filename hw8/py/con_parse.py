@@ -314,6 +314,17 @@ def q_determine(question,tree):
     elif 'how' in search_words:
         print('how')
 
+        pattern = nltk.ParentedTree.fromstring("(VP (*))")
+        
+        subtree = subtree_master(pattern,tree)
+
+        pattern = nltk.ParentedTree.fromstring("(ADVP)")
+        
+        subtree = subtree_master(pattern,subtree)         
+
+
+        return subtree         
+
 
 def get_index(answer_sentence,paths):
     fh = open(paths, 'r')
