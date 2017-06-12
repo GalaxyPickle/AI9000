@@ -69,7 +69,7 @@ def lemmatizer(tokens):
 def baseline(qbow, text, fnames, stopwords):
     # Collect all the candidate answers
     answers = []
-    qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
+    # qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
     qbow.update(set(lemmatizer(qbow)))
     # print(qbow)
 
@@ -81,7 +81,7 @@ def baseline(qbow, text, fnames, stopwords):
             sbow = get_bow(sent, stopwords)
 
             # stem all questions and sentences for better results
-            sbow = set([nltk.LancasterStemmer().stem(word) for word in sbow])
+            # sbow = set([nltk.LancasterStemmer().stem(word) for word in sbow])
             sbow.update(set(lemmatizer(sbow)))
 
             # and then add the other
