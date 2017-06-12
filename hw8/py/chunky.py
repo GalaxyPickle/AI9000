@@ -71,7 +71,7 @@ def baseline(qbow, text, fnames, stopwords):
     answers = []
     # qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
     qbow.update(set(lemmatizer(qbow)))
-    print(qbow)
+    # print(qbow)
 
     i = 0
     for f in text:
@@ -85,7 +85,7 @@ def baseline(qbow, text, fnames, stopwords):
             sbow.update(set(lemmatizer(sbow)))
 
             # and then add the other
-            print(sbow)
+            # print(sbow)
             
             # Count the # of overlapping words between the Q and the A
             # & is the set intersection operator
@@ -169,7 +169,7 @@ def chunk(fnames, question, q_type, q_diff, a):
     fnames = [fnames + '.' + t.lower() for t in q_type]
 
     if q_diff.lower() != 'hard':
-        answer_sentence, qbow, filename = find_best_sentence(question, fnames)
+        answer_sentence, qbow, filename = hard_chunk.chunk(question, fnames)
     else:
         answer_sentence, qbow, filename = hard_chunk.chunk(question, fnames)
 
