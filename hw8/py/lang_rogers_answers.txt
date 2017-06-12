@@ -17,7 +17,7 @@ QuestionID: blogs-01-6
 Answer: The people
 
 QuestionID: blogs-01-7
-Answer: The people
+Answer: a police
 
 QuestionID: blogs-01-8
 Answer: The people
@@ -104,7 +104,7 @@ QuestionID: blogs-02-11
 Answer: the flash
 
 QuestionID: blogs-02-12
-Answer: The narrator
+Answer: a group of trees that was above the narrator
 
 QuestionID: blogs-02-13
 Answer: when he crashed his motorbike
@@ -131,10 +131,10 @@ QuestionID: blogs-02-20
 Answer: the motorbike of the young man
 
 QuestionID: blogs-03-1
-Answer: Louisiana
+Answer: Hurricane Gustav
 
 QuestionID: blogs-03-2
-Answer: The storm
+Answer: Monday
 
 QuestionID: blogs-03-3
 Answer: Winds
@@ -164,7 +164,7 @@ QuestionID: blogs-03-11
 Answer: An area of a neighborhood of the narrator
 
 QuestionID: blogs-03-12
-Answer: The tree
+Answer: the yard of a neighbor
 
 QuestionID: blogs-03-13
 Answer: The narrator
@@ -176,10 +176,10 @@ QuestionID: blogs-03-15
 Answer: My wife , our five children , and our dog ,
 
 QuestionID: blogs-03-16
-Answer: The narrator
+Answer: trees
 
 QuestionID: blogs-03-17
-Answer: storm
+Answer: Louisiana
 
 QuestionID: blogs-03-18
 Answer: The narrator
@@ -233,10 +233,10 @@ QuestionID: blogs-04-14
 Answer: answer was none.
 
 QuestionID: blogs-04-15
-Answer: The birds
+Answer: the deck 's railing in order for the birds to wait
 
 QuestionID: blogs-05-1
-Answer: There
+Answer: students and a narrator
 
 QuestionID: blogs-05-2
 Answer: the group of students for presence
@@ -254,7 +254,7 @@ QuestionID: blogs-05-6
 Answer: the slip
 
 QuestionID: blogs-05-7
-Answer: I
+Answer: my underslip
 
 QuestionID: blogs-05-8
 Answer: I
@@ -287,7 +287,7 @@ QuestionID: blogs-05-17
 Answer: a group of students and a narrator
 
 QuestionID: blogs-06-1
-Answer: An oven
+Answer: the oven
 
 QuestionID: blogs-06-2
 Answer: a group of
@@ -320,7 +320,7 @@ QuestionID: blogs-06-11
 Answer: of the house
 
 QuestionID: blogs-06-12
-Answer: The fire
+Answer: the ceiling of the house
 
 QuestionID: blogs-06-13
 Answer: the door of the oven
@@ -332,13 +332,13 @@ QuestionID: blogs-06-15
 Answer: a batch of cookies
 
 QuestionID: blogs-06-16
-Answer: The oven
+Answer: of
 
 QuestionID: blogs-06-17
 Answer: The husband of the narrator
 
 QuestionID: blogs-06-18
-Answer: An oven
+Answer: the oven
 
 QuestionID: fables-01-1
 Answer: on a branch of a tree with a piece of cheese in her beak
@@ -380,7 +380,7 @@ QuestionID: fables-01-13
 Answer: answer was none.
 
 QuestionID: fables-01-14
-Answer: A fox
+Answer: the crow
 
 QuestionID: fables-01-15
 Answer: A fox
@@ -449,7 +449,7 @@ QuestionID: fables-02-18
 Answer: The lion
 
 QuestionID: fables-02-19
-Answer: There
+Answer: a fat bull
 
 QuestionID: fables-02-20
 Answer: because the lion wanted to eat the bull
@@ -494,7 +494,7 @@ QuestionID: fables-03-10
 Answer: with his exertions
 
 QuestionID: fables-03-11
-Answer: his exertions
+Answer: a draught
 
 QuestionID: fables-03-12
 Answer: the Serpent spat
@@ -545,10 +545,10 @@ QuestionID: fables-03-27
 Answer: in the drinking vessel
 
 QuestionID: fables-04-1
-Answer: A Fox
+Answer: a Stork
 
 QuestionID: fables-04-2
-Answer: A Fox
+Answer: dinner , at which the only fare provided was a large flat dish of soup
 
 QuestionID: fables-04-3
 Answer: in a flat and large dish
@@ -569,19 +569,19 @@ QuestionID: fables-04-8
 Answer: while she enjoyed her dinner
 
 QuestionID: fables-04-9
-Answer: The Fox
+Answer: great relish
 
 QuestionID: fables-04-10
 Answer: The stork
 
 QuestionID: fables-04-11
-Answer: The stork
+Answer: the stork
 
 QuestionID: fables-04-12
 Answer: A clever fox
 
 QuestionID: fables-04-13
-Answer: The fox
+Answer: a flat and large dish
 
 QuestionID: fables-04-14
 Answer: The stork
@@ -641,7 +641,7 @@ QuestionID: fables-05-15
 Answer: the fox
 
 QuestionID: fables-05-16
-Answer: An agriculturist
+Answer: the fox
 
 QuestionID: fables-06-1
 Answer: in a lair
@@ -668,7 +668,7 @@ QuestionID: fables-06-8
 Answer: the rope of the net
 
 QuestionID: fables-06-9
-Answer: A Lion asleep in his lair
+Answer: a Mouse running over his face
 
 QuestionID: fables-06-10
 Answer: in order to catch a big game
@@ -680,10 +680,10 @@ QuestionID: fables-06-12
 Answer: the voice of the lion
 
 QuestionID: fables-06-13
-Answer: more ado
+Answer: its teeth
 
 QuestionID: fables-06-14
-Answer: There
+Answer: a lion
 
 QuestionID: fables-06-15
 Answer: The mouse

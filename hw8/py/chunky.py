@@ -153,7 +153,7 @@ def find_best_sentence(question, fnames):
 # 2. use super s1ck algorithms to find the best sentence
 #   (if story | sch, open both and find best matching sentence)
 # 3. return best sentence
-def chunk(fnames, question, q_type,a):
+def chunk(fnames, question, q_type, q_diff, a):
 
     # ready storyname to open
     fnames = fnames.split('-')
