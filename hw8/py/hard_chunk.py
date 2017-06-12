@@ -11,6 +11,11 @@
 import sys, nltk, operator, zipfile, re
 from nltk.stem.wordnet import WordNetLemmatizer
 import con_parse
+from nltk.corpus import wordnet as wn
+from collections import defaultdict
+import csv
+
+
 
 # colorssszzzzzz
 class c:
@@ -22,6 +27,17 @@ class c:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
+
+def load_wordnet_ids(filename):
+    file = open(filename, 'r')
+    if "noun" in filename: type = "noun"
+    else: type = "verb"
+    csvreader = csv.DictReader(file, delimiter=",", quotechar='"')
+    word_ids = defaultdict()
+    for line in csvreader:
+        word_ids[line['synset_id']] = {'synset_offset': line['synset_offset'], 'story_'+type: line['story_'+type], 'stories': line['stories']}
+    return word_ids
 
 # unzip and read story from zip file
 def unzip_corpus(input_file, name):
@@ -67,11 +83,46 @@ def lemmatizer(tokens):
 # stopwords is a set of stopwords
 # matches words to sentences for each text and returns the best answer
 def baseline(qbow, text, fnames, stopwords):
+    noun_ids = load_wordnet_ids("Wordnet_nouns.csv")
+    verb_ids = load_wordnet_ids("Wordnet_verbs.csv")
+
     # Collect all the candidate answers
     answers = []
     # qbow = set([nltk.LancasterStemmer().stem(word) for word in qbow])
     qbow.update(set(lemmatizer(qbow)))
-    # print(qbow)
+    
+    synsets = [wn.synsets(word) for word in qbow]
+    synsets = [x for val in synsets for x in val]
+    hyponyms = [synset.hyponyms() for synset in synsets]
+    hyponyms = [x for val in hyponyms for x in val]
+    hypernyms = [synset.hypernyms() for synset in synsets]
+    hypernyms = [x for val in hypernyms for x in val]
+
+    synset_strings = [synset.name() for synset in synsets]
+    hyponyms_strings = [synset.name() for synset in hyponyms]
+    hypernyms_strings = [synset.name() for synset in hypernyms]
+
+    qbow.update(synset_strings)
+    qbow.update(hyponyms_strings)
+    qbow.update(hypernyms_strings)
+     # print("'Know' hypernyms")
+    # for know_synset in know_synsets:
+    #     know_hyper = know_synset.hypernyms()
+    #     print("%s: %s" % (know_synset, know_hyper))
+
+    # print("SYNSETS: " + str(synset_strings))
+    # print("HYPOS: " + str(hyponyms_strings))
+    # print("HYPERS: " + str(hypernyms_strings))
+    
+    # for synset in rodent_synsets:
+    #     hypos = [synset.hyponyms() for synset in synsets]
+        # print("%s: %s" % (rodent_synset, rodent_hypo))
+
+    #     for hypo in rodent_hypo:
+    #         print(hypo.name()[0:hypo.name().index(".")])
+    #         print("is hypo_synset in Wordnet_nouns/verbs.csv?")
+    #         # match on "mouse.n.01"
+    # # print(qbow)
 
     i = 0
     for f in text:
@@ -83,6 +134,21 @@ def baseline(qbow, text, fnames, stopwords):
             # stem all questions and sentences for better results
             # sbow = set([nltk.LancasterStemmer().stem(word) for word in sbow])
             sbow.update(set(lemmatizer(sbow)))
+
+            synsets = [wn.synsets(word) for word in sbow]
+            synsets = [x for val in synsets for x in val]
+            hyponyms = [synset.hyponyms() for synset in synsets]
+            hyponyms = [x for val in hyponyms for x in val]
+            hypernyms = [synset.hypernyms() for synset in synsets]
+            hypernyms = [x for val in hypernyms for x in val]
+
+            synset_strings = [synset.name() for synset in synsets]
+            hyponyms_strings = [synset.name() for synset in hyponyms]
+            hypernyms_strings = [synset.name() for synset in hypernyms]
+
+            sbow.update(synset_strings)
+            sbow.update(hyponyms_strings)
+            sbow.update(hypernyms_strings)
 
             # and then add the other
             # print(sbow)
