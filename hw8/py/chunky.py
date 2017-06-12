@@ -10,7 +10,7 @@
 
 import sys, nltk, operator, zipfile, re
 from nltk.stem.wordnet import WordNetLemmatizer
-import con_parse
+import con_parse, hard_chunk
 
 # colorssszzzzzz
 class c:
@@ -168,7 +168,10 @@ def chunk(fnames, question, q_type, q_diff, a):
 
     fnames = [fnames + '.' + t.lower() for t in q_type]
 
-    answer_sentence, qbow, filename = find_best_sentence(question, fnames)
+    if q_diff.lower() != 'hard':
+        answer_sentence, qbow, filename = find_best_sentence(question, fnames)
+    else:
+        answer_sentence, qbow, filename = hard_chunk.chunk(question, fnames)
 
     answer_sentence = ' '.join(word for word, tag in answer_sentence[0])
 

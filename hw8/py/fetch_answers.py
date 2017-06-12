@@ -23,7 +23,7 @@ import pickle, re, collections
 
 from nltk.parse import DependencyGraph
 
-import fetch_sentence, process_questions, dep_parse, chunky
+import process_questions, dep_parse, chunky
 
 #loads pickles
 def load_pickle(filename):
