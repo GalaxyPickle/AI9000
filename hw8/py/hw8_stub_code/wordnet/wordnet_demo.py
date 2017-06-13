@@ -31,13 +31,13 @@ if __name__ == "__main__":
     for synset_id, items in noun_ids.items():
         noun = items['story_noun']
         stories = items['stories']
-        # print(noun, stories)
+        print(noun, stories)
         # get lemmas, hyponyms, hypernyms
 
     for synset_id, items in verb_ids.items():
         verb = items['story_verb']
         stories = items['stories']
-        # print(verb, stories)
+        print(verb, stories)
         # get lemmas, hyponyms, hypernyms
 
 

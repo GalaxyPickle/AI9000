@@ -62,10 +62,10 @@ QuestionID: blogs-01-21
 Answer: The police
 
 QuestionID: blogs-01-22
-Answer: A summit meeting named G20 summit
+Answer: The people
 
 QuestionID: blogs-01-23
-Answer: A summit meeting named G20 summit
+Answer: The people
 
 QuestionID: blogs-01-24
 Answer: The police
@@ -86,7 +86,7 @@ QuestionID: blogs-02-5
 Answer: of the narrator
 
 QuestionID: blogs-02-6
-Answer: the motorbike of the young man
+Answer: some bright flash
 
 QuestionID: blogs-02-7
 Answer: my logical mind
@@ -98,7 +98,7 @@ QuestionID: blogs-02-9
 Answer: The narrator
 
 QuestionID: blogs-02-10
-Answer: A few years
+Answer: The narrator
 
 QuestionID: blogs-02-11
 Answer: the flash
@@ -122,13 +122,13 @@ QuestionID: blogs-02-17
 Answer: the spot of the yard of the narrator
 
 QuestionID: blogs-02-18
-Answer: A young man
+Answer: The narrator
 
 QuestionID: blogs-02-19
 Answer: The narrator
 
 QuestionID: blogs-02-20
-Answer: the motorbike of the young man
+Answer: some bright flash
 
 QuestionID: blogs-03-1
 Answer: Louisiana
@@ -170,13 +170,13 @@ QuestionID: blogs-03-13
 Answer: The narrator
 
 QuestionID: blogs-03-14
-Answer: the first tree
+Answer: a RV of the neighbor
 
 QuestionID: blogs-03-15
 Answer: My wife , our five children , and our dog ,
 
 QuestionID: blogs-03-16
-Answer: The narrator
+Answer: The group of power lines
 
 QuestionID: blogs-03-17
 Answer: storm
@@ -221,7 +221,7 @@ QuestionID: blogs-04-10
 Answer: on the deck in order for Benjamin
 
 QuestionID: blogs-04-11
-Answer: answer was none.
+Answer: over the deck 's railing
 
 QuestionID: blogs-04-12
 Answer: answer was none.
@@ -230,10 +230,10 @@ QuestionID: blogs-04-13
 Answer: a large stainless steel bowl of water
 
 QuestionID: blogs-04-14
-Answer: answer was none.
+Answer: on the deck 's railing in order for the birds to wait
 
 QuestionID: blogs-04-15
-Answer: The birds
+Answer: The squirrel 's paw
 
 QuestionID: blogs-05-1
 Answer: There
@@ -266,13 +266,13 @@ QuestionID: blogs-05-10
 Answer: the slip
 
 QuestionID: blogs-05-11
-Answer: that the slip had fallen because the elastic of the slip was dysfunctional
+Answer: because the not-functional elastic of the slip was dysfunctional
 
 QuestionID: blogs-05-12
 Answer: The narrator
 
 QuestionID: blogs-05-13
-Answer: I
+Answer: Ten years
 
 QuestionID: blogs-05-14
 Answer: an eyelid
@@ -284,7 +284,7 @@ QuestionID: blogs-05-16
 Answer: The narrator
 
 QuestionID: blogs-05-17
-Answer: a group of students and a narrator
+Answer: the slip
 
 QuestionID: blogs-06-1
 Answer: An oven
@@ -305,7 +305,7 @@ QuestionID: blogs-06-6
 Answer: The oven
 
 QuestionID: blogs-06-7
-Answer: answer was none.
+Answer: a fire extinguisher
 
 QuestionID: blogs-06-8
 Answer: the fire extinguisher
@@ -332,7 +332,7 @@ QuestionID: blogs-06-15
 Answer: a batch of cookies
 
 QuestionID: blogs-06-16
-Answer: The oven
+Answer: The husband of a narrator who owned a house and owned the oven attempted for the husband of the narrator to retrieve the group of
 
 QuestionID: blogs-06-17
 Answer: The husband of the narrator
@@ -377,13 +377,13 @@ QuestionID: fables-01-12
 Answer: the beauty of the bird
 
 QuestionID: fables-01-13
-Answer: answer was none.
+Answer: loudly in order for she
 
 QuestionID: fables-01-14
 Answer: the crow
 
 QuestionID: fables-01-15
-Answer: A fox
+Answer: The fox
 
 QuestionID: fables-01-16
 Answer: The fox
@@ -413,7 +413,7 @@ QuestionID: fables-02-6
 Answer: the bull
 
 QuestionID: fables-02-7
-Answer: A Lion
+Answer: The Bull
 
 QuestionID: fables-02-8
 Answer: The Bull
@@ -449,10 +449,10 @@ QuestionID: fables-02-18
 Answer: The lion
 
 QuestionID: fables-02-19
-Answer: a fat bull
+Answer: the bull
 
 QuestionID: fables-02-20
-Answer: because the lion wanted to eat the bull
+Answer: because the lion feared sharp every horn of the bull
 
 QuestionID: fables-02-21
 Answer: the bull
@@ -464,7 +464,7 @@ QuestionID: fables-02-23
 Answer: The lion
 
 QuestionID: fables-03-1
-Answer: An Eagle
+Answer: his exertions
 
 QuestionID: fables-03-2
 Answer: An Eagle
@@ -476,7 +476,7 @@ QuestionID: fables-03-4
 Answer: A countryman , who was a witness of the encounter ,
 
 QuestionID: fables-03-5
-Answer: a Serpent
+Answer: the Serpent spat
 
 QuestionID: fables-03-6
 Answer: In revenge the Serpent spat some of his poison into the man 's drinking-horn
@@ -518,7 +518,7 @@ QuestionID: fables-03-18
 Answer: A countryman , who was a witness of the encounter ,
 
 QuestionID: fables-03-19
-Answer: a drinking vessel
+Answer: answer was none.
 
 QuestionID: fables-03-20
 Answer: some poison
@@ -536,7 +536,7 @@ QuestionID: fables-03-24
 Answer: a serpent
 
 QuestionID: fables-03-25
-Answer: An eagle
+Answer: The eagle
 
 QuestionID: fables-03-26
 Answer: A countryman who owned a drinking vessel
@@ -620,7 +620,7 @@ QuestionID: fables-05-8
 Answer: The agriculturist
 
 QuestionID: fables-05-9
-Answer: a Fox , which came prowling about his yard at night and carried off his fowls
+Answer: fire
 
 QuestionID: fables-05-10
 Answer: The agriculturist set a
@@ -638,10 +638,10 @@ QuestionID: fables-05-14
 Answer: He
 
 QuestionID: fables-05-15
-Answer: the fox
+Answer: answer was none.
 
 QuestionID: fables-05-16
-Answer: the fox
+Answer: the fiber
 
 QuestionID: fables-06-1
 Answer: in a lair
@@ -683,7 +683,7 @@ QuestionID: fables-06-13
 Answer: more ado
 
 QuestionID: fables-06-14
-Answer: a lion
+Answer: The mouse
 
 QuestionID: fables-06-15
 Answer: The mouse
