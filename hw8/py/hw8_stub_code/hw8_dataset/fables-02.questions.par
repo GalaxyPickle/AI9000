@@ -46,8 +46,47 @@ QuestionId: fables-02-22
 QuestionId: fables-02-23
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD tried) (S (VP (TO to) (VP (VB kill) (NP (DT the) (NN bull))))))) (. ?)))
 
+QuestionId: fables-02-24
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN lion)) (VP (VB watch))) (. ?)))
+
+QuestionId: fables-02-25
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (VP (VBN persuaded) (PP (IN by) (NP (DT this) (NN flattery))))) (. ?)))
+
+QuestionId: fables-02-26
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD was) (NP (DT the) (NN bull))) (. ?)))
+
+QuestionId: fables-02-27
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (ADJP (JJ magnificent))) (. ?)))
+
+QuestionId: fables-02-28
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (VP (VBN cut) (PRT (RP off)))) (. ?)))
+
+QuestionId: fables-02-29
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (ADJP (JJ powerful))) (. ?)))
+
 QuestionId: fables-02-3
 (ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD was) (NP (DT the) (NN bull))) (. ?)))
+
+QuestionId: fables-02-30
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (ADJP (JJ ugly))) (. ?)))
+
+QuestionId: fables-02-31
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD watched) (NP (DT the) (NNS cattle)))) (. ?)))
+
+QuestionId: fables-02-32
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD did) (NP (DT the) (NN lion)) (VP (VB attempt) (PP (TO to) (NP (NN murder))))) (. ?)))
+
+QuestionId: fables-02-33
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD planned) (S (VP (TO to) (VP (VBN deceived) (NP (DT the) (NN bull))))))) (. ?)))
+
+QuestionId: fables-02-34
+(ROOT (SBARQ (WHNP (WP What)) (SQ (NP (DT the) (NN bull)) (VP (VB strip))) (. ?)))
+
+QuestionId: fables-02-35
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD counseled) (NP (DT the) (NN bull)))) (. ?)))
+
+QuestionId: fables-02-36
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD fobbed) (NP (DT the) (NN bull)))) (. ?)))
 
 QuestionId: fables-02-4
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (NP (NN grazing))) (. ?)))

@@ -79,12 +79,48 @@ the	DT	8	det
 oven	NN	5	nmod
 tripped	VBN	2	advcl
 
+QuestionId: blogs-06-19
+What	WP	4	dobj
+did	VBD	4	aux
+I	PRP	4	nsubj
+order	VB	0	root
+a	DT	7	det
+few	JJ	7	amod
+days	NNS	4	advmod
+ago	IN	7	case
+
 QuestionId: blogs-06-2
 What	WP	5	dobj
 did	VBD	5	aux
 the	DT	4	det
 oven	NN	5	nsubj
 scorch	VB	0	root
+
+QuestionId: blogs-06-20
+What	WDT	2	nsubj
+got	VBD	0	root
+damaged	JJ	2	dep
+besides	IN	6	case
+the	DT	6	det
+range	NN	2	nmod
+
+QuestionId: blogs-06-21
+What	WP	9	dobj
+did	VBD	9	aux
+the	DT	4	det
+husband	NN	9	nsubj
+of	IN	7	case
+the	DT	7	det
+narrator	NN	4	nmod
+quickly	RB	9	advmod
+close	VB	0	root
+
+QuestionId: blogs-06-22
+What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+narrator	NN	5	nsubj
+recover	VB	0	root
 
 QuestionId: blogs-06-3
 Who	WP	3	nsubj

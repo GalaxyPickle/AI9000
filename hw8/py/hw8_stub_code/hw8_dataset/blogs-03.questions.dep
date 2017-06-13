@@ -94,6 +94,89 @@ the	DT	4	det
 tempest	NN	5	nsubj
 occurring	VBG	0	root
 
+QuestionId: blogs-03-20
+Who	WP	2	nsubj
+filled	VBD	0	root
+the	DT	4	det
+container	NN	2	dobj
+of	IN	7	case
+some	DT	7	det
+gasoline	NN	4	nmod
+
+QuestionId: blogs-03-21
+What	WP	4	dobj
+did	VBD	4	aux
+they	PRP	4	nsubj
+watch	VBP	0	root
+on	IN	8	case
+the	DT	8	det
+local	JJ	8	amod
+news	NN	4	nmod
+
+QuestionId: blogs-03-22
+When	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+storm	NN	5	nsubj
+roll	VB	0	root
+in	RP	5	compound:prt
+
+QuestionId: blogs-03-23
+What	WP	6	nmod
+did	VBD	6	aux
+the	DT	5	det
+first	JJ	5	amod
+tree	NN	6	nsubj
+fall	VB	0	root
+onto	IN	1	case
+
+QuestionId: blogs-03-24
+Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+narrator	NN	5	nsubj
+stand	VB	0	root
+
+QuestionId: blogs-03-25
+Whose	WP$	2	nmod:poss
+yard	NN	6	dobj
+did	VBD	6	aux
+the	DT	5	det
+tree	NN	6	nsubj
+fall	VB	0	root
+on	RP	6	compound:prt
+
+QuestionId: blogs-03-26
+Who	WP	2	nsubj
+watched	VBD	0	root
+a	DT	5	det
+large	JJ	5	amod
+tree	NN	2	dobj
+
+QuestionId: blogs-03-27
+Who	WP	2	nsubj
+watched	VBD	0	root
+a	DT	6	det
+large	JJ	6	amod
+Jamaica	NNP	6	compound
+dogwood	NN	2	dobj
+
+QuestionId: blogs-03-28
+What	WDT	2	nsubj
+fell	VBD	0	root
+on	IN	6	case
+the	DT	6	det
+garden	NN	6	compound
+tool	NN	2	nmod
+
+QuestionId: blogs-03-29
+Who	WP	2	nsubj
+filled	VBD	0	root
+the	DT	4	det
+container	NN	2	dobj
+of	IN	6	case
+fuel	NN	4	nmod
+
 QuestionId: blogs-03-2
 What	WDT	2	nmod
 rolled	VBD	0	root
@@ -120,6 +203,24 @@ What	WDT	2	nsubj
 started	VBD	0	root
 kicking	VBG	2	xcomp
 up	RP	3	compound:prt
+
+QuestionId: blogs-03-30
+Who	WP	2	nsubj
+filled	VBD	0	root
+the	DT	4	det
+can	NN	2	dobj
+of	IN	6	case
+gasoline	NN	4	nmod
+
+QuestionId: blogs-03-31
+What	WDT	2	nsubj
+divided	VBN	0	root
+
+QuestionId: blogs-03-32
+Who	WP	2	nsubj
+evaluated	VBD	0	root
+Baton	NNP	4	compound
+Rouge	NNP	2	dobj
 
 QuestionId: blogs-03-4
 Who	WP	2	nsubj

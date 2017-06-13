@@ -99,3 +99,63 @@ Question: Who attempted to drink some savory soup?
 Answer: The stork
 Difficulty: Hard
 Type: Sch
+
+QuestionID: fables-04-18
+Question: What did the Stork try to partake of?
+Answer: the savoury broth
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-04-19
+Question: What did the Stork try in vain to do?
+Answer: to partake of the savoury broth
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-04-20
+Question: Who was sly? 
+Answer: the fox
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-04-21
+Question: Who did the stork present a pitcher to?
+Answer: the fox
+Difficulty: Medium
+Type: Sch
+
+QuestionID: fables-04-22
+Question: What has a long and narrow neck?
+Answer: a pitcher
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-04-23
+Question: What was evident?
+Answer: her distress
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-04-24
+Question: What caused the fox much amusement?
+Answer: her evident distress
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-04-25
+Question: Who attempted to drink some savory stock?
+Answer: The stork
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-04-26
+Question: Who presented a vessel?
+Answer: The stork
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-04-27
+Question: What did the stork show the fox? 
+Answer: A pitcher
+Difficulty: Hard
+Type: Sch

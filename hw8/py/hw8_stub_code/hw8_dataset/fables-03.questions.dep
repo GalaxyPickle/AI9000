@@ -155,6 +155,20 @@ spat	VBD	0	root
 some	DT	7	det
 toxin	NN	5	dobj
 
+QuestionId: fables-03-28
+Who	WP	2	nsubj
+assisted	VBD	0	root
+the	DT	5	det
+eagle	NN	5	compound
+escape	NN	2	dobj
+
+QuestionId: fables-03-29
+Who	WP	2	nsubj
+struggled	VBD	0	root
+with	IN	5	case
+the	DT	5	det
+serpent	NN	2	nmod
+
 QuestionId: fables-03-3
 What	WP	5	nmod
 did	VBD	5	aux
@@ -163,6 +177,66 @@ Eagle	NNP	5	nsubj
 seize	VB	0	root
 it	PRP	5	dobj
 with	IN	1	case
+
+QuestionId: fables-03-30
+Who	WP	2	nsubj
+fleed	VBN	0	root
+
+QuestionId: fables-03-31
+Who	WP	2	nsubj
+spilled	VBD	0	root
+the	DT	4	det
+mug	NN	2	dobj
+
+QuestionId: fables-03-32
+What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+eagle	NN	5	nsubj
+snatch	VB	0	root
+
+QuestionId: fables-03-33
+Who	WP	2	nsubj
+tried	VBD	0	root
+to	TO	4	mark
+help	VB	2	xcomp
+the	DT	6	det
+eagle	NN	4	dobj
+to	TO	8	mark
+escape	VB	6	acl
+
+QuestionId: fables-03-34
+Who	WP	2	nsubj
+seized	VBD	0	root
+it	PRP	2	dobj
+in	IN	6	case
+his	PRP$	6	nmod:poss
+talons	NNS	2	nmod
+
+QuestionId: fables-03-35
+What	WP	5	nmod
+did	VBD	5	aux
+the	DT	4	det
+eagle	NN	5	nsubj
+seize	VB	0	root
+it	PRP	5	dobj
+with	IN	1	case
+
+QuestionId: fables-03-36
+Who	WP	2	nsubj
+owned	VBD	0	root
+a	DT	5	det
+drinking	NN	5	compound
+vessel	NN	2	dobj
+
+QuestionId: fables-03-37
+Who	WP	7	dobj
+did	VBD	5	aux
+the	DT	4	det
+countryman	NN	5	nsubj
+try	VB	0	root
+to	TO	7	mark
+help	VB	5	xcomp
 
 QuestionId: fables-03-4
 Who	WP	2	nsubj

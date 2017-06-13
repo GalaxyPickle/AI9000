@@ -55,6 +55,27 @@ the	DT	4	det
 agriculturist	NN	5	nsubj
 unloosen	VB	0	root
 
+QuestionId: fables-05-17
+What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+agriculturalist	NN	5	nsubj
+free	VB	0	root
+
+QuestionId: fables-05-18
+What	WP	2	nsubj
+came	VBD	0	root
+prowling	VBG	2	xcomp
+
+QuestionId: fables-05-19
+When	WRB	5	advmod
+was	VBD	5	aux
+the	DT	4	det
+fox	NN	5	nsubj
+prowling	VBG	0	root
+a	DT	7	det
+yard	NN	5	dobj
+
 QuestionId: fables-05-2
 Where	WRB	5	advmod
 did	VBD	5	aux
@@ -63,6 +84,55 @@ Fox	NNP	5	nsubj
 make	VBP	0	root
 straight	JJ	5	xcomp
 for	IN	6	nmod
+
+QuestionId: fables-05-20
+Where	WRB	5	advmod
+did	VBD	5	aux
+some	DT	4	det
+corn	NN	5	nsubj
+begin	VB	0	root
+to	TO	8	mark
+be	VB	8	cop
+ripe	JJ	5	xcomp
+
+QuestionId: fables-05-21
+What	WDT	2	nsubj
+began	VBD	0	root
+to	TO	5	mark
+be	VB	5	cop
+ready	JJ	2	xcomp
+to	TO	8	case
+a	DT	8	det
+harvest	NN	5	nmod
+
+QuestionId: fables-05-22
+Who	WP	2	nsubj
+caught	VBD	0	root
+the	DT	4	det
+fox	NN	2	dobj
+
+QuestionId: fables-05-23
+Who	WP	5	nmod
+did	VBD	5	aux
+the	DT	4	det
+farmer	NN	5	nsubj
+set	VBD	0	root
+a	DT	7	det
+trap	NN	5	dobj
+for	IN	1	case
+
+QuestionId: fables-05-24
+Who	WP	3	nsubjpass
+was	VBD	3	auxpass
+caught	VBN	0	root
+in	IN	6	case
+the	DT	6	det
+snare	NN	3	nmod
+
+QuestionId: fables-05-25
+What	WDT	2	nsubj
+flared	VBD	0	root
+up	RP	2	compound:prt
 
 QuestionId: fables-05-3
 Who	WP	2	nsubj

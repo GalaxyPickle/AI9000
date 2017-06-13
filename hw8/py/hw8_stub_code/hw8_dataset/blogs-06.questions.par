@@ -28,8 +28,20 @@ QuestionId: blogs-06-17
 QuestionId: blogs-06-18
 (ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBD broke) (SBAR (IN because) (S (NP (NP (DT the) (NN broiler)) (PP (IN of) (NP (DT the) (NN oven)))) (VP (VBN tripped)))))) (. ?)))
 
+QuestionId: blogs-06-19
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (PRP I)) (VP (VB order) (ADVP (NP (DT a) (JJ few) (NNS days)) (IN ago)))) (. ?)))
+
 QuestionId: blogs-06-2
 (ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN oven)) (VP (VB scorch))) (. ?)))
+
+QuestionId: blogs-06-20
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VP (VBD got) (JJ damaged) (PP (IN besides) (NP (DT the) (NN range))))) (. ?)))
+
+QuestionId: blogs-06-21
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (NP (DT the) (NN husband)) (PP (IN of) (NP (DT the) (NN narrator)))) (ADVP (RB quickly)) (VP (VB close))) (. ?)))
+
+QuestionId: blogs-06-22
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB recover))) (. ?)))
 
 QuestionId: blogs-06-3
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (ADVP (RB unsuccessfully)) (VBD tried) (S (VP (TO to) (VP (VB eliminate) (NP (DT the) (NN fire))))))) (. ?)))

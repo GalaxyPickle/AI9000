@@ -105,3 +105,33 @@ Question: Who felt buttered up?
 Answer: The crow
 Difficulty: Hard
 Type: Sch
+
+QuestionID: fables-01-19
+Question: What was exquisite? 
+Answer: the hue of the plumage of the bird
+Difficulty: Medium
+Type: Sch
+
+QuestionID: fables-01-20
+Question: What is without equal?
+Answer: her beauty
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-01-21
+Question: What is noble?
+Answer: a bird
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-01-22
+Question: What did the fox say about the bird’s plumage?
+Answer: the hue of the plumage of the bird was exquisite
+Difficulty: Medium
+Type: Sch
+
+QuestionID: fables-01-23
+Question: Who was grazing? 
+Answer: a fat bull 
+Difficulty: Hard
+Type: Story

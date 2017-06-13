@@ -37,8 +37,44 @@ QuestionId: blogs-03-2
 QuestionId: blogs-03-20
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD filled) (NP (NP (DT the) (NN container)) (PP (IN of) (NP (DT some) (NN gasoline)))))) (. ?)))
 
+QuestionId: blogs-03-21
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (PRP they)) (VP (VBP watch) (PP (IN on) (NP (DT the) (JJ local) (NN news))))) (. ?)))
+
+QuestionId: blogs-03-22
+(ROOT (SBARQ (WHADVP (WRB When)) (SQ (VBD did) (NP (DT the) (NN storm)) (VP (VB roll) (PRT (RP in)))) (. ?)))
+
+QuestionId: blogs-03-23
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (JJ first) (NN tree)) (VP (VB fall) (PP (IN onto)))) (. ?)))
+
+QuestionId: blogs-03-24
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB stand))) (. ?)))
+
+QuestionId: blogs-03-25
+(ROOT (SBARQ (WHNP (WP$ Whose) (NN yard)) (SQ (VBD did) (NP (DT the) (NN tree)) (VP (VB fall) (PRT (RP on)))) (. ?)))
+
+QuestionId: blogs-03-26
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD watched) (NP (DT a) (JJ large) (NN tree)))) (. ?)))
+
+QuestionId: blogs-03-27
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD watched) (NP (DT a) (JJ large) (NNP Jamaica) (NN dogwood)))) (. ?)))
+
+QuestionId: blogs-03-28
+(ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBD fell) (PP (IN on) (NP (DT the) (NN garden) (NN tool))))) (. ?)))
+
+QuestionId: blogs-03-29
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD filled) (NP (NP (DT the) (NN container)) (PP (IN of) (NP (NN fuel)))))) (. ?)))
+
 QuestionId: blogs-03-3
 (ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBD started) (S (VP (VBG kicking) (PRT (RP up)))))) (. ?)))
+
+QuestionId: blogs-03-30
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD filled) (NP (NP (DT the) (NN can)) (PP (IN of) (NP (NN gasoline)))))) (. ?)))
+
+QuestionId: blogs-03-31
+(ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBN divided))) (. ?)))
+
+QuestionId: blogs-03-32
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD evaluated) (NP (NNP Baton) (NNP Rouge)))) (. ?)))
 
 QuestionId: blogs-03-4
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD came) (PP (TO to) (NP (NNP Baton) (NNP Rouge))) (NP-TMP (NN yesterday)) (S (VP (TO to) (VP (VB assess) (NP (DT the) (NN damage))))))) (. ?)))

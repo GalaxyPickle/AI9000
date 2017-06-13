@@ -23,85 +23,158 @@ Difficulty: Easy
 Type: Story
 
 QuestionID: fables-06-5
+Question: Who heard and recognised his roars of anger and ran to the spot?
+Answer: the Mouse
+Difficulty: Easy
+Type: Story
+
+QuestionID: fables-06-6
 Question: Why was the lion awaked?
 Answer: because a mouse ran into the face of the lion
 Difficulty: Easy
 Type: Sch
 
-QuestionID: fables-06-6
+QuestionID: fables-06-7
 Question: Who spread some net in order to catch a big game?
 Answer: a trapper
 Difficulty: Easy
 Type: Sch
 
-QuestionID: fables-06-7
+QuestionID: fables-06-8
 Question: Who entangled himself in the net?
 Answer: the lion
 Difficulty: Easy
 Type: Sch
 
-QuestionID: fables-06-8
+QuestionID: fables-06-9
 Question: What did the mouse immediately begin gnawing?
 Answer: the rope of the net
 Difficulty: Easy
 Type: Sch
 
-QuestionID: fables-06-9
+QuestionID: fables-06-10
 Question: What woke up the lion?
 Answer: a mouse
 Difficulty: Medium
 Type: Story
 
-QuestionID: fables-06-10
+QuestionID: fables-06-11
 Question: Why did the trapper spread some net? 
 Answer: in order to catch a big game
 Difficulty: Medium
 Type: Sch
 
-QuestionID: fables-06-11
+QuestionID: fables-06-12
 Question: Who entreated the lion? 
 Answer: the mouse
 Difficulty: Medium
 Type: Sch
 
-QuestionID: fables-06-12
+QuestionID: fables-06-13
 Question: What did the mouse recognize? 
 Answer: the voice of the lion
 Difficulty: Medium
 Type: Sch
 
-QuestionID: fables-06-13
+QuestionID: fables-06-14
+Question: What did the mouse recognise? 
+Answer: his roars of anger
+Difficulty: Medium
+Type: Story
+
+
+QuestionID: fables-06-15
 Question: What were the ropes gnawed with? 
 Answer: its teeth
 Difficulty: Medium
 Type: Story
 
-QuestionID: fables-06-14
+QuestionID: fables-06-16
 Question: Who expressed mirth? 
 Answer: the lion
 Difficulty: Hard
 Type: Sch
 
-QuestionID: fables-06-15
+QuestionID: fables-06-17
 Question: Who gnawed the bungee? 
 Answer: the mouse
 Difficulty: Hard
 Type: Sch
 
-QuestionID: fables-06-16
+QuestionID: fables-06-18
 Question: Why did the king of beasts laugh?
 Answer: because he thought that the mouse is extremely not able to help him.  
 Difficulty: Hard
 Type: Sch
 
-QuestionID: fables-06-17
+QuestionID: fables-06-19
 Question: Who entangled himself in the meshing? 
 Answer: the lion
 Difficulty: Hard
 Type: Sch
 
-QuestionID: fables-06-18
+QuestionID: fables-06-20
 Question: What did the hunter spread? 
 Answer: some net
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-06-21
+Question: What seized the mouse?
+Answer:  the lion
+Difficulty: Medium
+Type: Sch
+
+QuestionID: fables-06-22
+Question: What did the Lion seize the mouse with?
+Answer:  the paw of the lion
+Difficulty: Medium
+Type: Sch
+
+QuestionID: fables-06-23
+Question: What did it set to work to gnaw?
+Answer:  the ropes
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-06-24
+Question: What did it gnaw the ropes with?
+Answer:  its teeth
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-06-25
+Question: Who would reward kindness?
+Answer: the mouse
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-06-26
+Question: What did the mouse know? 
+Answer: the voice of the lion
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-06-27
+Question: What did the lion take with the paw of the lion?
+Answer: the mouse
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-06-28
+Question: Why did the lion wake up? 
+Answer: because a mouse ran into the face of the lion.
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-06-29
+Question: Where was the king of beasts resting?
+Answer: in a lair
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-06-30
+Question: Where did the rodent run into? 
+Answer: the face of the lion
 Difficulty: Hard
 Type: Sch

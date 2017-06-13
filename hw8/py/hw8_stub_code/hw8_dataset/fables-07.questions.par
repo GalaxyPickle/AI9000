@@ -1,0 +1,30 @@
+QuestionId: fables-07-1
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD was) (NP (DT the) (NN dog)) (VP (VBG lying))) (. ?)))
+
+QuestionId: fables-07-10
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBN pounced))) (. ?)))
+
+QuestionId: fables-07-2
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD jumped) (PP (IN onto) (NP (DT the) (NN dog))))) (. ?)))
+
+QuestionId: fables-07-3
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD did) (NP (DT the) (NN dog)) (VP (VB beg))) (. ?)))
+
+QuestionId: fables-07-4
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN dog)) (VP (VBP beg) (NP (DT the) (NN wolf)) (S (VP (TO to) (VP (VB do)))))) (. ?)))
+
+QuestionId: fables-07-5
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (VP (VBG lying) (PP (IN in) (NP (DT the) (NN sun))))) (. ?)))
+
+QuestionId: fables-07-6
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD was) (NP (DT the) (NN dog)) (VP (VBG lying))) (. ?)))
+
+QuestionId: fables-07-7
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD thought) (SBAR (S (NP (DT this)) (VP (VBD was) (NP (DT a) (ADJP (RB very) (JJ good)) (NN plan))))))) (. ?)))
+
+QuestionId: fables-07-8
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT the) (NN wolf)) (VP (VB return) (PP (TO to)))) (. ?)))
+
+QuestionId: fables-07-9
+(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBD did) (RB n't) (NP (DT the) (NN wolf)) (VP (VB reach) (NP (DT the) (NN dog)))) (. ?)))
+

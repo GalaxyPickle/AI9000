@@ -24,11 +24,23 @@ QuestionId: blogs-04-12
 Why	WRB	5	advmod
 did	VBD	5	aux
 the	DT	4	det
+narrator	NN	5	nsubj
+place	VB	0	root
+the	DT	7	det
+bowl	NN	5	dobj
+on	IN	10	case
+the	DT	10	det
+deck	NN	5	nmod
+
+QuestionId: blogs-04-13
+Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
 birds	NNS	5	nsubj
 organize	VBP	0	root
 themselves	PRP	5	dobj
 
-QuestionId: blogs-04-13
+QuestionId: blogs-04-14
 What	WP	4	dobj
 did	VBD	4	aux
 we	PRP	4	nsubj
@@ -39,7 +51,7 @@ the	DT	9	det
 back	JJ	9	amod
 deck	NN	4	nmod
 
-QuestionId: blogs-04-14
+QuestionId: blogs-04-15
 Where	WRB	5	advmod
 did	VBD	5	aux
 the	DT	4	det
@@ -47,7 +59,7 @@ birds	NNS	5	nsubj
 form	VBP	0	root
 themselves	PRP	5	dobj
 
-QuestionId: blogs-04-15
+QuestionId: blogs-04-16
 What	WDT	2	nsubj
 erred	VBD	0	root
 off	RP	2	compound:prt
@@ -55,6 +67,28 @@ the	DT	5	det
 deck	NN	7	nmod:poss
 's	POS	5	case
 railing	NN	2	dobj
+
+QuestionId: blogs-04-17
+What	WDT	3	nsubj
+has	VBZ	3	aux
+become	VBN	0	root
+a	DT	7	det
+very	RB	6	advmod
+popular	JJ	7	amod
+site	NN	3	xcomp
+
+QuestionId: blogs-04-18
+Who	WP	2	nsubj
+bathes	VBZ	0	root
+in	IN	4	case
+it	PRP	2	nmod
+
+QuestionId: blogs-04-19
+When	WRB	5	advmod
+did	VBD	5	aux
+his	PRP$	4	nmod
+paw	NN	5	nsubj
+slip	VB	0	root
 
 QuestionId: blogs-04-2
 Who	WP	2	nsubj
@@ -64,6 +98,22 @@ the	DT	5	det
 deck	NN	7	nmod:poss
 's	POS	5	case
 railing	NN	2	nmod
+
+QuestionId: blogs-04-20
+Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+narrator	NN	5	nsubj
+put	VBD	0	root
+the	DT	7	det
+bowl	NN	5	dobj
+
+QuestionId: blogs-04-21
+Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+squirrel	NN	5	nsubj
+jump	VB	0	root
 
 QuestionId: blogs-04-3
 What	WDT	2	nsubj

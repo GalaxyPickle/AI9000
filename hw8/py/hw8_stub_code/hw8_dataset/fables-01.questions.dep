@@ -76,6 +76,11 @@ felt	VBD	0	root
 buttered	VBN	2	dep
 up	RP	3	compound:prt
 
+QuestionId: fables-01-19
+What	WP	3	nsubj
+was	VBD	3	cop
+exquisite	JJ	0	root
+
 QuestionId: fables-01-2
 What	WP	5	dobj
 did	VBD	5	aux
@@ -85,6 +90,34 @@ have	VBP	0	root
 in	IN	8	case
 her	PRP$	8	nmod:poss
 beak	NN	5	nmod
+
+QuestionId: fables-01-20
+What	WP	2	nsubj
+is	VBZ	0	root
+without	IN	4	case
+equal	JJ	2	advcl
+
+QuestionId: fables-01-21
+What	WP	3	nsubj
+is	VBZ	3	cop
+noble	JJ	0	root
+
+QuestionId: fables-01-22
+What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+fox	NN	5	nsubj
+say	VBP	0	root
+about	IN	10	case
+the	DT	8	det
+bird	NN	10	nmod:poss
+'s	POS	8	case
+plumage	NN	5	nmod
+
+QuestionId: fables-01-23
+Who	WP	0	root
+was	VBD	1	cop
+grazing	NN	1	nsubj
 
 QuestionId: fables-01-3
 Who	WP	5	dobj

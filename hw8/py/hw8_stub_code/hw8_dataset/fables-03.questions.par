@@ -58,8 +58,38 @@ QuestionId: fables-03-26
 QuestionId: fables-03-27
 (ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT the) (NN serpent)) (VP (VBD spat) (NP (DT some) (NN toxin)))) (. ?)))
 
+QuestionId: fables-03-28
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD assisted) (NP (DT the) (NN eagle) (NN escape)))) (. ?)))
+
+QuestionId: fables-03-29
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD struggled) (PP (IN with) (NP (DT the) (NN serpent))))) (. ?)))
+
 QuestionId: fables-03-3
 (ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NNP Eagle)) (VP (VB seize) (NP (PRP it)) (PP (IN with)))) (. ?)))
+
+QuestionId: fables-03-30
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBN fleed))) (. ?)))
+
+QuestionId: fables-03-31
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD spilled) (NP (DT the) (NN mug)))) (. ?)))
+
+QuestionId: fables-03-32
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN eagle)) (VP (VB snatch))) (. ?)))
+
+QuestionId: fables-03-33
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD tried) (S (VP (TO to) (VP (VB help) (NP (DT the) (NN eagle) (S (VP (TO to) (VP (VB escape)))))))))) (. ?)))
+
+QuestionId: fables-03-34
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD seized) (NP (PRP it)) (PP (IN in) (NP (PRP$ his) (NNS talons))))) (. ?)))
+
+QuestionId: fables-03-35
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN eagle)) (VP (VB seize) (NP (PRP it)) (PP (IN with)))) (. ?)))
+
+QuestionId: fables-03-36
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD owned) (NP (DT a) (NN drinking) (NN vessel)))) (. ?)))
+
+QuestionId: fables-03-37
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD did) (NP (DT the) (NN countryman)) (VP (VB try) (S (VP (TO to) (VP (VB help)))))) (. ?)))
 
 QuestionId: fables-03-4
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD came) (PP (TO to) (NP (NP (DT the) (NN assistance)) (PP (IN of) (NP (DT the) (NNP Eagle))))))) (. ?)))

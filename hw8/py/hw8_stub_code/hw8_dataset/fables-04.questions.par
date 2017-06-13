@@ -25,8 +25,38 @@ QuestionId: fables-04-16
 QuestionId: fables-04-17
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD attempted) (S (VP (TO to) (VP (VB drink) (NP (DT some) (JJ savory) (NN soup))))))) (. ?)))
 
+QuestionId: fables-04-18
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NNP Stork)) (VP (VB try) (S (VP (TO to) (VP (VB partake) (PP (IN of))))))) (. ?)))
+
+QuestionId: fables-04-19
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NNP Stork)) (VP (VB try) (PP (IN in) (NP (JJ vain))) (S (VP (TO to) (VP (VB do)))))) (. ?)))
+
 QuestionId: fables-04-2
 (ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (NP (DT the) (JJ only) (NN fare)) (VP (VBN provided))) (. ?)))
+
+QuestionId: fables-04-20
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (NP (NNP sly))) (. ?)))
+
+QuestionId: fables-04-21
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD did) (NP (DT the) (NN stork)) (VP (VB present) (NP (DT a) (NN pitcher)) (PP (TO to)))) (. ?)))
+
+QuestionId: fables-04-22
+(ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBZ has) (NP (DT a) (ADJP (JJ long) (CC and) (JJ narrow)) (NN neck)))) (. ?)))
+
+QuestionId: fables-04-23
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (ADJP (JJ evident))) (. ?)))
+
+QuestionId: fables-04-24
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VP (VBD caused) (NP (DT the) (NN fox) (JJ much) (NN amusement)))) (. ?)))
+
+QuestionId: fables-04-25
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD attempted) (S (VP (TO to) (VP (VB drink) (NP (DT some) (JJ savory) (NN stock))))))) (. ?)))
+
+QuestionId: fables-04-26
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD presented) (NP (DT a) (NN vessel)))) (. ?)))
+
+QuestionId: fables-04-27
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN stork)) (VP (VBP show) (NP (DT the) (NN fox)))) (. ?)))
 
 QuestionId: fables-04-3
 (ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD was) (NP (DT some) (NN soup)) (VP (VBN served))) (. ?)))

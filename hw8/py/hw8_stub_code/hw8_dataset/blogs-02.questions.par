@@ -37,6 +37,30 @@ QuestionId: blogs-02-2
 QuestionId: blogs-02-20
 (ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB perceive))) (. ?)))
 
+QuestionId: blogs-02-21
+(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBD was) (NP (EX there)) (NP (NP (NN nothing)) (SBAR (S (NP (DT the) (NN narrator)) (VP (MD could) (VP (VB do))))))) (. ?)))
+
+QuestionId: blogs-02-22
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (VP (VBN broken)))))
+
+QuestionId: blogs-02-23
+(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB talk) (PP (TO to) (NP (PRP him))) (SBAR (RB as) (IN if) (S (NP (PRP he)) (VP (VBD were) (ADVP (RB still)) (ADVP (RB there))))))) (. ?)))
+
+QuestionId: blogs-02-24
+(ROOT (SBARQ (WHADVP (WRB When)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB decide) (S (VP (TO to) (VP (VB talk) (PP (TO to) (NP (PRP him)))))))) (. ?)))
+
+QuestionId: blogs-02-25
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (ADJP (JJ logical))) (. ?)))
+
+QuestionId: blogs-02-26
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD passed) (ADVP (RB away)))) (. ?)))
+
+QuestionId: blogs-02-27
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VBP speak) (PP (TO to)))) (. ?)))
+
+QuestionId: blogs-02-28
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBN communicated) (PP (IN with) (NP (DT the) (JJ young) (NN man))))) (. ?)))
+
 QuestionId: blogs-02-3
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD visited) (NP (DT the) (NN place)) (SBAR (WHADVP (WRB where)) (S (NP (PRP he)) (VP (VBD died)))))) (. ?)))
 

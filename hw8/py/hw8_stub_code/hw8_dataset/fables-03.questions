@@ -44,7 +44,7 @@ Difficulty: Easy
 Type: Sch
 
 QuestionID: fables-03-10
-Question: Where were the contents of the horn spilled? 
+Question: Where where the contents of the horn spilled? 
 Difficulty: Easy
 Type: Story
 
@@ -132,3 +132,53 @@ QuestionID: fables-03-27
 Question: Where did the serpent spat some toxin?
 Difficulty: Hard
 Type: Sch
+
+QuestionID: fables-03-28
+Question: Who assisted the eagle escape?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-03-29
+Question: Who struggled with the serpent? 
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-03-30
+Question: Who fleed?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-03-31
+Question: Who spilled the mug?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-03-32
+Question: What did the eagle snatch?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-03-33
+Question: Who tried to help the eagle to escape?
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-03-34
+Question: Who seized it in his talons?
+Difficulty: Medium
+Type:  Story
+
+QuestionID: fables-03-35
+Question: What did the eagle seize it with?
+Difficulty: Medium
+Type:  Sch
+
+QuestionID: fables-03-36
+Question: Who owned a drinking vessel?
+Difficulty: Medium
+Type:  Sch
+
+QuestionID: fables-03-37
+Question: Who did the countryman try to help?
+Difficulty: Medium
+Type:  Sch 

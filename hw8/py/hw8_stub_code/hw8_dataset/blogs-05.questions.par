@@ -25,8 +25,17 @@ QuestionId: blogs-05-16
 QuestionId: blogs-05-17
 (ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB raise))) (. ?)))
 
+QuestionId: blogs-05-18
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB stand))) (. ?)))
+
+QuestionId: blogs-05-19
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB insert) (NP (PRP it)))) (. ?)))
+
 QuestionId: blogs-05-2
 (ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB check) (NP (NP (DT the) (NN group)) (PP (IN of) (NP (NNS students)))) (PP (IN for)))) (. ?)))
+
+QuestionId: blogs-05-20
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN narrator)) (VP (VB see) (NP (NP (DT the) (NN group)) (PP (IN of) (NP (NNS students)))) (PP (IN for)))) (. ?)))
 
 QuestionId: blogs-05-3
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD noticed) (SBAR (IN that) (S (NP (NP (DT the) (NN ankle)) (PP (IN of) (NP (DT the) (NN narrator)))) (VP (VBD was) (VP (VBN observed))))))) (. ?)))

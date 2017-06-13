@@ -112,3 +112,68 @@ QuestionID: fables-02-23
 Question: Who tried to kill the bull?
 Difficulty: Hard
 Type: Sch
+
+QuestionID: fables-02-24
+Question: What did the lion watch? 
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-02-25
+Question: Who was persuaded by this flattery? 
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-02-26
+Question: Where was the bull? 
+Difficulty: Medium
+Type: Sch
+
+QuestionID: fables-02-27
+Question: What was magnificent?
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-02-28
+Question: What was cut off?
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-02-29
+Question: What was powerful?
+Difficulty: Medium
+Type: Story
+
+QuestionID: fables-02-30
+Question: What was ugly?
+Difficulty: Medium
+Type: Story | Sch
+
+QuestionID: fables-02-31
+Question: Who watched the cattle?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-02-32
+Question: Who did the lion attempt to murder?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-02-33
+Question: Who planned to deceived the bull?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-02-34
+Question: What the bull strip?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-02-35
+Question: Who counseled the bull?
+Difficulty: Hard
+Type: Sch
+
+QuestionID: fables-02-36
+Question: Who fobbed the bull?
+Difficulty: Hard
+Type: Sch 

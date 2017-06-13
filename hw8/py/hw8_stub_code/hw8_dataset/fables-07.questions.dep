@@ -1,0 +1,79 @@
+QuestionId: fables-07-1
+Where	WRB	5	advmod
+was	VBD	5	aux
+the	DT	4	det
+dog	NN	5	nsubj
+lying	VBG	0	root
+
+QuestionId: fables-07-10
+Who	WP	2	nsubj
+pounced	VBN	0	root
+
+QuestionId: fables-07-2
+Who	WP	2	nsubj
+jumped	VBD	0	root
+onto	IN	5	case
+the	DT	5	det
+dog	NN	2	nmod
+
+QuestionId: fables-07-3
+Who	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+dog	NN	5	nsubj
+beg	VB	0	root
+
+QuestionId: fables-07-4
+What	WP	9	dobj
+did	VBD	5	aux
+the	DT	4	det
+dog	NN	5	nsubj
+beg	VBP	0	root
+the	DT	7	det
+wolf	NN	5	dobj
+to	TO	9	mark
+do	VB	5	xcomp
+
+QuestionId: fables-07-5
+Who	WP	3	nsubj
+was	VBD	3	aux
+lying	VBG	0	root
+in	IN	6	case
+the	DT	6	det
+sun	NN	3	nmod
+
+QuestionId: fables-07-6
+Where	WRB	5	advmod
+was	VBD	5	aux
+the	DT	4	det
+dog	NN	5	nsubj
+lying	VBG	0	root
+
+QuestionId: fables-07-7
+Who	WP	2	nsubj
+thought	VBD	0	root
+this	DT	8	nsubj
+was	VBD	8	cop
+a	DT	8	det
+very	RB	7	advmod
+good	JJ	8	amod
+plan	NN	2	ccomp
+
+QuestionId: fables-07-8
+Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+wolf	NN	5	nsubj
+return	VB	0	root
+to	TO	5	nmod
+
+QuestionId: fables-07-9
+Why	WRB	6	advmod
+did	VBD	6	aux
+n't	RB	6	neg
+the	DT	5	det
+wolf	NN	6	nsubj
+reach	VB	0	root
+the	DT	8	det
+dog	NN	6	dobj
+

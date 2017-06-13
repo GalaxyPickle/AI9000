@@ -105,3 +105,27 @@ Question: What broke because the broiler of the oven tripped?
 Answer: an oven
 Difficulty: Hard
 Type: Sch
+
+QuestionID: blogs-06-19
+Question: What did I order a few days ago?
+Answer: my new range
+Difficulty: Medium
+Type: Story
+
+QuestionID: blogs-06-20
+Question: What got damaged besides the range?
+Answer: Nothing
+Difficulty: Medium
+Type: Story
+
+QuestionID: blogs-06-21
+Question: What did the husband of the narrator quickly close? 
+Answer: the door of the oven
+Difficulty: Hard
+Type: Sch
+
+QuestionID: blogs-06-22
+Question: What did the narrator recover?
+Answer: a fire extinguisher | the group of treats
+Difficulty: Hard
+Type: Sch

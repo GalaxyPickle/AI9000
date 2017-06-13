@@ -28,8 +28,23 @@ QuestionId: fables-01-17
 QuestionId: fables-01-18
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD felt) (VP (VBN buttered) (PRT (RP up))))) (. ?)))
 
+QuestionId: fables-01-19
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD was) (ADJP (JJ exquisite))) (. ?)))
+
 QuestionId: fables-01-2
 (ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN crow)) (VP (VBP have) (PP (IN in) (NP (PRP$ her) (NN beak))))) (. ?)))
+
+QuestionId: fables-01-20
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBZ is) (PP (IN without) (ADJP (JJ equal)))) (. ?)))
+
+QuestionId: fables-01-21
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBZ is) (ADJP (JJ noble))) (. ?)))
+
+QuestionId: fables-01-22
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN fox)) (VP (VBP say) (PP (IN about) (NP (NP (DT the) (NN bird) (POS 's)) (NN plumage))))) (. ?)))
+
+QuestionId: fables-01-23
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (NP (NN grazing))) (. ?)))
 
 QuestionId: fables-01-3
 (ROOT (SBARQ (WHNP (WP Who)) (SQ (VBZ is) (NP (DT the) (NNP Story)) (ADJP (IN about))) (. ?)))

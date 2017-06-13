@@ -64,12 +64,39 @@ the	DT	4	det
 narrator	NN	5	nsubj
 raise	VB	0	root
 
+QuestionId: blogs-05-18
+Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+narrator	NN	5	nsubj
+stand	VB	0	root
+
+QuestionId: blogs-05-19
+Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+narrator	NN	5	nsubj
+insert	VB	0	root
+it	PRP	5	dobj
+
 QuestionId: blogs-05-2
 What	WP	5	nmod
 did	VBD	5	aux
 the	DT	4	det
 narrator	NN	5	nsubj
 check	VB	0	root
+the	DT	7	det
+group	NN	5	dobj
+of	IN	9	case
+students	NNS	7	nmod
+for	IN	1	case
+
+QuestionId: blogs-05-20
+What	WP	5	nmod
+did	VBD	5	aux
+the	DT	4	det
+narrator	NN	5	nsubj
+see	VB	0	root
 the	DT	7	det
 group	NN	5	dobj
 of	IN	9	case
