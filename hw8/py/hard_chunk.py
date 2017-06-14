@@ -105,24 +105,8 @@ def baseline(qbow, text, fnames, stopwords):
     qbow.update(synset_strings)
     qbow.update(hyponyms_strings)
     qbow.update(hypernyms_strings)
-     # print("'Know' hypernyms")
-    # for know_synset in know_synsets:
-    #     know_hyper = know_synset.hypernyms()
-    #     print("%s: %s" % (know_synset, know_hyper))
 
-    # print("SYNSETS: " + str(synset_strings))
-    # print("HYPOS: " + str(hyponyms_strings))
-    # print("HYPERS: " + str(hypernyms_strings))
     
-    # for synset in rodent_synsets:
-    #     hypos = [synset.hyponyms() for synset in synsets]
-        # print("%s: %s" % (rodent_synset, rodent_hypo))
-
-    #     for hypo in rodent_hypo:
-    #         print(hypo.name()[0:hypo.name().index(".")])
-    #         print("is hypo_synset in Wordnet_nouns/verbs.csv?")
-    #         # match on "mouse.n.01"
-    # # print(qbow)
 
     i = 0
     for f in text:

@@ -1,4 +1,3 @@
-# import word_category_counter
 ##############
 # Alex Lang
 # Conor Rogers
