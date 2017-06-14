@@ -44,31 +44,40 @@ def unzip_corpus(input_file, name,type_call=False):
     return ''.join(contents)
 
 #takes start, then steps through for every 4th line and splits it off at the ':' delimiter
-def get_qfactor(split_text, start,offset=0,step=5):
+def get_qfactor(split_text, start,offset=0,step=4):
+    # print(split_text)
     return [split_text[i].split(': ',1)[1] for i in range(start,len(split_text),step + offset)]
 
 #gets questionIDs, questions, and types from specified question files
 def question_process(raw_text, offset=0,answer=False):
     split_text = []
-    for i in range(len(raw_text)):
-        split_text += raw_text[i].splitlines() + ['']
-    #print(split_text)
-    questionID = get_qfactor(split_text,0,offset) #questionID start at line 0 and continue every 4th line
-    questions = get_qfactor(split_text,1,offset)
-    diff = get_qfactor(split_text,2,offset)
-    q_type = get_qfactor(split_text,3,offset)
+    # print(raw_text)
+    for i in range(len(raw_text)):        
+        split_text += raw_text[i].splitlines()
+        split_text = [x for x in split_text if x != '']
 
-    # print("questionID: {0}".format(questionID))
-    # print("questions: {0}".format(questions))
-    # print("type: {0}".format(q_type))
+    # print(split_text)
     if answer == True:
         questionID = get_qfactor(split_text,0,offset) #questionID start at line 0 and continue every 4th line
         questions = get_qfactor(split_text,1,offset)
         q_type = get_qfactor(split_text,4,offset)
         diff = get_qfactor(split_text,3,offset)
         answer = get_qfactor(split_text,2,offset)
+        # print("questionID: {0}".format(questionID))
+        # print("questions: {0}".format(questions))
+        # print("type: {0}".format(q_type))
         return questionID, questions, q_type, diff, answer
-    return questionID, questions, q_type, diff
+    else:   
+        questionID = get_qfactor(split_text,0,offset) #questionID start at line 0 and continue every 4th line
+        questions = get_qfactor(split_text,1,offset)
+        diff = get_qfactor(split_text,2,offset)
+        q_type = get_qfactor(split_text,3,offset)
+
+        # print("questionID: {0}".format(questionID))
+        # print("questions: {0}".format(questions))
+        # print("type: {0}".format(q_type))
+       
+        return questionID, questions, q_type, diff
 
 def dep_question_process(raw_text,offset=0):
     split_text = []

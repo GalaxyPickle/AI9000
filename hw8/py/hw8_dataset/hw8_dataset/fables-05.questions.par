@@ -1,0 +1,75 @@
+QuestionId: fables-05-1
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (NP (DT the) (NNP Farmer)) (ADJP (RB greatly) (JJ annoyed) (PP (IN by)))) (. ?)))
+
+QuestionId: fables-05-10
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD caught) (NP (DT the) (NN fox)))) (. ?)))
+
+QuestionId: fables-05-11
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD freed) (NP (DT the) (NN fox)))) (. ?)))
+
+QuestionId: fables-05-12
+(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBD did) (NP (DT the) (NN agriculturist)) (VP (VB begin) (S (VP (TO to) (VP (VB be) (ADJP (JJ unlucky))))))) (. ?)))
+
+QuestionId: fables-05-13
+(ROOT (X (SBARQ (WHNP (WDT What) (NP (JJ burned))) (ADVP (RB completely))) (. ?)))
+
+QuestionId: fables-05-14
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (VP (VBG stealing) (NP (DT the) (NN chicken)))) (. ?)))
+
+QuestionId: fables-05-15
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN agriculturist)) (VP (VB ignite))) (. ?)))
+
+QuestionId: fables-05-16
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD did) (NP (DT the) (NN agriculturist)) (VP (VB unloosen))) (. ?)))
+
+QuestionId: fables-05-17
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN agriculturalist)) (VP (VB free))) (. ?)))
+
+QuestionId: fables-05-18
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VP (VBD came) (S (VP (VBG prowling))))) (. ?)))
+
+QuestionId: fables-05-19
+(ROOT (SBARQ (WHADVP (WRB When)) (SQ (VBD was) (NP (DT the) (NN fox)) (VP (VBG prowling) (NP (DT a) (NN yard)))) (. ?)))
+
+QuestionId: fables-05-2
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT the) (NNP Fox)) (VP (VBP make) (ADJP (JJ straight) (PP (IN for))))) (. ?)))
+
+QuestionId: fables-05-20
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT some) (NN corn)) (VP (VB begin) (S (VP (TO to) (VP (VB be) (ADJP (JJ ripe))))))) (. ?)))
+
+QuestionId: fables-05-21
+(ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBD began) (S (VP (TO to) (VP (VB be) (ADJP (JJ ready) (PP (TO to) (NP (DT a) (NN harvest))))))))) (. ?)))
+
+QuestionId: fables-05-22
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD caught) (NP (DT the) (NN fox)))) (. ?)))
+
+QuestionId: fables-05-23
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD did) (NP (DT the) (NN farmer)) (VP (VBD set) (NP (DT a) (NN trap)) (PP (IN for)))) (. ?)))
+
+QuestionId: fables-05-24
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VBD was) (VP (VBN caught) (PP (IN in) (NP (DT the) (NN snare))))) (. ?)))
+
+QuestionId: fables-05-25
+(ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VBD flared) (PRT (RP up)))) (. ?)))
+
+QuestionId: fables-05-3
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD lost) (NP (PDT all) (PRP$ his) (NN harvest)))) (. ?)))
+
+QuestionId: fables-05-4
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD set) (NP (DT a) (NN trap)))) (. ?)))
+
+QuestionId: fables-05-5
+(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (VBD did) (NP (DT the) (NN agriculturist)) (VP (VB tie) (NP (DT some) (NN fiber)) (PP (IN onto)))) (. ?)))
+
+QuestionId: fables-05-6
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD kindled) (NP (DT the) (NN fiber)))) (. ?)))
+
+QuestionId: fables-05-7
+(ROOT (SBARQ (WHNP (WDT What)) (SQ (VP (VP (VBD ignited)) (CC and) (VP (VBD burned) (ADVP (RB completely))))) (. ?)))
+
+QuestionId: fables-05-8
+(ROOT (SBARQ (WHNP (WP Who)) (SQ (VP (VBD lost) (NP (DT a) (NN corp)))) (. ?)))
+
+QuestionId: fables-05-9
+(ROOT (SBARQ (WHNP (WP What)) (SQ (VBD did) (NP (DT the) (NN farmer)) (VP (VB lose))) (. ?)))
+

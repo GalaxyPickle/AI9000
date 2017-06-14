@@ -88,8 +88,8 @@ def subtree_master(pattern,tree):
         return 'nopes'
 
 
-    print(subtree)
-    print(" ".join(subtree.leaves()))
+    # print(subtree)
+    # print(" ".join(subtree.leaves()))
     return subtree
 
 
@@ -353,6 +353,10 @@ def get_index(answer_sentence,paths):
     answer_sentence = answer_sentence.lower()
 
     answer_sentence = answer_sentence.replace(' ','')
+    answer_sentence = answer_sentence.replace("``",'')
+    # answer_sentence = answer_sentence.replace('"','')
+
+
     # print(answer_sentence)
 
 
